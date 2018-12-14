@@ -20,8 +20,8 @@
 //////////////////////////////////////////////////////////////////////////////////
 
 
-module light_7seg(input [3:0] num, output reg [7:0] seg_out, output seg_en);
-    assign seg_en = 0;
+module light_7seg(input [3:0] num, output reg [7:0] seg_out);
+    
     always @ *
     begin
         case(num)
