@@ -1,5 +1,7 @@
-# 基于FPGA的简单时钟
-数字逻辑project
+# Simple-FPGA-Clock 基于FPGA的简单时钟
+A SUSTech Digital Design 2018 fall project.  
+Based on: MINISYS Artix-7 FPGA platform.  
+Using: Vivado HLS.  
 ## 说明
 代码置于`/Simple-FPGA-Clock.srcs`里, 由于Vivado本身问题（几乎每一个操作，包括运行模拟和修改代码等，Vivado都会修改一大串日志和其他关联文件），建议新提交代码放在`/exchange_src`中，pull到本地后，在Vivado内import。
 ## Updates
