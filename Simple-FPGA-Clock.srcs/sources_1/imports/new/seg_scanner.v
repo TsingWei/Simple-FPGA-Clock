@@ -44,6 +44,13 @@ module seg_scanner(
             en <= 8'hFF;
             out <= 8'hFF;
             end
+        
+        else if(scan_cnt==(seg_num>>1)-1)
+            scan_cnt<=8'd1;
+            else
+                scan_cnt <= scan_cnt + 1'b1;
+    end
+    always@(posedge clk) begin
         case (scan_cnt)
             3'd1: begin
                 out<=a;
@@ -78,8 +85,5 @@ module seg_scanner(
                 en<=8'd128;
                 end
         endcase
-        scan_cnt <= scan_cnt << 1;
-        if(scan_cnt==8'b1000_0000)
-            scan_cnt<=8'd1;
     end
 endmodule
