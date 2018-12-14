@@ -38,8 +38,8 @@ module seg_scanner(
     );
     parameter seg_num = 8;
     reg [7:0] scan_cnt;
-    always en = ~scan_cnt;
     always@(posedge clk, negedge rst) begin
+        en = ~scan_cnt;
         if(!rst) begin
             scan_cnt <=8'b0000_0001;
             en <= 8'hFF;
