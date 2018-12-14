@@ -20,11 +20,11 @@
 //////////////////////////////////////////////////////////////////////////////////
 
 
-module light_7seg(input [3:0] sw, output reg [7:0] seg_out, output [7:0] seg_en);
-    assign seg_en = ~8'hff;
+module light_7seg(input [3:0] num, output reg [7:0] seg_out, output seg_en);
+    assign seg_en = 0;
     always @ *
     begin
-        case(sw)
+        case(num)
             4'h0: seg_out = 8'b01000000; // 0  
             4'h1: seg_out = 8'b01111001; // 1
             4'h2: seg_out = 8'b00100100; // 2
