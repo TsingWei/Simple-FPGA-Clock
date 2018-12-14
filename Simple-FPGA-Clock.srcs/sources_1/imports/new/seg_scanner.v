@@ -40,47 +40,47 @@ module seg_scanner(
     reg [3:0] scan_cnt;
     always@(posedge clk, negedge rst) begin
         if(!rst) begin
-            scan_cnt <=3'b001;
+            scan_cnt <=3'b000;
             en <= 8'hFF;
             out <= 8'hFF;
             end
         
-        else if(scan_cnt==(seg_num>>1)-1)
-            scan_cnt<=8'd1;
-            else
-                scan_cnt <= scan_cnt + 1'b1;
+        else if(scan_cnt==seg_num-1)
+            scan_cnt<=3'd0;
+        else
+            scan_cnt <= scan_cnt + 1'b1;
     end
     always@(posedge clk) begin
         case (scan_cnt)
-            3'd1: begin
+            3'd0: begin
                 out<=a;
                 en<=8'd1;
                 end
-            3'd2: begin 
+            3'd1: begin 
                 out<=b;
                 en<=8'd2;
                 end
-            3'd3: begin
+            3'd2: begin
                 out<=c;
                 en<=8'd4;
                 end
-            3'd4: begin
+            3'd3: begin
                 out<=d;
                 en<=8'd8;
                 end
-            3'd5: begin 
+            3'd4: begin 
                 out<=e;
                 en<=8'd16;
                 end
-            3'd6: begin
+            3'd5: begin
                 out<=f;
                 en<=8'd32;
                 end
-            3'd7: begin
+            3'd6: begin
                 out<=g;
                 en<=8'd64;
                 end
-            3'd8: begin
+            3'd7: begin
                 out<=h;
                 en<=8'd128;
                 end
