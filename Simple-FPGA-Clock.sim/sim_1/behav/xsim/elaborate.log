@@ -1,15 +1,13 @@
 Vivado Simulator 2017.4
 Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
-Running: /home/moe/文档/Vivado/2017.4/bin/unwrapped/lnx64.o/xelab -wto 4da20e3c81824f519157aadad2c4f05e --incr --debug typical --relax --mt 8 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot seg_assembly_tb_behav xil_defaultlib.seg_assembly_tb xil_defaultlib.glbl -log elaborate.log 
+Running: /home/moe/文档/Vivado/2017.4/bin/unwrapped/lnx64.o/xelab -wto 4da20e3c81824f519157aadad2c4f05e --incr --debug typical --relax --mt 8 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot counter_60_tb_behav xil_defaultlib.counter_60_tb xil_defaultlib.glbl -log elaborate.log 
 Using 8 slave threads.
 Starting static elaboration
 Completed static elaboration
 Starting simulation data flow analysis
 Completed simulation data flow analysis
 Time Resolution for simulation is 1ps
-Compiling module xil_defaultlib.light_7seg
-Compiling module xil_defaultlib.seg_scanner
-Compiling module xil_defaultlib.seg_assembly
-Compiling module xil_defaultlib.seg_assembly_tb
+Compiling module xil_defaultlib.counter60
+Compiling module xil_defaultlib.counter_60_tb
 Compiling module xil_defaultlib.glbl
-Built simulation snapshot seg_assembly_tb_behav
+Built simulation snapshot counter_60_tb_behav

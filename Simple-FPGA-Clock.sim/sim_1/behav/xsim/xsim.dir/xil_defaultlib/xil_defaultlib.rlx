@@ -3,8 +3,11 @@
 Dec 15 2017
 20:57:24
 /home/moe/Simple-FPGA-Clock/Simple-FPGA-Clock.sim/sim_1/behav/xsim/glbl.v,1513215259,verilog,,,,glbl,,,,,,,,
+/home/moe/Simple-FPGA-Clock/Simple-FPGA-Clock.srcs/sim_1/new/counter_60_tb.v,1544808549,verilog,,,,counter_60_tb,,,,,,,,
 /home/moe/Simple-FPGA-Clock/Simple-FPGA-Clock.srcs/sim_1/new/seg7_tb.v,1544795065,verilog,,,,seg7_tb,,,,,,,,
 /home/moe/Simple-FPGA-Clock/Simple-FPGA-Clock.srcs/sim_1/new/seg_assembly_tb.v,1544799426,verilog,,,,seg_assembly_tb,,,,,,,,
+/home/moe/Simple-FPGA-Clock/Simple-FPGA-Clock.srcs/sources_1/imports/exchange_src/counter60.v,1544808887,verilog,,/home/moe/Simple-FPGA-Clock/Simple-FPGA-Clock.srcs/sim_1/new/counter_60_tb.v,,counter60,,,,,,,,
 /home/moe/Simple-FPGA-Clock/Simple-FPGA-Clock.srcs/sources_1/imports/new/light_7seg.v,1544793746,verilog,,/home/moe/Simple-FPGA-Clock/Simple-FPGA-Clock.srcs/sources_1/new/seg_assembly.v,,light_7seg,,,,,,,,
 /home/moe/Simple-FPGA-Clock/Simple-FPGA-Clock.srcs/sources_1/imports/new/seg_scanner.v,1544797904,verilog,,/home/moe/Simple-FPGA-Clock/Simple-FPGA-Clock.srcs/sim_1/new/seg_assembly_tb.v,,seg_scanner,,,,,,,,
+/home/moe/Simple-FPGA-Clock/Simple-FPGA-Clock.srcs/sources_1/new/counter24.v,1544808889,verilog,,/home/moe/Simple-FPGA-Clock/Simple-FPGA-Clock.srcs/sim_1/new/counter_60_tb.v,,counter24,,,,,,,,
 /home/moe/Simple-FPGA-Clock/Simple-FPGA-Clock.srcs/sources_1/new/seg_assembly.v,1544799573,verilog,,/home/moe/Simple-FPGA-Clock/Simple-FPGA-Clock.srcs/sources_1/imports/new/seg_scanner.v,,seg_assembly,,,,,,,,

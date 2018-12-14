@@ -1,10 +1,24 @@
 # Simple-FPGA-Clock 基于FPGA的简单时钟
-* A SUSTech Digital Design 2018 fall project.  
-* Based on: MINISYS Artix-7 FPGA platform.  
-* Using: Vivado HLS.  
+* A SUSTech Digital Design 2018 fall project  
+* Based on: MINISYS Artix-7 FPGA platform  
+* Using: Vivado HLS
+## 设计规范
+### 变量命名
+* 时钟: clk
+* 复位: rst 低电平有效
+* 使能: en 低电平有效
+* 进位输出: cout 
+* 控制使能: ctrl_en 低电平有效
+* 诸如此类...
 ## 说明
 代码置于`/Simple-FPGA-Clock.srcs`里, 由于Vivado本身问题（几乎每一个操作，包括运行模拟和修改代码等，Vivado都会修改一大串日志和其他关联文件），建议新提交代码放在`/exchange_src`中，pull到本地后，在Vivado内import。
 ## Updates
+### 0.0.3 60计数器和24计数器完成
+* 且通过test bench
+* counter60:
+    ![c60](https://github.com/TsingWei/Simple-FPGA-Clock/blob/master/img/counter60_tb.png)
+* counter24:
+    ![c24](https://github.com/TsingWei/Simple-FPGA-Clock/blob/master/img/counter24_tb.png)
 ### 0.0.2 数码管封装完成
 * 尚未实现小数点和冒号的控制.  
 * 数码管封装的test bench：  
@@ -12,5 +26,5 @@
     ![scanner_tb](https://github.com/TsingWei/Simple-FPGA-Clock/blob/master/img/seg_assembly_tb.png)
 
 ### 0.0.1
-完成了数码管scanner，下一步集成数码管译码器并封装
-![scanner_tb](https://github.com/TsingWei/Simple-FPGA-Clock/blob/master/img/scanner_tb.png)
+* 完成了数码管scanner，下一步集成数码管译码器并封装
+* ![scanner_tb](https://github.com/TsingWei/Simple-FPGA-Clock/blob/master/img/scanner_tb.png)

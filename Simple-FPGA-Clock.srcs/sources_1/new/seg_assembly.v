@@ -10,7 +10,7 @@
 // Target Devices: 
 // Tool Versions: 
 // Description: 
-// 
+//         输入8个4bit字(8 * 0~F)
 // Dependencies: 
 // 
 // Revision:
