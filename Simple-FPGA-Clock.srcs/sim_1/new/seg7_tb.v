@@ -25,11 +25,11 @@ module seg7_tb(
     reg [3:0] a = 0;
     reg [3:0] b = 1;
     reg [3:0] c = 2;
-    reg [3:0] d;
-    reg [3:0] e;
-    reg [3:0] f;
-    reg [3:0] g;
-    reg [3:0] h;
+    reg [3:0] d = 3;
+    reg [3:0] e = 4;
+    reg [3:0] f = 5;
+    reg [3:0] g = 6;
+    reg [3:0] h = 7;
     reg rst;
     reg clk;
     wire [7:0] out;//段信号，包括小数点
