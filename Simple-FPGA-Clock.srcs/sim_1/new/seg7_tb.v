@@ -58,7 +58,7 @@ module seg7_tb(
     initial begin
         clk <= 1'b0;
         rst <= 1'b0;
-
+        #10 rst <= 1'b1; 
     end
     
 endmodule
