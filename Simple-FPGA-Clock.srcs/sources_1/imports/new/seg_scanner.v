@@ -37,23 +37,46 @@ module seg_scanner(
     output reg [7:0] en//管选择使能信号
     );
     parameter seg_num = 8;
-    reg [7:0] scan_cnt;
+    reg [3:0] scan_cnt;
     always@(posedge clk, negedge rst) begin
-        en = ~scan_cnt;
         if(!rst) begin
-            scan_cnt <=8'b0000_0001;
+            scan_cnt <=3'b001;
             en <= 8'hFF;
             out <= 8'hFF;
             end
         case (scan_cnt)
-            8'd1: out<=a;
-            8'd2: out<=b;
-            8'd4: out<=c;
-            8'd8: out<=d;
-            8'd16: out<=e;
-            8'd32: out<=f;
-            8'd64: out<=g;
-            8'd128: out<=h;
+            3'd1: begin
+                out<=a;
+                en<=8'd1;
+                end
+            3'd2: begin 
+                out<=b;
+                en<=8'd2;
+                end
+            3'd3: begin
+                out<=c;
+                en<=8'd4;
+                end
+            3'd4: begin
+                out<=d;
+                en<=8'd8;
+                end
+            3'd5: begin 
+                out<=e;
+                en<=8'd16;
+                end
+            3'd6: begin
+                out<=f;
+                en<=8'd32;
+                end
+            3'd7: begin
+                out<=g;
+                en<=8'd64;
+                end
+            3'd8: begin
+                out<=h;
+                en<=8'd128;
+                end
         endcase
         scan_cnt <= scan_cnt << 1;
         if(scan_cnt==8'b1000_0000)
