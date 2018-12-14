@@ -15,9 +15,9 @@
 ## Updates
 ### 0.0.3 60计数器和24计数器完成
 * 且通过test bench
-* counter60:
+* counter60:  
     ![c60](https://github.com/TsingWei/Simple-FPGA-Clock/blob/master/img/counter60_tb.png)
-* counter24:
+* counter24:  
     ![c24](https://github.com/TsingWei/Simple-FPGA-Clock/blob/master/img/counter24_tb.png)
 ### 0.0.2 数码管封装完成
 * 尚未实现小数点和冒号的控制.  
