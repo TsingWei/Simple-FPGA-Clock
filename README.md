@@ -3,4 +3,4 @@
 ## Updates
 ### 0.0.1
 完成了数码管scanner，下一步集成数码管译码器并封装
-![scanner_tb](https://github.com/TsingWei/Simple-FPGA-Clock/img/scanner_tb.png)
+![scanner_tb](https://github.com/TsingWei/Simple-FPGA-Clock/tree/master/img/scanner_tb.png)
