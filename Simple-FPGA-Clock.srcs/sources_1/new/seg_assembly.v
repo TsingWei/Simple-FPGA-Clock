@@ -32,8 +32,8 @@ module seg_assembly(
     input [3:0] h,
     input rst,
     input clk,
-    output [7:0] out,//段信号，包括小数点
-    output [7:0] en//管选择使能信号
+    output [7:0] seg_out,//段信号，包括小数点
+    output [7:0] seg_an//管选择使能信号
     );
     wire [7:0] a1;
     wire [7:0] b1;
@@ -51,5 +51,5 @@ module seg_assembly(
     light_7seg l6(f,f1);
     light_7seg l7(g,g1);
     light_7seg l8(h,h1);
-    seg_scanner sc(a1,b1,c1,d1,e1,f1,g1,h1,rst,clk,out,en);
+    seg_scanner sc(a1,b1,c1,d1,e1,f1,g1,h1,rst,clk,seg_out,seg_an);
 endmodule
