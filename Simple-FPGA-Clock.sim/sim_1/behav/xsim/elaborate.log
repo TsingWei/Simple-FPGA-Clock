@@ -5,6 +5,14 @@ Using 8 slave threads.
 Starting static elaboration
 WARNING: [VRFC 10-278] actual bit length 4 differs from formal bit length 8 for port seg_out [/home/moe/Simple-FPGA-Clock/Simple-FPGA-Clock.srcs/sim_1/new/seg7_tb.v:46]
 WARNING: [VRFC 10-278] actual bit length 4 differs from formal bit length 8 for port a [/home/moe/Simple-FPGA-Clock/Simple-FPGA-Clock.srcs/sim_1/new/seg7_tb.v:54]
+ERROR: [VRFC 10-529] concurrent assignment to a non-net a1 is not permitted [/home/moe/Simple-FPGA-Clock/Simple-FPGA-Clock.srcs/sim_1/new/seg7_tb.v:46]
+ERROR: [VRFC 10-529] concurrent assignment to a non-net b1 is not permitted [/home/moe/Simple-FPGA-Clock/Simple-FPGA-Clock.srcs/sim_1/new/seg7_tb.v:47]
+ERROR: [VRFC 10-529] concurrent assignment to a non-net c1 is not permitted [/home/moe/Simple-FPGA-Clock/Simple-FPGA-Clock.srcs/sim_1/new/seg7_tb.v:48]
+ERROR: [VRFC 10-529] concurrent assignment to a non-net d1 is not permitted [/home/moe/Simple-FPGA-Clock/Simple-FPGA-Clock.srcs/sim_1/new/seg7_tb.v:49]
+ERROR: [VRFC 10-529] concurrent assignment to a non-net e1 is not permitted [/home/moe/Simple-FPGA-Clock/Simple-FPGA-Clock.srcs/sim_1/new/seg7_tb.v:50]
+ERROR: [VRFC 10-529] concurrent assignment to a non-net f1 is not permitted [/home/moe/Simple-FPGA-Clock/Simple-FPGA-Clock.srcs/sim_1/new/seg7_tb.v:51]
+ERROR: [VRFC 10-529] concurrent assignment to a non-net g1 is not permitted [/home/moe/Simple-FPGA-Clock/Simple-FPGA-Clock.srcs/sim_1/new/seg7_tb.v:52]
+ERROR: [VRFC 10-529] concurrent assignment to a non-net h1 is not permitted [/home/moe/Simple-FPGA-Clock/Simple-FPGA-Clock.srcs/sim_1/new/seg7_tb.v:53]
 WARNING: [VRFC 10-278] actual bit length 4 differs from formal bit length 8 for port seg_out [/home/moe/Simple-FPGA-Clock/Simple-FPGA-Clock.srcs/sim_1/new/seg7_tb.v:47]
 WARNING: [VRFC 10-278] actual bit length 4 differs from formal bit length 8 for port seg_out [/home/moe/Simple-FPGA-Clock/Simple-FPGA-Clock.srcs/sim_1/new/seg7_tb.v:48]
 WARNING: [VRFC 10-278] actual bit length 4 differs from formal bit length 8 for port seg_out [/home/moe/Simple-FPGA-Clock/Simple-FPGA-Clock.srcs/sim_1/new/seg7_tb.v:49]
@@ -12,12 +20,4 @@ WARNING: [VRFC 10-278] actual bit length 4 differs from formal bit length 8 for 
 WARNING: [VRFC 10-278] actual bit length 4 differs from formal bit length 8 for port seg_out [/home/moe/Simple-FPGA-Clock/Simple-FPGA-Clock.srcs/sim_1/new/seg7_tb.v:51]
 WARNING: [VRFC 10-278] actual bit length 4 differs from formal bit length 8 for port seg_out [/home/moe/Simple-FPGA-Clock/Simple-FPGA-Clock.srcs/sim_1/new/seg7_tb.v:52]
 WARNING: [VRFC 10-278] actual bit length 4 differs from formal bit length 8 for port seg_out [/home/moe/Simple-FPGA-Clock/Simple-FPGA-Clock.srcs/sim_1/new/seg7_tb.v:53]
-Completed static elaboration
-Starting simulation data flow analysis
-Completed simulation data flow analysis
-Time Resolution for simulation is 1ps
-Compiling module xil_defaultlib.light_7seg
-Compiling module xil_defaultlib.seg_scanner
-Compiling module xil_defaultlib.seg7_tb
-Compiling module xil_defaultlib.glbl
-Built simulation snapshot seg7_tb_behav
+ERROR: [XSIM 43-3322] Static elaboration of top level Verilog design unit(s) in library work failed.
