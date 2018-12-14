@@ -35,14 +35,14 @@ module seg7_tb(
     wire [7:0] out;//段信号，包括小数点
     wire [7:0] en;//管选择使能信号
 
-    wire [3:0] a1;
-    wire [3:0] b1;
-    wire [3:0] c1;
-    wire [3:0] d1;
-    wire [3:0] e1;
-    wire [3:0] f1;
-    wire [3:0] g1;
-    wire [3:0] h1;
+    reg [3:0] a1;
+    reg [3:0] b1;
+    reg [3:0] c1;
+    reg [3:0] d1;
+    reg [3:0] e1;
+    reg [3:0] f1;
+    reg [3:0] g1;
+    reg [3:0] h1;
     light_7seg l1(a,a1);
     light_7seg l2(b,b1);
     light_7seg l3(c,c1);
