@@ -34,7 +34,7 @@ module seg_scanner(
     input rst,
     input clk,
     output reg [7:0] out,//段信号，包括小数点
-    output [7:0] en//管选择使能信号
+    output reg [7:0] en//管选择使能信号
     );
     parameter seg_num = 8;
     reg [7:0] scan_cnt;
