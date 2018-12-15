@@ -15,7 +15,7 @@
 ## Updates
 ### 0.0.4 scanner bug修复
 * 尝试将上一版本的数码管总成烧入板子上运行检查数码管运行情况，发现没反应，还以为是板子问题，烧了一个简单的亮灯小程序，运行正常。遂回头检查seg_assembly.v文件。经过简单的行为模拟，运行正常无问题。于是进行post-synthesis行为模拟，蹊跷的事情出现了，输出en和seg_sw始终为ff：
-* ![post-syn-sim-fail](https://github.com/TsingWei/Simple-FPGA-Clock/blob/master/img/post-syn-sim-fail.png)
+* ![post-syn-sim-fail](https://github.com/TsingWei/Simple-FPGA-Clock/blob/master/img/post-syn-sim-fail.PNG)
 * 照理说他应该实现“八个循环跑马灯”
 * 现在的情况是，简单行为模拟和综合后行为模拟出来的结果截然不同。由于assmbly文件只是集成数码管译码器和数码管扫描器，本身几乎没有什么逻辑代码，而且译码器在前几次的project中是确定可用的，那么这时候就应该到scanner里面找bug。经过检查，scanner内部有两个always语句块：
     always@(xxx) begin
@@ -26,7 +26,7 @@
     end
 * 原本写这个的时候以为这两个块是并行执行，分开写能让逻辑清晰一点。不过他们是可以合并起来的，免得造成莫名其妙的错误，遂合并。
 * 合并后，综合后模拟和简单模拟结果终于一致。
-    ![post-syn-sim-pass](https://github.com/TsingWei/Simple-FPGA-Clock/blob/master/img/post-syn-sim-pass.png)
+    ![post-syn-sim-pass](https://github.com/TsingWei/Simple-FPGA-Clock/blob/master/img/post-syn-sim-pass.PNG)
 ### 0.0.3 60计数器和24计数器完成
 * 且通过test bench
 * counter60:  
