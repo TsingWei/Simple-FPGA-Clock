@@ -10,12 +10,12 @@
 // Target Devices: 
 // Tool Versions: 
 // Description: 
-//         输入8个4bit字(8 * 0~F)
+//         输入8�?4bit�?(8 * 0~F)
 // Dependencies: 
 // 
 // Revision:
 // Revision 0.01 - File Created
-// Revision 0.02 - Finished without dot and "：" control.
+// Revision 0.02 - Finished without dot and "�?" control.
 // Additional Comments:
 // 
 //////////////////////////////////////////////////////////////////////////////////
@@ -32,8 +32,8 @@ module seg_assembly(
     input [3:0] h,
     input rst,
     input clk,
-    output [7:0] seg_out,//段信号，包括小数点
-    output [7:0] seg_an//管选择使能信号
+    output wire [7:0] seg_out,//段信号，包括小数�?
+    output wire [7:0] seg_an//管�?�择使能信号
     );
     wire [7:0] a1;
     wire [7:0] b1;

@@ -33,25 +33,19 @@ module seg_scanner(
     input [7:0] h,
     input rst,
     input clk,
-    output reg [7:0] out,//段信号，包括小数点
-    output reg [7:0] en//管选择使能信号
+    output reg [7:0] out,//段信号，包括小数�?
+    output reg [7:0] en//管�?�择使能信号
     );
     parameter seg_num = 8;
     reg [3:0] scan_cnt;
-    always@(posedge clk, negedge rst) begin
+    always@(posedge clk or negedge rst) begin
         if(!rst) begin
             scan_cnt <=3'b000;
             en <= 8'hFF;
             out <= 8'hFF;
             end
-        
-        else if(scan_cnt==seg_num-1)
-            scan_cnt<=3'd0;
-        else
-            scan_cnt <= scan_cnt + 1'b1;
-    end
-    always@(posedge clk) begin
-        case (scan_cnt)
+        else begin
+                           case (scan_cnt)
             3'd0: begin
                 out<=a;
                 en<=8'd1;
@@ -85,5 +79,11 @@ module seg_scanner(
                 en<=8'd128;
                 end
         endcase
+            if(scan_cnt==seg_num-1)
+                scan_cnt<=3'd0;
+            else
+                scan_cnt <= scan_cnt + 1'b1;
+        end
     end
+   
 endmodule

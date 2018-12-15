@@ -70,7 +70,7 @@ set_property PACKAGE_PIN E13 [get_ports {seg_out[7]}]
 
 
 set_property PACKAGE_PIN Y18 [get_ports clk]
-set_property PACKAGE_PIN P20 [get_ports rst]
+set_property PACKAGE_PIN W4 [get_ports rst]
 
 
 
@@ -159,3 +159,4 @@ set_property PACKAGE_PIN AB8 [get_ports {b[3]}]
 set_property PACKAGE_PIN AA8 [get_ports {b[2]}]
 set_property PACKAGE_PIN V8 [get_ports {b[1]}]
 set_property PACKAGE_PIN V9 [get_ports {b[0]}]
+

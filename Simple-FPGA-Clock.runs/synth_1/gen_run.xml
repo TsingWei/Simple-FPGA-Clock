@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="synth_1" LaunchPart="xc7a100tfgg484-1" LaunchTime="1544812768">
-  <File Type="VDS-TIMING-PB" Name="seg_assembly_timing_summary_synth.pb"/>
-  <File Type="VDS-TIMINGSUMMARY" Name="seg_assembly_timing_summary_synth.rpt"/>
-  <File Type="RDS-DCP" Name="seg_assembly.dcp"/>
+<GenRun Id="synth_1" LaunchPart="xc7a100tfgg484-1" LaunchTime="1544853666">
   <File Type="PA-TCL" Name="seg_assembly.tcl"/>
+  <File Type="RDS-PROPCONSTRS" Name="seg_assembly_drc_synth.rpt"/>
   <File Type="REPORTS-TCL" Name="seg_assembly_reports.tcl"/>
   <File Type="RDS-RDS" Name="seg_assembly.vds"/>
-  <File Type="RDS-PROPCONSTRS" Name="seg_assembly_drc_synth.rpt"/>
   <File Type="RDS-UTIL" Name="seg_assembly_utilization_synth.rpt"/>
   <File Type="RDS-UTIL-PB" Name="seg_assembly_utilization_synth.pb"/>
+  <File Type="RDS-DCP" Name="seg_assembly.dcp"/>
+  <File Type="VDS-TIMINGSUMMARY" Name="seg_assembly_timing_summary_synth.rpt"/>
+  <File Type="VDS-TIMING-PB" Name="seg_assembly_timing_summary_synth.pb"/>
   <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
     <Filter Type="Srcs"/>
     <File Path="$PSRCDIR/sources_1/imports/new/light_7seg.v">
