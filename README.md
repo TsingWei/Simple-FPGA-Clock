@@ -1,6 +1,6 @@
 # Simple-FPGA-Clock 基于FPGA的简单时钟
 * A SUSTech Digital Design 2018 fall project  
-* Based on: MINISYS Artix-7 FPGA platform  
+* Based on: MINISYS Artix-7 FPGA platform  (XC7a100t-1-fgg484)
 * Using: Vivado HLS
 ## 设计规范
 ### 变量命名
