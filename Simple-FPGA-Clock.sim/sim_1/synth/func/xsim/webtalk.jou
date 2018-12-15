@@ -2,8 +2,8 @@
 # Webtalk v2017.4 (64-bit)
 # SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
 # IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
-# Start of session at: Sat Dec 15 13:38:41 2018
-# Process ID: 12712
+# Start of session at: Sat Dec 15 15:16:26 2018
+# Process ID: 12216
 # Current directory: C:/Users/46162/Desktop/Simple-FPGA-Clock/Simple-FPGA-Clock/Simple-FPGA-Clock.sim/sim_1/synth/func/xsim
 # Command line: wbtcv.exe -mode batch -source C:/Users/46162/Desktop/Simple-FPGA-Clock/Simple-FPGA-Clock/Simple-FPGA-Clock.sim/sim_1/synth/func/xsim/xsim.dir/seg7_tb_func_synth/webtalk/xsim_webtalk.tcl -notrace
 # Log file: C:/Users/46162/Desktop/Simple-FPGA-Clock/Simple-FPGA-Clock/Simple-FPGA-Clock.sim/sim_1/synth/func/xsim/webtalk.log

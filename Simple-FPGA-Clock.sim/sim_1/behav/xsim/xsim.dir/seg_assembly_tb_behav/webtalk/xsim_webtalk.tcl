@@ -1,6 +1,6 @@
 webtalk_init -webtalk_dir C:/Users/46162/Desktop/Simple-FPGA-Clock/Simple-FPGA-Clock/Simple-FPGA-Clock.sim/sim_1/behav/xsim/xsim.dir/seg_assembly_tb_behav/webtalk/
 webtalk_register_client -client project
-webtalk_add_data -client project -key date_generated -value "Sat Dec 15 14:00:35 2018" -context "software_version_and_target_device"
+webtalk_add_data -client project -key date_generated -value "Sat Dec 15 15:07:04 2018" -context "software_version_and_target_device"
 webtalk_add_data -client project -key product_version -value "XSIM v2017.4 (64-bit)" -context "software_version_and_target_device"
 webtalk_add_data -client project -key build_version -value "2086221" -context "software_version_and_target_device"
 webtalk_add_data -client project -key os_platform -value "WIN64" -context "software_version_and_target_device"
@@ -14,7 +14,7 @@ webtalk_add_data -client project -key target_package -value "not_applicable" -co
 webtalk_add_data -client project -key target_speed -value "not_applicable" -context "software_version_and_target_device"
 webtalk_add_data -client project -key random_id -value "e1d4e973-844c-44a9-8af5-7bed5fe936a0" -context "software_version_and_target_device"
 webtalk_add_data -client project -key project_id -value "4da20e3c81824f519157aadad2c4f05e" -context "software_version_and_target_device"
-webtalk_add_data -client project -key project_iteration -value "6" -context "software_version_and_target_device"
+webtalk_add_data -client project -key project_iteration -value "8" -context "software_version_and_target_device"
 webtalk_add_data -client project -key os_name -value "Microsoft Windows 8 or later , 64-bit" -context "user_environment"
 webtalk_add_data -client project -key os_release -value "major release  (build 9200)" -context "user_environment"
 webtalk_add_data -client project -key cpu_name -value "Intel(R) Core(TM) i5-6300HQ CPU @ 2.30GHz" -context "user_environment"
@@ -36,7 +36,7 @@ webtalk_add_data -client xsim -key Total_Nets -value "0" -context "xsim\\usage"
 webtalk_add_data -client xsim -key Total_Processes -value "44" -context "xsim\\usage"
 webtalk_add_data -client xsim -key Total_Instances -value "12" -context "xsim\\usage"
 webtalk_add_data -client xsim -key Xilinx_HDL_Libraries_Used -value "secureip unimacro_ver unisims_ver " -context "xsim\\usage"
-webtalk_add_data -client xsim -key Compiler_Time -value "0.51_sec" -context "xsim\\usage"
-webtalk_add_data -client xsim -key Compiler_Memory -value "46912_KB" -context "xsim\\usage"
-webtalk_transmit -clientid 3183214244 -regid "" -xml C:/Users/46162/Desktop/Simple-FPGA-Clock/Simple-FPGA-Clock/Simple-FPGA-Clock.sim/sim_1/behav/xsim/xsim.dir/seg_assembly_tb_behav/webtalk/usage_statistics_ext_xsim.xml -html C:/Users/46162/Desktop/Simple-FPGA-Clock/Simple-FPGA-Clock/Simple-FPGA-Clock.sim/sim_1/behav/xsim/xsim.dir/seg_assembly_tb_behav/webtalk/usage_statistics_ext_xsim.html -wdm C:/Users/46162/Desktop/Simple-FPGA-Clock/Simple-FPGA-Clock/Simple-FPGA-Clock.sim/sim_1/behav/xsim/xsim.dir/seg_assembly_tb_behav/webtalk/usage_statistics_ext_xsim.wdm -intro "<H3>XSIM Usage Report</H3><BR>"
+webtalk_add_data -client xsim -key Compiler_Time -value "0.61_sec" -context "xsim\\usage"
+webtalk_add_data -client xsim -key Compiler_Memory -value "46892_KB" -context "xsim\\usage"
+webtalk_transmit -clientid 3651422280 -regid "" -xml C:/Users/46162/Desktop/Simple-FPGA-Clock/Simple-FPGA-Clock/Simple-FPGA-Clock.sim/sim_1/behav/xsim/xsim.dir/seg_assembly_tb_behav/webtalk/usage_statistics_ext_xsim.xml -html C:/Users/46162/Desktop/Simple-FPGA-Clock/Simple-FPGA-Clock/Simple-FPGA-Clock.sim/sim_1/behav/xsim/xsim.dir/seg_assembly_tb_behav/webtalk/usage_statistics_ext_xsim.html -wdm C:/Users/46162/Desktop/Simple-FPGA-Clock/Simple-FPGA-Clock/Simple-FPGA-Clock.sim/sim_1/behav/xsim/xsim.dir/seg_assembly_tb_behav/webtalk/usage_statistics_ext_xsim.wdm -intro "<H3>XSIM Usage Report</H3><BR>"
 webtalk_terminate

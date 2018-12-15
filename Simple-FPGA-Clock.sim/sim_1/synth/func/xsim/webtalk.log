@@ -2,14 +2,14 @@
 # Webtalk v2017.4 (64-bit)
 # SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
 # IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
-# Start of session at: Sat Dec 15 13:38:41 2018
-# Process ID: 12712
+# Start of session at: Sat Dec 15 15:16:26 2018
+# Process ID: 12216
 # Current directory: C:/Users/46162/Desktop/Simple-FPGA-Clock/Simple-FPGA-Clock/Simple-FPGA-Clock.sim/sim_1/synth/func/xsim
 # Command line: wbtcv.exe -mode batch -source C:/Users/46162/Desktop/Simple-FPGA-Clock/Simple-FPGA-Clock/Simple-FPGA-Clock.sim/sim_1/synth/func/xsim/xsim.dir/seg7_tb_func_synth/webtalk/xsim_webtalk.tcl -notrace
 # Log file: C:/Users/46162/Desktop/Simple-FPGA-Clock/Simple-FPGA-Clock/Simple-FPGA-Clock.sim/sim_1/synth/func/xsim/webtalk.log
 # Journal file: C:/Users/46162/Desktop/Simple-FPGA-Clock/Simple-FPGA-Clock/Simple-FPGA-Clock.sim/sim_1/synth/func/xsim\webtalk.jou
 #-----------------------------------------------------------
 source C:/Users/46162/Desktop/Simple-FPGA-Clock/Simple-FPGA-Clock/Simple-FPGA-Clock.sim/sim_1/synth/func/xsim/xsim.dir/seg7_tb_func_synth/webtalk/xsim_webtalk.tcl -notrace
-INFO: [Common 17-186] 'C:/Users/46162/Desktop/Simple-FPGA-Clock/Simple-FPGA-Clock/Simple-FPGA-Clock.sim/sim_1/synth/func/xsim/xsim.dir/seg7_tb_func_synth/webtalk/usage_statistics_ext_xsim.xml' has been successfully sent to Xilinx on Sat Dec 15 13:38:48 2018. For additional details about this file, please refer to the WebTalk help file at E:/Xilinx/Vivado/2017.4/doc/webtalk_introduction.html.
-webtalk_transmit: Time (s): cpu = 00:00:00 ; elapsed = 00:00:07 . Memory (MB): peak = 52.391 ; gain = 0.535
-INFO: [Common 17-206] Exiting Webtalk at Sat Dec 15 13:38:48 2018...
+INFO: [Common 17-186] 'C:/Users/46162/Desktop/Simple-FPGA-Clock/Simple-FPGA-Clock/Simple-FPGA-Clock.sim/sim_1/synth/func/xsim/xsim.dir/seg7_tb_func_synth/webtalk/usage_statistics_ext_xsim.xml' has been successfully sent to Xilinx on Sat Dec 15 15:16:50 2018. For additional details about this file, please refer to the WebTalk help file at E:/Xilinx/Vivado/2017.4/doc/webtalk_introduction.html.
+webtalk_transmit: Time (s): cpu = 00:00:00 ; elapsed = 00:00:24 . Memory (MB): peak = 52.254 ; gain = 1.117
+INFO: [Common 17-206] Exiting Webtalk at Sat Dec 15 15:16:50 2018...

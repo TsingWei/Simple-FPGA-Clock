@@ -1,8 +1,9 @@
 Vivado Simulator 2017.4
 Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
-Running: E:/Xilinx/Vivado/2017.4/bin/unwrapped/win64.o/xelab.exe -wto 4da20e3c81824f519157aadad2c4f05e --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot seg_assembly_tb_behav xil_defaultlib.seg_assembly_tb xil_defaultlib.glbl -log elaborate.log 
+Running: E:/Xilinx/Vivado/2017.4/bin/unwrapped/win64.o/xelab.exe -wto 4da20e3c81824f519157aadad2c4f05e --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot mux_sim_behav xil_defaultlib.mux_sim xil_defaultlib.glbl -log elaborate.log 
 Using 2 slave threads.
 Starting static elaboration
+WARNING: [VRFC 10-278] actual bit length 1 differs from formal bit length 4 for port b [C:/Users/46162/Desktop/Simple-FPGA-Clock/Simple-FPGA-Clock/Simple-FPGA-Clock.srcs/sources_1/new/pin_mux.v:36]
 Completed static elaboration
 Starting simulation data flow analysis
 Completed simulation data flow analysis
@@ -10,6 +11,7 @@ Time Resolution for simulation is 1ps
 Compiling module xil_defaultlib.light_7seg
 Compiling module xil_defaultlib.seg_scanner
 Compiling module xil_defaultlib.seg_assembly
-Compiling module xil_defaultlib.seg_assembly_tb
+Compiling module xil_defaultlib.pin_mux
+Compiling module xil_defaultlib.mux_sim
 Compiling module xil_defaultlib.glbl
-Built simulation snapshot seg_assembly_tb_behav
+Built simulation snapshot mux_sim_behav

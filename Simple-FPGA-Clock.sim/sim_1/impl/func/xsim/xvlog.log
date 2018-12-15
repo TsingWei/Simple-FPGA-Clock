@@ -1,0 +1,6 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/46162/Desktop/Simple-FPGA-Clock/Simple-FPGA-Clock/Simple-FPGA-Clock.sim/sim_1/impl/func/xsim/seg_assembly_tb_func_impl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module seg_assembly
+INFO: [VRFC 10-311] analyzing module seg_scanner
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/46162/Desktop/Simple-FPGA-Clock/Simple-FPGA-Clock/Simple-FPGA-Clock.srcs/sim_1/new/seg_assembly_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module seg_assembly_tb

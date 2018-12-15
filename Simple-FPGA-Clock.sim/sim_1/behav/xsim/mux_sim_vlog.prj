@@ -1,0 +1,13 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"../../../../Simple-FPGA-Clock.srcs/sources_1/imports/new/light_7seg.v" \
+"../../../../Simple-FPGA-Clock.srcs/sources_1/new/pin_mux.v" \
+"../../../../Simple-FPGA-Clock.srcs/sources_1/new/seg_assembly.v" \
+"../../../../Simple-FPGA-Clock.srcs/sources_1/imports/new/seg_scanner.v" \
+"../../../../Simple-FPGA-Clock.srcs/sim_1/new/mux_sim.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort
