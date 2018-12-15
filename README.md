@@ -15,6 +15,7 @@
 ## Updates
 ### 0.0.5 数码管总成完成
 * 经过板上验证,扫描频率并不是越高越好.当扫描时钟直接接到板载100Mhz晶振时,数码管非常暗淡,并且显示不正确. 经过多次调试,扫描频率至少要放慢5个量级(1Khz),才能显示正常.
+    ![on_board_1.png](https://github.com/TsingWei/Simple-FPGA-Clock/blob/master/img/on_board_1.png)
 ### 0.0.4 scanner bug修复
 * 尝试将上一版本的数码管总成烧入板子上运行检查数码管运行情况，发现没反应，还以为是板子问题，烧了一个简单的亮灯小程序，运行正常。遂回头检查seg_assembly.v文件。经过简单的行为模拟，运行正常无问题。于是进行post-synthesis行为模拟，蹊跷的事情出现了，输出en和seg_sw始终为ff：
 * ![post-syn-sim-fail](https://github.com/TsingWei/Simple-FPGA-Clock/blob/master/img/post-syn-sim-fail.PNG)
