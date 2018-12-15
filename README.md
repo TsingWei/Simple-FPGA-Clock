@@ -18,12 +18,12 @@
 * ![post-syn-sim-fail](https://github.com/TsingWei/Simple-FPGA-Clock/blob/master/img/post-syn-sim-fail.PNG)
 * 照理说他应该实现“八个循环跑马灯”
 * 现在的情况是，简单行为模拟和综合后行为模拟出来的结果截然不同。由于assmbly文件只是集成数码管译码器和数码管扫描器，本身几乎没有什么逻辑代码，而且译码器在前几次的project中是确定可用的，那么这时候就应该到scanner里面找bug。经过检查，scanner内部有两个always语句块：
-    always@(xxx) begin
-        ...
-    end
-    always@(xxx) begin
-        ...
-    end
+> always@(xxx) begin  
+>     ...  
+> end  
+> always@(xxx) begin  
+>     ...  
+> end  
 * 原本写这个的时候以为这两个块是并行执行，分开写能让逻辑清晰一点。不过他们是可以合并起来的，免得造成莫名其妙的错误，遂合并。
 * 合并后，综合后模拟和简单模拟结果终于一致。
     ![post-syn-sim-pass](https://github.com/TsingWei/Simple-FPGA-Clock/blob/master/img/post-syn-sim-pass.PNG)
