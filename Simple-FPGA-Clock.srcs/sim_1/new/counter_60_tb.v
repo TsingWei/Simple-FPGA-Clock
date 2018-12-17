@@ -25,14 +25,22 @@ module counter_60_tb(
     );
     reg clk;
     reg rst;
+    reg set_en;
+    reg [7:0]set_val;
     wire cout;
     wire [7:0] dout;
-    counter60 c24(clk,rst,cout,dout);
+//    wire [7:0] dout;
+    counter60 c24(clk,rst,set_en,set_val,cout,dout);
     always 
         #5 clk = ~clk;
     initial begin
         clk <= 1'b0;
-        rst <= 1'b0;
-        #10 rst <= 1'b1; 
+        rst <= 1'b1;
+        set_en = 1'b0;
+        set_val = 8'h55;
+        #10 rst <= 1'b0; 
+        #50 set_en = 1;
+        #60 set_en = 0;
     end
+    
 endmodule
