@@ -147,3 +147,16 @@ set_property PACKAGE_PIN V9 [get_ports {b[0]}]
 
 
 
+
+set_property IOSTANDARD LVCMOS33 [get_ports buzz_out]
+set_property IOSTANDARD LVCMOS33 [get_ports en]
+set_property PACKAGE_PIN Y9 [get_ports en]
+set_property PACKAGE_PIN A19 [get_ports buzz_out]
+
+set_property IOSTANDARD LVCMOS33 [get_ports led1]
+set_property IOSTANDARD LVCMOS33 [get_ports led2]
+set_property PACKAGE_PIN K17 [get_ports led1]
+set_property PACKAGE_PIN L13 [get_ports led2]
+
+set_property IOSTANDARD LVCMOS33 [get_ports set_en]
+set_property PACKAGE_PIN W9 [get_ports set_en]

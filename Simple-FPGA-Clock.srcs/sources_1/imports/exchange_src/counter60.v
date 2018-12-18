@@ -23,19 +23,23 @@
 module counter60(
     input clk,
     input rst,
+    input set_en,
+    input [7:0]set_val,
     output cout,
     output [7:0] dout
     );
     reg[7:0]dout;
     reg cout;
-    always@(posedge clk or negedge rst)
+    always@(posedge clk or posedge rst or posedge set_en)
     begin
-        if(~rst)
+        if(rst)
             dout<=0;
-        else if(dout[3:0]==9)
+        else if(set_en) 
+            dout <= set_val;
+        else if(dout[3:0]>=9)
         begin
             dout[3:0]=0;
-            if(dout[7:4]==5)
+            if(dout[7:4]>=5)
             begin
                 dout[7:4]=0;
                 cout<=1'b1;

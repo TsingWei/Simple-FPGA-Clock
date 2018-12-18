@@ -25,7 +25,7 @@ eval( EAInclude(ISEJScriptLib) );
 // pre-commands:
 ISETouchFile( "init_design", "begin" );
 ISEStep( "vivado",
-         "-log pin_mux.vdi -applog -m64 -product Vivado -messageDb vivado.pb -mode batch -source pin_mux.tcl -notrace" );
+         "-log clock_assembly.vdi -applog -m64 -product Vivado -messageDb vivado.pb -mode batch -source clock_assembly.tcl -notrace" );
 
 
 

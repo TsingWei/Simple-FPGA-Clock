@@ -40,4 +40,4 @@ EAStep()
      fi
 }
 
-EAStep vivado -log pin_mux.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source pin_mux.tcl
+EAStep vivado -log clock_assembly.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source clock_assembly.tcl

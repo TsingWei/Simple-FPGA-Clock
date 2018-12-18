@@ -1,6 +1,6 @@
 
 *** Running vivado
-    with args -log pin_mux.vdi -applog -m64 -product Vivado -messageDb vivado.pb -mode batch -source pin_mux.tcl -notrace
+    with args -log clock_assembly.vdi -applog -m64 -product Vivado -messageDb vivado.pb -mode batch -source clock_assembly.tcl -notrace
 
 
 ****** Vivado v2017.4 (64-bit)
@@ -8,11 +8,11 @@
   **** IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
     ** Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
 
-source pin_mux.tcl -notrace
-Command: link_design -top pin_mux -part xc7a100tfgg484-1
+source clock_assembly.tcl -notrace
+Command: link_design -top clock_assembly -part xc7a100tfgg484-1
 Design is defaulting to srcset: sources_1
 Design is defaulting to constrset: constrs_1
-INFO: [Netlist 29-17] Analyzing 19 Unisim elements for replacement
+INFO: [Netlist 29-17] Analyzing 17 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-479] Netlist was created with Vivado 2017.4
 INFO: [Device 21-403] Loading part xc7a100tfgg484-1
@@ -102,6 +102,30 @@ Resolution: If [get_<value>] was used to populate the object, check to make sure
 WARNING: [Vivado 12-584] No ports matched 'b[0]'. [C:/Users/46162/Desktop/Simple-FPGA-Clock/Simple-FPGA-Clock/Simple-FPGA-Clock.srcs/constrs_1/imports/exchange_src/KEY_SEG.xdc:133]
 CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/46162/Desktop/Simple-FPGA-Clock/Simple-FPGA-Clock/Simple-FPGA-Clock.srcs/constrs_1/imports/exchange_src/KEY_SEG.xdc:133]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'a[3]'. [C:/Users/46162/Desktop/Simple-FPGA-Clock/Simple-FPGA-Clock/Simple-FPGA-Clock.srcs/constrs_1/imports/exchange_src/KEY_SEG.xdc:134]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/46162/Desktop/Simple-FPGA-Clock/Simple-FPGA-Clock/Simple-FPGA-Clock.srcs/constrs_1/imports/exchange_src/KEY_SEG.xdc:134]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'a[2]'. [C:/Users/46162/Desktop/Simple-FPGA-Clock/Simple-FPGA-Clock/Simple-FPGA-Clock.srcs/constrs_1/imports/exchange_src/KEY_SEG.xdc:135]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/46162/Desktop/Simple-FPGA-Clock/Simple-FPGA-Clock/Simple-FPGA-Clock.srcs/constrs_1/imports/exchange_src/KEY_SEG.xdc:135]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'a[1]'. [C:/Users/46162/Desktop/Simple-FPGA-Clock/Simple-FPGA-Clock/Simple-FPGA-Clock.srcs/constrs_1/imports/exchange_src/KEY_SEG.xdc:136]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/46162/Desktop/Simple-FPGA-Clock/Simple-FPGA-Clock/Simple-FPGA-Clock.srcs/constrs_1/imports/exchange_src/KEY_SEG.xdc:136]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'a[0]'. [C:/Users/46162/Desktop/Simple-FPGA-Clock/Simple-FPGA-Clock/Simple-FPGA-Clock.srcs/constrs_1/imports/exchange_src/KEY_SEG.xdc:137]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/46162/Desktop/Simple-FPGA-Clock/Simple-FPGA-Clock/Simple-FPGA-Clock.srcs/constrs_1/imports/exchange_src/KEY_SEG.xdc:137]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'a[3]'. [C:/Users/46162/Desktop/Simple-FPGA-Clock/Simple-FPGA-Clock/Simple-FPGA-Clock.srcs/constrs_1/imports/exchange_src/KEY_SEG.xdc:138]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/46162/Desktop/Simple-FPGA-Clock/Simple-FPGA-Clock/Simple-FPGA-Clock.srcs/constrs_1/imports/exchange_src/KEY_SEG.xdc:138]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'a[2]'. [C:/Users/46162/Desktop/Simple-FPGA-Clock/Simple-FPGA-Clock/Simple-FPGA-Clock.srcs/constrs_1/imports/exchange_src/KEY_SEG.xdc:139]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/46162/Desktop/Simple-FPGA-Clock/Simple-FPGA-Clock/Simple-FPGA-Clock.srcs/constrs_1/imports/exchange_src/KEY_SEG.xdc:139]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'a[0]'. [C:/Users/46162/Desktop/Simple-FPGA-Clock/Simple-FPGA-Clock/Simple-FPGA-Clock.srcs/constrs_1/imports/exchange_src/KEY_SEG.xdc:140]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/46162/Desktop/Simple-FPGA-Clock/Simple-FPGA-Clock/Simple-FPGA-Clock.srcs/constrs_1/imports/exchange_src/KEY_SEG.xdc:140]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'a[1]'. [C:/Users/46162/Desktop/Simple-FPGA-Clock/Simple-FPGA-Clock/Simple-FPGA-Clock.srcs/constrs_1/imports/exchange_src/KEY_SEG.xdc:141]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/46162/Desktop/Simple-FPGA-Clock/Simple-FPGA-Clock/Simple-FPGA-Clock.srcs/constrs_1/imports/exchange_src/KEY_SEG.xdc:141]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
 WARNING: [Vivado 12-584] No ports matched 'b[3]'. [C:/Users/46162/Desktop/Simple-FPGA-Clock/Simple-FPGA-Clock/Simple-FPGA-Clock.srcs/constrs_1/imports/exchange_src/KEY_SEG.xdc:142]
 CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/46162/Desktop/Simple-FPGA-Clock/Simple-FPGA-Clock/Simple-FPGA-Clock.srcs/constrs_1/imports/exchange_src/KEY_SEG.xdc:142]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
@@ -114,14 +138,26 @@ Resolution: If [get_<value>] was used to populate the object, check to make sure
 WARNING: [Vivado 12-584] No ports matched 'b[0]'. [C:/Users/46162/Desktop/Simple-FPGA-Clock/Simple-FPGA-Clock/Simple-FPGA-Clock.srcs/constrs_1/imports/exchange_src/KEY_SEG.xdc:145]
 CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/46162/Desktop/Simple-FPGA-Clock/Simple-FPGA-Clock/Simple-FPGA-Clock.srcs/constrs_1/imports/exchange_src/KEY_SEG.xdc:145]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'buzz_out'. [C:/Users/46162/Desktop/Simple-FPGA-Clock/Simple-FPGA-Clock/Simple-FPGA-Clock.srcs/constrs_1/imports/exchange_src/KEY_SEG.xdc:151]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/46162/Desktop/Simple-FPGA-Clock/Simple-FPGA-Clock/Simple-FPGA-Clock.srcs/constrs_1/imports/exchange_src/KEY_SEG.xdc:151]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'en'. [C:/Users/46162/Desktop/Simple-FPGA-Clock/Simple-FPGA-Clock/Simple-FPGA-Clock.srcs/constrs_1/imports/exchange_src/KEY_SEG.xdc:152]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/46162/Desktop/Simple-FPGA-Clock/Simple-FPGA-Clock/Simple-FPGA-Clock.srcs/constrs_1/imports/exchange_src/KEY_SEG.xdc:152]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'en'. [C:/Users/46162/Desktop/Simple-FPGA-Clock/Simple-FPGA-Clock/Simple-FPGA-Clock.srcs/constrs_1/imports/exchange_src/KEY_SEG.xdc:153]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/46162/Desktop/Simple-FPGA-Clock/Simple-FPGA-Clock/Simple-FPGA-Clock.srcs/constrs_1/imports/exchange_src/KEY_SEG.xdc:153]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'buzz_out'. [C:/Users/46162/Desktop/Simple-FPGA-Clock/Simple-FPGA-Clock/Simple-FPGA-Clock.srcs/constrs_1/imports/exchange_src/KEY_SEG.xdc:154]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/46162/Desktop/Simple-FPGA-Clock/Simple-FPGA-Clock/Simple-FPGA-Clock.srcs/constrs_1/imports/exchange_src/KEY_SEG.xdc:154]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
 Finished Parsing XDC File [C:/Users/46162/Desktop/Simple-FPGA-Clock/Simple-FPGA-Clock/Simple-FPGA-Clock.srcs/constrs_1/imports/exchange_src/KEY_SEG.xdc]
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-7 Infos, 32 Warnings, 32 Critical Warnings and 0 Errors encountered.
+7 Infos, 44 Warnings, 44 Critical Warnings and 0 Errors encountered.
 link_design completed successfully
-link_design: Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 545.539 ; gain = 318.969
+link_design: Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 545.402 ; gain = 318.570
 Command: opt_design
 Attempting to get a license for feature 'Implementation' and/or device 'xc7a100t'
 INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7a100t'
@@ -132,7 +168,7 @@ INFO: [DRC 23-27] Running DRC with 2 threads
 INFO: [Project 1-461] DRC finished with 0 Errors
 INFO: [Project 1-462] Please refer to the DRC report (report_drc) for more information.
 
-Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.617 . Memory (MB): peak = 560.191 ; gain = 14.652
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.643 . Memory (MB): peak = 560.355 ; gain = 14.953
 INFO: [Timing 38-35] Done setting XDC timing constraints.
 
 Starting Logic Optimization Task
@@ -140,65 +176,65 @@ Starting Logic Optimization Task
 Phase 1 Retarget
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
 INFO: [Opt 31-49] Retargeted 0 cell(s).
-Phase 1 Retarget | Checksum: 252ce4141
+Phase 1 Retarget | Checksum: 19a79c047
 
-Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.021 . Memory (MB): peak = 1109.180 ; gain = 0.000
-INFO: [Opt 31-389] Phase Retarget created 0 cells and removed 1 cells
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.026 . Memory (MB): peak = 1121.242 ; gain = 0.000
+INFO: [Opt 31-389] Phase Retarget created 0 cells and removed 0 cells
 
 Phase 2 Constant propagation
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Phase 2 Constant propagation | Checksum: 252ce4141
+Phase 2 Constant propagation | Checksum: 19a79c047
 
-Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.025 . Memory (MB): peak = 1109.180 ; gain = 0.000
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.033 . Memory (MB): peak = 1121.242 ; gain = 0.000
 INFO: [Opt 31-389] Phase Constant propagation created 0 cells and removed 0 cells
 
 Phase 3 Sweep
-Phase 3 Sweep | Checksum: 21869a911
+Phase 3 Sweep | Checksum: fe11c31b
 
-Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.030 . Memory (MB): peak = 1109.180 ; gain = 0.000
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.042 . Memory (MB): peak = 1121.242 ; gain = 0.000
 INFO: [Opt 31-389] Phase Sweep created 0 cells and removed 0 cells
 
 Phase 4 BUFG optimization
-Phase 4 BUFG optimization | Checksum: 21869a911
+Phase 4 BUFG optimization | Checksum: fe11c31b
 
-Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.036 . Memory (MB): peak = 1109.180 ; gain = 0.000
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.050 . Memory (MB): peak = 1121.242 ; gain = 0.000
 INFO: [Opt 31-389] Phase BUFG optimization created 0 cells and removed 0 cells
 
 Phase 5 Shift Register Optimization
-Phase 5 Shift Register Optimization | Checksum: 21869a911
+Phase 5 Shift Register Optimization | Checksum: fe11c31b
 
-Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.038 . Memory (MB): peak = 1109.180 ; gain = 0.000
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.055 . Memory (MB): peak = 1121.242 ; gain = 0.000
 INFO: [Opt 31-389] Phase Shift Register Optimization created 0 cells and removed 0 cells
 
 Starting Connectivity Check Task
 
-Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1109.180 ; gain = 0.000
-Ending Logic Optimization Task | Checksum: 21869a911
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1121.242 ; gain = 0.000
+Ending Logic Optimization Task | Checksum: fe11c31b
 
-Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.041 . Memory (MB): peak = 1109.180 ; gain = 0.000
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.059 . Memory (MB): peak = 1121.242 ; gain = 0.000
 
 Starting Power Optimization Task
 INFO: [Pwropt 34-132] Skipping clock gating for clocks with a period < 2.00 ns.
-Ending Power Optimization Task | Checksum: 1638fa146
+Ending Power Optimization Task | Checksum: 1530c304d
 
-Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.007 . Memory (MB): peak = 1109.180 ; gain = 0.000
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.009 . Memory (MB): peak = 1121.242 ; gain = 0.000
 INFO: [Common 17-83] Releasing license: Implementation
-22 Infos, 32 Warnings, 32 Critical Warnings and 0 Errors encountered.
+22 Infos, 44 Warnings, 44 Critical Warnings and 0 Errors encountered.
 opt_design completed successfully
-opt_design: Time (s): cpu = 00:00:14 ; elapsed = 00:00:14 . Memory (MB): peak = 1109.180 ; gain = 563.641
+opt_design: Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 1121.242 ; gain = 575.840
 Writing placer database...
 Writing XDEF routing.
 Writing XDEF routing logical nets.
 Writing XDEF routing special nets.
-Write XDEF Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.041 . Memory (MB): peak = 1109.180 ; gain = 0.000
-INFO: [Common 17-1381] The checkpoint 'C:/Users/46162/Desktop/Simple-FPGA-Clock/Simple-FPGA-Clock/Simple-FPGA-Clock.runs/impl_1/pin_mux_opt.dcp' has been generated.
-INFO: [runtcl-4] Executing : report_drc -file pin_mux_drc_opted.rpt -pb pin_mux_drc_opted.pb -rpx pin_mux_drc_opted.rpx
-Command: report_drc -file pin_mux_drc_opted.rpt -pb pin_mux_drc_opted.pb -rpx pin_mux_drc_opted.rpx
+Write XDEF Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.039 . Memory (MB): peak = 1121.242 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'C:/Users/46162/Desktop/Simple-FPGA-Clock/Simple-FPGA-Clock/Simple-FPGA-Clock.runs/impl_1/clock_assembly_opt.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_drc -file clock_assembly_drc_opted.rpt -pb clock_assembly_drc_opted.pb -rpx clock_assembly_drc_opted.rpx
+Command: report_drc -file clock_assembly_drc_opted.rpt -pb clock_assembly_drc_opted.pb -rpx clock_assembly_drc_opted.rpx
 INFO: [IP_Flow 19-234] Refreshing IP repositories
 INFO: [IP_Flow 19-1704] No user IP repositories specified
 INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'E:/Xilinx/Vivado/2017.4/data/ip'.
 INFO: [DRC 23-27] Running DRC with 2 threads
-INFO: [Coretcl 2-168] The results of DRC are in file C:/Users/46162/Desktop/Simple-FPGA-Clock/Simple-FPGA-Clock/Simple-FPGA-Clock.runs/impl_1/pin_mux_drc_opted.rpt.
+INFO: [Coretcl 2-168] The results of DRC are in file C:/Users/46162/Desktop/Simple-FPGA-Clock/Simple-FPGA-Clock/Simple-FPGA-Clock.runs/impl_1/clock_assembly_drc_opted.rpt.
 report_drc completed successfully
 INFO: [Chipscope 16-241] No debug cores found in the current design.
 Before running the implement_debug_core command, either use the Set Up Debug wizard (GUI mode)
@@ -220,120 +256,120 @@ INFO: [Place 30-611] Multithreading enabled for place_design using a maximum of 
 Phase 1 Placer Initialization
 
 Phase 1.1 Placer Initialization Netlist Sorting
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1109.180 ; gain = 0.000
-Phase 1.1 Placer Initialization Netlist Sorting | Checksum: 114cbfd8d
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1121.242 ; gain = 0.000
+Phase 1.1 Placer Initialization Netlist Sorting | Checksum: b85c3d45
 
-Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.004 . Memory (MB): peak = 1109.180 ; gain = 0.000
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.004 . Memory (MB): peak = 1121.242 ; gain = 0.000
 INFO: [Timing 38-35] Done setting XDC timing constraints.
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1109.180 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1121.242 ; gain = 0.000
 
 Phase 1.2 IO Placement/ Clock Placement/ Build Placer Device
 INFO: [Timing 38-35] Done setting XDC timing constraints.
-Phase 1.2 IO Placement/ Clock Placement/ Build Placer Device | Checksum: cc079d20
+Phase 1.2 IO Placement/ Clock Placement/ Build Placer Device | Checksum: 103d077c3
 
-Time (s): cpu = 00:00:03 ; elapsed = 00:00:01 . Memory (MB): peak = 1109.180 ; gain = 0.000
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:01 . Memory (MB): peak = 1121.242 ; gain = 0.000
 
 Phase 1.3 Build Placer Netlist Model
-Phase 1.3 Build Placer Netlist Model | Checksum: 13b7f2487
+Phase 1.3 Build Placer Netlist Model | Checksum: 1c31be32b
 
-Time (s): cpu = 00:00:03 ; elapsed = 00:00:01 . Memory (MB): peak = 1109.180 ; gain = 0.000
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:01 . Memory (MB): peak = 1121.242 ; gain = 0.000
 
 Phase 1.4 Constrain Clocks/Macros
-Phase 1.4 Constrain Clocks/Macros | Checksum: 13b7f2487
+Phase 1.4 Constrain Clocks/Macros | Checksum: 1c31be32b
 
-Time (s): cpu = 00:00:03 ; elapsed = 00:00:01 . Memory (MB): peak = 1109.180 ; gain = 0.000
-Phase 1 Placer Initialization | Checksum: 13b7f2487
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:01 . Memory (MB): peak = 1121.242 ; gain = 0.000
+Phase 1 Placer Initialization | Checksum: 1c31be32b
 
-Time (s): cpu = 00:00:03 ; elapsed = 00:00:01 . Memory (MB): peak = 1109.180 ; gain = 0.000
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:01 . Memory (MB): peak = 1121.242 ; gain = 0.000
 
 Phase 2 Global Placement
-Phase 2 Global Placement | Checksum: cc098429
+Phase 2 Global Placement | Checksum: 1f52d8d4b
 
-Time (s): cpu = 00:00:03 ; elapsed = 00:00:02 . Memory (MB): peak = 1109.180 ; gain = 0.000
+Time (s): cpu = 00:00:03 ; elapsed = 00:00:02 . Memory (MB): peak = 1121.242 ; gain = 0.000
 
 Phase 3 Detail Placement
 
 Phase 3.1 Commit Multi Column Macros
-Phase 3.1 Commit Multi Column Macros | Checksum: cc098429
+Phase 3.1 Commit Multi Column Macros | Checksum: 1f52d8d4b
 
-Time (s): cpu = 00:00:03 ; elapsed = 00:00:02 . Memory (MB): peak = 1109.180 ; gain = 0.000
+Time (s): cpu = 00:00:03 ; elapsed = 00:00:02 . Memory (MB): peak = 1121.242 ; gain = 0.000
 
 Phase 3.2 Commit Most Macros & LUTRAMs
-Phase 3.2 Commit Most Macros & LUTRAMs | Checksum: 1fd029e0a
+Phase 3.2 Commit Most Macros & LUTRAMs | Checksum: 1706af281
 
-Time (s): cpu = 00:00:03 ; elapsed = 00:00:02 . Memory (MB): peak = 1109.180 ; gain = 0.000
+Time (s): cpu = 00:00:03 ; elapsed = 00:00:02 . Memory (MB): peak = 1121.242 ; gain = 0.000
 
 Phase 3.3 Area Swap Optimization
-Phase 3.3 Area Swap Optimization | Checksum: 217f5b506
+Phase 3.3 Area Swap Optimization | Checksum: 143cd52b4
 
-Time (s): cpu = 00:00:03 ; elapsed = 00:00:02 . Memory (MB): peak = 1109.180 ; gain = 0.000
+Time (s): cpu = 00:00:03 ; elapsed = 00:00:02 . Memory (MB): peak = 1121.242 ; gain = 0.000
 
 Phase 3.4 Pipeline Register Optimization
-Phase 3.4 Pipeline Register Optimization | Checksum: 217f5b506
+Phase 3.4 Pipeline Register Optimization | Checksum: 143cd52b4
 
-Time (s): cpu = 00:00:03 ; elapsed = 00:00:02 . Memory (MB): peak = 1109.180 ; gain = 0.000
+Time (s): cpu = 00:00:03 ; elapsed = 00:00:02 . Memory (MB): peak = 1121.242 ; gain = 0.000
 
 Phase 3.5 Small Shape Detail Placement
-Phase 3.5 Small Shape Detail Placement | Checksum: 155a60683
+Phase 3.5 Small Shape Detail Placement | Checksum: 19fea5e87
 
-Time (s): cpu = 00:00:03 ; elapsed = 00:00:02 . Memory (MB): peak = 1109.180 ; gain = 0.000
+Time (s): cpu = 00:00:04 ; elapsed = 00:00:02 . Memory (MB): peak = 1121.242 ; gain = 0.000
 
 Phase 3.6 Re-assign LUT pins
-Phase 3.6 Re-assign LUT pins | Checksum: 155a60683
+Phase 3.6 Re-assign LUT pins | Checksum: 19fea5e87
 
-Time (s): cpu = 00:00:03 ; elapsed = 00:00:02 . Memory (MB): peak = 1109.180 ; gain = 0.000
+Time (s): cpu = 00:00:04 ; elapsed = 00:00:02 . Memory (MB): peak = 1121.242 ; gain = 0.000
 
 Phase 3.7 Pipeline Register Optimization
-Phase 3.7 Pipeline Register Optimization | Checksum: 155a60683
+Phase 3.7 Pipeline Register Optimization | Checksum: 19fea5e87
 
-Time (s): cpu = 00:00:03 ; elapsed = 00:00:02 . Memory (MB): peak = 1109.180 ; gain = 0.000
-Phase 3 Detail Placement | Checksum: 155a60683
+Time (s): cpu = 00:00:04 ; elapsed = 00:00:02 . Memory (MB): peak = 1121.242 ; gain = 0.000
+Phase 3 Detail Placement | Checksum: 19fea5e87
 
-Time (s): cpu = 00:00:03 ; elapsed = 00:00:02 . Memory (MB): peak = 1109.180 ; gain = 0.000
+Time (s): cpu = 00:00:04 ; elapsed = 00:00:02 . Memory (MB): peak = 1121.242 ; gain = 0.000
 
 Phase 4 Post Placement Optimization and Clean-Up
 
 Phase 4.1 Post Commit Optimization
-Phase 4.1 Post Commit Optimization | Checksum: 155a60683
+Phase 4.1 Post Commit Optimization | Checksum: 19fea5e87
 
-Time (s): cpu = 00:00:03 ; elapsed = 00:00:02 . Memory (MB): peak = 1109.180 ; gain = 0.000
+Time (s): cpu = 00:00:04 ; elapsed = 00:00:02 . Memory (MB): peak = 1121.242 ; gain = 0.000
 
 Phase 4.2 Post Placement Cleanup
-Phase 4.2 Post Placement Cleanup | Checksum: 155a60683
+Phase 4.2 Post Placement Cleanup | Checksum: 19fea5e87
 
-Time (s): cpu = 00:00:03 ; elapsed = 00:00:02 . Memory (MB): peak = 1109.180 ; gain = 0.000
+Time (s): cpu = 00:00:04 ; elapsed = 00:00:02 . Memory (MB): peak = 1121.242 ; gain = 0.000
 
 Phase 4.3 Placer Reporting
-Phase 4.3 Placer Reporting | Checksum: 155a60683
+Phase 4.3 Placer Reporting | Checksum: 19fea5e87
 
-Time (s): cpu = 00:00:03 ; elapsed = 00:00:02 . Memory (MB): peak = 1109.180 ; gain = 0.000
+Time (s): cpu = 00:00:04 ; elapsed = 00:00:02 . Memory (MB): peak = 1121.242 ; gain = 0.000
 
 Phase 4.4 Final Placement Cleanup
-Phase 4.4 Final Placement Cleanup | Checksum: 156522c38
+Phase 4.4 Final Placement Cleanup | Checksum: 1d6f5f934
 
-Time (s): cpu = 00:00:03 ; elapsed = 00:00:02 . Memory (MB): peak = 1109.180 ; gain = 0.000
-Phase 4 Post Placement Optimization and Clean-Up | Checksum: 156522c38
+Time (s): cpu = 00:00:04 ; elapsed = 00:00:02 . Memory (MB): peak = 1121.242 ; gain = 0.000
+Phase 4 Post Placement Optimization and Clean-Up | Checksum: 1d6f5f934
 
-Time (s): cpu = 00:00:03 ; elapsed = 00:00:02 . Memory (MB): peak = 1109.180 ; gain = 0.000
-Ending Placer Task | Checksum: 11782c741
+Time (s): cpu = 00:00:04 ; elapsed = 00:00:02 . Memory (MB): peak = 1121.242 ; gain = 0.000
+Ending Placer Task | Checksum: db17e322
 
-Time (s): cpu = 00:00:03 ; elapsed = 00:00:02 . Memory (MB): peak = 1109.180 ; gain = 0.000
+Time (s): cpu = 00:00:04 ; elapsed = 00:00:02 . Memory (MB): peak = 1121.242 ; gain = 0.000
 INFO: [Common 17-83] Releasing license: Implementation
-42 Infos, 32 Warnings, 32 Critical Warnings and 0 Errors encountered.
+42 Infos, 44 Warnings, 44 Critical Warnings and 0 Errors encountered.
 place_design completed successfully
 Writing placer database...
 Writing XDEF routing.
 Writing XDEF routing logical nets.
 Writing XDEF routing special nets.
-Write XDEF Complete: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.049 . Memory (MB): peak = 1109.180 ; gain = 0.000
-INFO: [Common 17-1381] The checkpoint 'C:/Users/46162/Desktop/Simple-FPGA-Clock/Simple-FPGA-Clock/Simple-FPGA-Clock.runs/impl_1/pin_mux_placed.dcp' has been generated.
-INFO: [runtcl-4] Executing : report_io -file pin_mux_io_placed.rpt
-report_io: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.074 . Memory (MB): peak = 1109.180 ; gain = 0.000
-INFO: [runtcl-4] Executing : report_utilization -file pin_mux_utilization_placed.rpt -pb pin_mux_utilization_placed.pb
-report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.061 . Memory (MB): peak = 1109.180 ; gain = 0.000
-INFO: [runtcl-4] Executing : report_control_sets -verbose -file pin_mux_control_sets_placed.rpt
-report_control_sets: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 1109.180 ; gain = 0.000
+Write XDEF Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.057 . Memory (MB): peak = 1121.242 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'C:/Users/46162/Desktop/Simple-FPGA-Clock/Simple-FPGA-Clock/Simple-FPGA-Clock.runs/impl_1/clock_assembly_placed.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_io -file clock_assembly_io_placed.rpt
+report_io: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.075 . Memory (MB): peak = 1121.242 ; gain = 0.000
+INFO: [runtcl-4] Executing : report_utilization -file clock_assembly_utilization_placed.rpt -pb clock_assembly_utilization_placed.pb
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.060 . Memory (MB): peak = 1121.242 ; gain = 0.000
+INFO: [runtcl-4] Executing : report_control_sets -verbose -file clock_assembly_control_sets_placed.rpt
+report_control_sets: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 1121.242 ; gain = 0.000
 Command: route_design
 Attempting to get a license for feature 'Implementation' and/or device 'xc7a100t'
 INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7a100t'
@@ -345,68 +381,68 @@ INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more in
 
 Starting Routing Task
 INFO: [Route 35-254] Multithreading enabled for route_design using a maximum of 2 CPUs
-Checksum: PlaceDB: e9c04250 ConstDB: 0 ShapeSum: 2dc284f1 RouteDB: 0
+Checksum: PlaceDB: 6699719e ConstDB: 0 ShapeSum: 747e7184 RouteDB: 0
 
 Phase 1 Build RT Design
-Phase 1 Build RT Design | Checksum: bc83a9bf
+Phase 1 Build RT Design | Checksum: 1a9631e4c
 
-Time (s): cpu = 00:00:40 ; elapsed = 00:00:35 . Memory (MB): peak = 1259.313 ; gain = 150.133
-Post Restoration Checksum: NetGraph: 9075a466 NumContArr: 2c0e0559 Constraints: 0 Timing: 0
+Time (s): cpu = 00:00:41 ; elapsed = 00:00:37 . Memory (MB): peak = 1259.008 ; gain = 137.766
+Post Restoration Checksum: NetGraph: b7f7c2af NumContArr: f16b5b9d Constraints: 0 Timing: 0
 
 Phase 2 Router Initialization
 INFO: [Route 35-64] No timing constraints were detected. The router will operate in resource-optimization mode.
 
 Phase 2.1 Fix Topology Constraints
-Phase 2.1 Fix Topology Constraints | Checksum: bc83a9bf
+Phase 2.1 Fix Topology Constraints | Checksum: 1a9631e4c
 
-Time (s): cpu = 00:00:40 ; elapsed = 00:00:35 . Memory (MB): peak = 1264.902 ; gain = 155.723
+Time (s): cpu = 00:00:41 ; elapsed = 00:00:37 . Memory (MB): peak = 1264.746 ; gain = 143.504
 
 Phase 2.2 Pre Route Cleanup
-Phase 2.2 Pre Route Cleanup | Checksum: bc83a9bf
+Phase 2.2 Pre Route Cleanup | Checksum: 1a9631e4c
 
-Time (s): cpu = 00:00:40 ; elapsed = 00:00:35 . Memory (MB): peak = 1264.902 ; gain = 155.723
+Time (s): cpu = 00:00:41 ; elapsed = 00:00:37 . Memory (MB): peak = 1264.746 ; gain = 143.504
  Number of Nodes with overlaps = 0
-Phase 2 Router Initialization | Checksum: 199f866d7
+Phase 2 Router Initialization | Checksum: 10fb5add5
 
-Time (s): cpu = 00:00:40 ; elapsed = 00:00:36 . Memory (MB): peak = 1288.676 ; gain = 179.496
+Time (s): cpu = 00:00:42 ; elapsed = 00:00:38 . Memory (MB): peak = 1285.453 ; gain = 164.211
 
 Phase 3 Initial Routing
-Phase 3 Initial Routing | Checksum: aaf8cc4c
+Phase 3 Initial Routing | Checksum: 11c3e7fba
 
-Time (s): cpu = 00:00:40 ; elapsed = 00:00:36 . Memory (MB): peak = 1288.676 ; gain = 179.496
+Time (s): cpu = 00:00:42 ; elapsed = 00:00:38 . Memory (MB): peak = 1285.453 ; gain = 164.211
 
 Phase 4 Rip-up And Reroute
 
 Phase 4.1 Global Iteration 0
- Number of Nodes with overlaps = 5
+ Number of Nodes with overlaps = 6
  Number of Nodes with overlaps = 0
-Phase 4.1 Global Iteration 0 | Checksum: 154a42102
+Phase 4.1 Global Iteration 0 | Checksum: 1668a6f1a
 
-Time (s): cpu = 00:00:40 ; elapsed = 00:00:36 . Memory (MB): peak = 1288.676 ; gain = 179.496
-Phase 4 Rip-up And Reroute | Checksum: 154a42102
+Time (s): cpu = 00:00:42 ; elapsed = 00:00:38 . Memory (MB): peak = 1285.453 ; gain = 164.211
+Phase 4 Rip-up And Reroute | Checksum: 1668a6f1a
 
-Time (s): cpu = 00:00:40 ; elapsed = 00:00:36 . Memory (MB): peak = 1288.676 ; gain = 179.496
+Time (s): cpu = 00:00:42 ; elapsed = 00:00:38 . Memory (MB): peak = 1285.453 ; gain = 164.211
 
 Phase 5 Delay and Skew Optimization
-Phase 5 Delay and Skew Optimization | Checksum: 154a42102
+Phase 5 Delay and Skew Optimization | Checksum: 1668a6f1a
 
-Time (s): cpu = 00:00:40 ; elapsed = 00:00:36 . Memory (MB): peak = 1288.676 ; gain = 179.496
+Time (s): cpu = 00:00:42 ; elapsed = 00:00:38 . Memory (MB): peak = 1285.453 ; gain = 164.211
 
 Phase 6 Post Hold Fix
 
 Phase 6.1 Hold Fix Iter
-Phase 6.1 Hold Fix Iter | Checksum: 154a42102
+Phase 6.1 Hold Fix Iter | Checksum: 1668a6f1a
 
-Time (s): cpu = 00:00:40 ; elapsed = 00:00:36 . Memory (MB): peak = 1288.676 ; gain = 179.496
-Phase 6 Post Hold Fix | Checksum: 154a42102
+Time (s): cpu = 00:00:42 ; elapsed = 00:00:38 . Memory (MB): peak = 1285.453 ; gain = 164.211
+Phase 6 Post Hold Fix | Checksum: 1668a6f1a
 
-Time (s): cpu = 00:00:40 ; elapsed = 00:00:36 . Memory (MB): peak = 1288.676 ; gain = 179.496
+Time (s): cpu = 00:00:42 ; elapsed = 00:00:38 . Memory (MB): peak = 1285.453 ; gain = 164.211
 
 Phase 7 Route finalize
 
 Router Utilization Summary
-  Global Vertical Routing Utilization    = 0.0531836 %
-  Global Horizontal Routing Utilization  = 0.0335323 %
+  Global Vertical Routing Utilization    = 0.0402576 %
+  Global Horizontal Routing Utilization  = 0.0267121 %
   Routable Net Status*
   *Does not include unroutable nets such as driverless and loadless.
   Run report_route_status for detailed report.
@@ -418,71 +454,71 @@ Router Utilization Summary
 Utilization threshold used for congestion level computation: 0.85
 Congestion Report
 North Dir 1x1 Area, Max Cong = 16.2162%, No Congested Regions.
-South Dir 1x1 Area, Max Cong = 20.7207%, No Congested Regions.
+South Dir 1x1 Area, Max Cong = 18.9189%, No Congested Regions.
 East Dir 1x1 Area, Max Cong = 17.6471%, No Congested Regions.
-West Dir 1x1 Area, Max Cong = 17.6471%, No Congested Regions.
-Phase 7 Route finalize | Checksum: 154a42102
+West Dir 1x1 Area, Max Cong = 19.1176%, No Congested Regions.
+Phase 7 Route finalize | Checksum: 1668a6f1a
 
-Time (s): cpu = 00:00:41 ; elapsed = 00:00:36 . Memory (MB): peak = 1288.676 ; gain = 179.496
+Time (s): cpu = 00:00:42 ; elapsed = 00:00:38 . Memory (MB): peak = 1285.453 ; gain = 164.211
 
 Phase 8 Verifying routed nets
 
  Verification completed successfully
-Phase 8 Verifying routed nets | Checksum: 154a42102
+Phase 8 Verifying routed nets | Checksum: 1668a6f1a
 
-Time (s): cpu = 00:00:41 ; elapsed = 00:00:36 . Memory (MB): peak = 1288.676 ; gain = 179.496
+Time (s): cpu = 00:00:42 ; elapsed = 00:00:38 . Memory (MB): peak = 1285.453 ; gain = 164.211
 
 Phase 9 Depositing Routes
-Phase 9 Depositing Routes | Checksum: 12d7eb2c6
+Phase 9 Depositing Routes | Checksum: 14b2e713b
 
-Time (s): cpu = 00:00:41 ; elapsed = 00:00:36 . Memory (MB): peak = 1288.676 ; gain = 179.496
+Time (s): cpu = 00:00:42 ; elapsed = 00:00:38 . Memory (MB): peak = 1285.453 ; gain = 164.211
 INFO: [Route 35-16] Router Completed Successfully
 
-Time (s): cpu = 00:00:41 ; elapsed = 00:00:36 . Memory (MB): peak = 1288.676 ; gain = 179.496
+Time (s): cpu = 00:00:42 ; elapsed = 00:00:38 . Memory (MB): peak = 1285.453 ; gain = 164.211
 
 Routing Is Done.
 INFO: [Common 17-83] Releasing license: Implementation
-54 Infos, 32 Warnings, 32 Critical Warnings and 0 Errors encountered.
+54 Infos, 44 Warnings, 44 Critical Warnings and 0 Errors encountered.
 route_design completed successfully
-route_design: Time (s): cpu = 00:00:42 ; elapsed = 00:00:37 . Memory (MB): peak = 1288.676 ; gain = 179.496
+route_design: Time (s): cpu = 00:00:44 ; elapsed = 00:00:39 . Memory (MB): peak = 1285.453 ; gain = 164.211
 Writing placer database...
 Writing XDEF routing.
 Writing XDEF routing logical nets.
 Writing XDEF routing special nets.
-Write XDEF Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.054 . Memory (MB): peak = 1288.676 ; gain = 0.000
-INFO: [Common 17-1381] The checkpoint 'C:/Users/46162/Desktop/Simple-FPGA-Clock/Simple-FPGA-Clock/Simple-FPGA-Clock.runs/impl_1/pin_mux_routed.dcp' has been generated.
-INFO: [runtcl-4] Executing : report_drc -file pin_mux_drc_routed.rpt -pb pin_mux_drc_routed.pb -rpx pin_mux_drc_routed.rpx
-Command: report_drc -file pin_mux_drc_routed.rpt -pb pin_mux_drc_routed.pb -rpx pin_mux_drc_routed.rpx
+Write XDEF Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.067 . Memory (MB): peak = 1285.453 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'C:/Users/46162/Desktop/Simple-FPGA-Clock/Simple-FPGA-Clock/Simple-FPGA-Clock.runs/impl_1/clock_assembly_routed.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_drc -file clock_assembly_drc_routed.rpt -pb clock_assembly_drc_routed.pb -rpx clock_assembly_drc_routed.rpx
+Command: report_drc -file clock_assembly_drc_routed.rpt -pb clock_assembly_drc_routed.pb -rpx clock_assembly_drc_routed.rpx
 INFO: [IP_Flow 19-1839] IP Catalog is up to date.
 INFO: [DRC 23-27] Running DRC with 2 threads
-INFO: [Coretcl 2-168] The results of DRC are in file C:/Users/46162/Desktop/Simple-FPGA-Clock/Simple-FPGA-Clock/Simple-FPGA-Clock.runs/impl_1/pin_mux_drc_routed.rpt.
+INFO: [Coretcl 2-168] The results of DRC are in file C:/Users/46162/Desktop/Simple-FPGA-Clock/Simple-FPGA-Clock/Simple-FPGA-Clock.runs/impl_1/clock_assembly_drc_routed.rpt.
 report_drc completed successfully
-INFO: [runtcl-4] Executing : report_methodology -file pin_mux_methodology_drc_routed.rpt -pb pin_mux_methodology_drc_routed.pb -rpx pin_mux_methodology_drc_routed.rpx
-Command: report_methodology -file pin_mux_methodology_drc_routed.rpt -pb pin_mux_methodology_drc_routed.pb -rpx pin_mux_methodology_drc_routed.rpx
+INFO: [runtcl-4] Executing : report_methodology -file clock_assembly_methodology_drc_routed.rpt -pb clock_assembly_methodology_drc_routed.pb -rpx clock_assembly_methodology_drc_routed.rpx
+Command: report_methodology -file clock_assembly_methodology_drc_routed.rpt -pb clock_assembly_methodology_drc_routed.pb -rpx clock_assembly_methodology_drc_routed.rpx
 INFO: [Timing 38-35] Done setting XDC timing constraints.
 INFO: [Timing 38-35] Done setting XDC timing constraints.
 INFO: [DRC 23-133] Running Methodology with 2 threads
-INFO: [Coretcl 2-1520] The results of Report Methodology are in file C:/Users/46162/Desktop/Simple-FPGA-Clock/Simple-FPGA-Clock/Simple-FPGA-Clock.runs/impl_1/pin_mux_methodology_drc_routed.rpt.
+INFO: [Coretcl 2-1520] The results of Report Methodology are in file C:/Users/46162/Desktop/Simple-FPGA-Clock/Simple-FPGA-Clock/Simple-FPGA-Clock.runs/impl_1/clock_assembly_methodology_drc_routed.rpt.
 report_methodology completed successfully
-INFO: [runtcl-4] Executing : report_power -file pin_mux_power_routed.rpt -pb pin_mux_power_summary_routed.pb -rpx pin_mux_power_routed.rpx
-Command: report_power -file pin_mux_power_routed.rpt -pb pin_mux_power_summary_routed.pb -rpx pin_mux_power_routed.rpx
+INFO: [runtcl-4] Executing : report_power -file clock_assembly_power_routed.rpt -pb clock_assembly_power_summary_routed.pb -rpx clock_assembly_power_routed.rpx
+Command: report_power -file clock_assembly_power_routed.rpt -pb clock_assembly_power_summary_routed.pb -rpx clock_assembly_power_routed.rpx
 WARNING: [Power 33-232] No user defined clocks were found in the design!
 Resolution: Please specify clocks using create_clock/create_generated_clock for sequential elements. For pure combinatorial circuits, please specify a virtual clock, otherwise the vectorless estimation might be inaccurate
 INFO: [Timing 38-35] Done setting XDC timing constraints.
 Running Vector-less Activity Propagation...
 
 Finished Running Vector-less Activity Propagation
-66 Infos, 33 Warnings, 32 Critical Warnings and 0 Errors encountered.
+66 Infos, 45 Warnings, 44 Critical Warnings and 0 Errors encountered.
 report_power completed successfully
-INFO: [runtcl-4] Executing : report_route_status -file pin_mux_route_status.rpt -pb pin_mux_route_status.pb
-INFO: [runtcl-4] Executing : report_timing_summary -max_paths 10 -file pin_mux_timing_summary_routed.rpt -rpx pin_mux_timing_summary_routed.rpx -warn_on_violation 
+INFO: [runtcl-4] Executing : report_route_status -file clock_assembly_route_status.rpt -pb clock_assembly_route_status.pb
+INFO: [runtcl-4] Executing : report_timing_summary -max_paths 10 -file clock_assembly_timing_summary_routed.rpt -rpx clock_assembly_timing_summary_routed.rpx -warn_on_violation 
 INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -1, Delay Type: min_max.
 INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 2 CPUs
 WARNING: [Timing 38-313] There are no user specified timing constraints. Timing constraints are needed for proper timing analysis.
-INFO: [runtcl-4] Executing : report_incremental_reuse -file pin_mux_incremental_reuse_routed.rpt
+INFO: [runtcl-4] Executing : report_incremental_reuse -file clock_assembly_incremental_reuse_routed.rpt
 INFO: [Vivado_Tcl 4-545] No incremental reuse to report, no incremental placement and routing data was found.
-INFO: [runtcl-4] Executing : report_clock_utilization -file pin_mux_clock_utilization_routed.rpt
-Command: write_bitstream -force pin_mux.bit
+INFO: [runtcl-4] Executing : report_clock_utilization -file clock_assembly_clock_utilization_routed.rpt
+Command: write_bitstream -force clock_assembly.bit
 Attempting to get a license for feature 'Implementation' and/or device 'xc7a100t'
 INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7a100t'
 Running DRC as a precondition to command write_bitstream
@@ -507,12 +543,12 @@ Loading route data...
 Processing options...
 Creating bitmap...
 Creating bitstream...
-Writing bitstream ./pin_mux.bit...
+Writing bitstream ./clock_assembly.bit...
 INFO: [Vivado 12-1842] Bitgen Completed Successfully.
 INFO: [Project 1-120] WebTalk data collection is mandatory when using a WebPACK part without a full Vivado license. To see the specific WebTalk data collected for your design, open the usage_statistics_webtalk.html or usage_statistics_webtalk.xml file in the implementation directory.
-INFO: [Common 17-186] 'C:/Users/46162/Desktop/Simple-FPGA-Clock/Simple-FPGA-Clock/Simple-FPGA-Clock.runs/impl_1/usage_statistics_webtalk.xml' has been successfully sent to Xilinx on Sat Dec 15 16:10:33 2018. For additional details about this file, please refer to the WebTalk help file at E:/Xilinx/Vivado/2017.4/doc/webtalk_introduction.html.
+INFO: [Common 17-186] 'C:/Users/46162/Desktop/Simple-FPGA-Clock/Simple-FPGA-Clock/Simple-FPGA-Clock.runs/impl_1/usage_statistics_webtalk.xml' has been successfully sent to Xilinx on Tue Dec 18 16:21:04 2018. For additional details about this file, please refer to the WebTalk help file at E:/Xilinx/Vivado/2017.4/doc/webtalk_introduction.html.
 INFO: [Common 17-83] Releasing license: Implementation
-84 Infos, 35 Warnings, 32 Critical Warnings and 0 Errors encountered.
+84 Infos, 47 Warnings, 44 Critical Warnings and 0 Errors encountered.
 write_bitstream completed successfully
-write_bitstream: Time (s): cpu = 00:00:18 ; elapsed = 00:00:41 . Memory (MB): peak = 1714.406 ; gain = 408.348
-INFO: [Common 17-206] Exiting Vivado at Sat Dec 15 16:10:33 2018...
+write_bitstream: Time (s): cpu = 00:00:18 ; elapsed = 00:00:43 . Memory (MB): peak = 1728.152 ; gain = 421.438
+INFO: [Common 17-206] Exiting Vivado at Tue Dec 18 16:21:04 2018...

@@ -46,7 +46,7 @@ output wire [7:0] seg_an//管�?�择使能信号
                 cnt <=0;
                 end
             else begin
-                cnt <= cnt +1;
+                cnt <= cnt +1; 
                 cout <= 0;
                 end
         end 
