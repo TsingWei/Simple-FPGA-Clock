@@ -29,7 +29,7 @@ module counter10_async(
     output reg [3:0] dout
     );
 
-    always@(posedge clk or posedge rst or set_en)
+    always@(posedge clk or posedge rst or posedge set_en)
     begin
         if(rst) begin
             dout<=0;
@@ -58,7 +58,7 @@ module counter10_sync(
     output reg [3:0] dout
     );
 
-    always@(posedge clk or set_en)
+    always@(posedge clk or posedge set_en)
     begin
         if(rst) begin
             dout<=0;

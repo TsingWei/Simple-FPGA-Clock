@@ -30,7 +30,7 @@ module counter60(
     );
     reg[7:0]dout;
     reg cout;
-    always@(posedge clk or posedge rst or set_en)
+    always@(posedge clk or posedge rst or posedge set_en)
     begin
         if(rst)
             dout<=0;

@@ -1,0 +1,8 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"counter_60_tb_func_synth.v" \
+"../../../../../Simple-FPGA-Clock.srcs/sources_1/imports/exchange_src/counter60.v" \
+"../../../../../Simple-FPGA-Clock.srcs/sim_1/new/counter_60_tb.v" \
+
+# Do not sort compile order
+nosort

@@ -27,18 +27,18 @@ output reg cout
     );
     reg [26:0]cnt;
     always@(posedge clk)begin
-            if(~rst)begin
+            if(rst)begin
                 cnt <=0;
                 cout <=0;
                 end
             else begin
-                if(cnt == 50000000-1)begin
-                    cout <=1;
+                if(cnt == 50000000>>1-1)begin
+                    cout <=~cout;
                     cnt <=0;
                     end
                 else begin
                     cnt <= cnt +1; 
-                    cout <= 0;
+                    //cout <= 0;
                     end
             end 
           end  
