@@ -1,71 +1,87 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="impl_1" LaunchPart="xc7a100tfgg484-1" LaunchTime="1545121090">
-  <File Type="PWROPT-DCP" Name="clock_assembly_pwropt.dcp"/>
-  <File Type="ROUTE-PWR" Name="clock_assembly_power_routed.rpt"/>
-  <File Type="PA-TCL" Name="clock_assembly.tcl"/>
-  <File Type="ROUTE-PWR-SUM" Name="clock_assembly_power_summary_routed.pb"/>
-  <File Type="REPORTS-TCL" Name="clock_assembly_reports.tcl"/>
-  <File Type="BG-DRC" Name="clock_assembly.drc"/>
-  <File Type="OPT-METHODOLOGY-DRC" Name="clock_assembly_methodology_drc_opted.rpt"/>
-  <File Type="INIT-TIMING" Name="clock_assembly_timing_summary_init.rpt"/>
-  <File Type="OPT-HWDEF" Name="clock_assembly.hwdef"/>
-  <File Type="OPT-DCP" Name="clock_assembly_opt.dcp"/>
-  <File Type="OPT-DRC" Name="clock_assembly_drc_opted.rpt"/>
-  <File Type="OPT-TIMING" Name="clock_assembly_timing_summary_opted.rpt"/>
-  <File Type="PWROPT-DRC" Name="clock_assembly_drc_pwropted.rpt"/>
-  <File Type="PWROPT-TIMING" Name="clock_assembly_timing_summary_pwropted.rpt"/>
-  <File Type="PLACE-DCP" Name="clock_assembly_placed.dcp"/>
-  <File Type="PLACE-IO" Name="clock_assembly_io_placed.rpt"/>
-  <File Type="PLACE-CLK" Name="clock_assembly_clock_utilization_placed.rpt"/>
-  <File Type="PLACE-UTIL" Name="clock_assembly_utilization_placed.rpt"/>
-  <File Type="PLACE-UTIL-PB" Name="clock_assembly_utilization_placed.pb"/>
-  <File Type="PLACE-CTRL" Name="clock_assembly_control_sets_placed.rpt"/>
-  <File Type="PLACE-SIMILARITY" Name="clock_assembly_incremental_reuse_placed.rpt"/>
-  <File Type="PLACE-PRE-SIMILARITY" Name="clock_assembly_incremental_reuse_pre_placed.rpt"/>
-  <File Type="PLACE-TIMING" Name="clock_assembly_timing_summary_placed.rpt"/>
-  <File Type="POSTPLACE-PWROPT-DCP" Name="clock_assembly_postplace_pwropt.dcp"/>
-  <File Type="POSTPLACE-PWROPT-TIMING" Name="clock_assembly_timing_summary_postplace_pwropted.rpt"/>
-  <File Type="PHYSOPT-DCP" Name="clock_assembly_physopt.dcp"/>
-  <File Type="PHYSOPT-DRC" Name="clock_assembly_drc_physopted.rpt"/>
-  <File Type="BG-BIT" Name="clock_assembly.bit"/>
-  <File Type="PHYSOPT-TIMING" Name="clock_assembly_timing_summary_physopted.rpt"/>
-  <File Type="ROUTE-ERROR-DCP" Name="clock_assembly_routed_error.dcp"/>
-  <File Type="ROUTE-DCP" Name="clock_assembly_routed.dcp"/>
-  <File Type="ROUTE-BLACKBOX-DCP" Name="clock_assembly_routed_bb.dcp"/>
-  <File Type="ROUTE-DRC" Name="clock_assembly_drc_routed.rpt"/>
-  <File Type="ROUTE-DRC-PB" Name="clock_assembly_drc_routed.pb"/>
-  <File Type="BITSTR-MSK" Name="clock_assembly.msk"/>
-  <File Type="ROUTE-DRC-RPX" Name="clock_assembly_drc_routed.rpx"/>
-  <File Type="BG-BGN" Name="clock_assembly.bgn"/>
-  <File Type="ROUTE-METHODOLOGY-DRC" Name="clock_assembly_methodology_drc_routed.rpt"/>
-  <File Type="BITSTR-RBT" Name="clock_assembly.rbt"/>
-  <File Type="ROUTE-METHODOLOGY-DRC-RPX" Name="clock_assembly_methodology_drc_routed.rpx"/>
-  <File Type="BG-BIN" Name="clock_assembly.bin"/>
-  <File Type="ROUTE-METHODOLOGY-DRC-PB" Name="clock_assembly_methodology_drc_routed.pb"/>
-  <File Type="ROUTE-PWR-RPX" Name="clock_assembly_power_routed.rpx"/>
-  <File Type="ROUTE-STATUS" Name="clock_assembly_route_status.rpt"/>
-  <File Type="ROUTE-STATUS-PB" Name="clock_assembly_route_status.pb"/>
-  <File Type="ROUTE-TIMINGSUMMARY" Name="clock_assembly_timing_summary_routed.rpt"/>
-  <File Type="ROUTE-TIMING-PB" Name="clock_assembly_timing_summary_routed.pb"/>
-  <File Type="ROUTE-TIMING-RPX" Name="clock_assembly_timing_summary_routed.rpx"/>
-  <File Type="ROUTE-SIMILARITY" Name="clock_assembly_incremental_reuse_routed.rpt"/>
-  <File Type="RDI-RDI" Name="clock_assembly.vdi"/>
-  <File Type="ROUTE-CLK" Name="clock_assembly_clock_utilization_routed.rpt"/>
-  <File Type="POSTROUTE-PHYSOPT-DCP" Name="clock_assembly_postroute_physopt.dcp"/>
-  <File Type="POSTROUTE-PHYSOPT-BLACKBOX-DCP" Name="clock_assembly_postroute_physopt_bb.dcp"/>
-  <File Type="POSTROUTE-PHYSOPT-TIMING" Name="clock_assembly_timing_summary_postroute_physopted.rpt"/>
-  <File Type="POSTROUTE-PHYSOPT-TIMING-PB" Name="clock_assembly_timing_summary_postroute_physopted.pb"/>
-  <File Type="POSTROUTE-PHYSOPT-TIMING-RPX" Name="clock_assembly_timing_summary_postroute_physopted.rpx"/>
-  <File Type="BITSTR-NKY" Name="clock_assembly.nky"/>
-  <File Type="BITSTR-BMM" Name="clock_assembly_bd.bmm"/>
-  <File Type="BITSTR-MMI" Name="clock_assembly.mmi"/>
-  <File Type="BITSTR-LTX" Name="debug_nets.ltx"/>
-  <File Type="BITSTR-LTX" Name="clock_assembly.ltx"/>
-  <File Type="BITSTR-SYSDEF" Name="clock_assembly.sysdef"/>
+<GenRun Id="impl_1" LaunchPart="xc7a100tfgg484-1" LaunchTime="1545143400">
   <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
+  <File Type="BG-DRC" Name="clock_with_set.drc"/>
+  <File Type="BG-BGN" Name="clock_with_set.bgn"/>
+  <File Type="BITSTR-SYSDEF" Name="clock_with_set.sysdef"/>
+  <File Type="BITSTR-LTX" Name="debug_nets.ltx"/>
+  <File Type="BITSTR-LTX" Name="clock_with_set.ltx"/>
+  <File Type="BITSTR-MMI" Name="clock_with_set.mmi"/>
+  <File Type="BITSTR-BMM" Name="clock_with_set_bd.bmm"/>
+  <File Type="BITSTR-NKY" Name="clock_with_set.nky"/>
+  <File Type="BITSTR-RBT" Name="clock_with_set.rbt"/>
+  <File Type="BITSTR-MSK" Name="clock_with_set.msk"/>
+  <File Type="BG-BIN" Name="clock_with_set.bin"/>
+  <File Type="BG-BIT" Name="clock_with_set.bit"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-RPX" Name="clock_with_set_timing_summary_postroute_physopted.rpx"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-PB" Name="clock_with_set_timing_summary_postroute_physopted.pb"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING" Name="clock_with_set_timing_summary_postroute_physopted.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-BLACKBOX-DCP" Name="clock_with_set_postroute_physopt_bb.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-DCP" Name="clock_with_set_postroute_physopt.dcp"/>
+  <File Type="ROUTE-CLK" Name="clock_with_set_clock_utilization_routed.rpt"/>
+  <File Type="ROUTE-SIMILARITY" Name="clock_with_set_incremental_reuse_routed.rpt"/>
+  <File Type="ROUTE-TIMING-RPX" Name="clock_with_set_timing_summary_routed.rpx"/>
+  <File Type="ROUTE-TIMING-PB" Name="clock_with_set_timing_summary_routed.pb"/>
+  <File Type="ROUTE-TIMINGSUMMARY" Name="clock_with_set_timing_summary_routed.rpt"/>
+  <File Type="ROUTE-STATUS-PB" Name="clock_with_set_route_status.pb"/>
+  <File Type="ROUTE-STATUS" Name="clock_with_set_route_status.rpt"/>
+  <File Type="ROUTE-PWR-RPX" Name="clock_with_set_power_routed.rpx"/>
+  <File Type="ROUTE-PWR-SUM" Name="clock_with_set_power_summary_routed.pb"/>
+  <File Type="ROUTE-PWR" Name="clock_with_set_power_routed.rpt"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-PB" Name="clock_with_set_methodology_drc_routed.pb"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-RPX" Name="clock_with_set_methodology_drc_routed.rpx"/>
+  <File Type="ROUTE-METHODOLOGY-DRC" Name="clock_with_set_methodology_drc_routed.rpt"/>
+  <File Type="ROUTE-DRC-RPX" Name="clock_with_set_drc_routed.rpx"/>
+  <File Type="ROUTE-DRC-PB" Name="clock_with_set_drc_routed.pb"/>
+  <File Type="ROUTE-DRC" Name="clock_with_set_drc_routed.rpt"/>
+  <File Type="ROUTE-BLACKBOX-DCP" Name="clock_with_set_routed_bb.dcp"/>
+  <File Type="ROUTE-DCP" Name="clock_with_set_routed.dcp"/>
+  <File Type="ROUTE-ERROR-DCP" Name="clock_with_set_routed_error.dcp"/>
+  <File Type="PHYSOPT-TIMING" Name="clock_with_set_timing_summary_physopted.rpt"/>
+  <File Type="PHYSOPT-DRC" Name="clock_with_set_drc_physopted.rpt"/>
+  <File Type="PHYSOPT-DCP" Name="clock_with_set_physopt.dcp"/>
+  <File Type="POSTPLACE-PWROPT-TIMING" Name="clock_with_set_timing_summary_postplace_pwropted.rpt"/>
+  <File Type="POSTPLACE-PWROPT-DCP" Name="clock_with_set_postplace_pwropt.dcp"/>
+  <File Type="PLACE-TIMING" Name="clock_with_set_timing_summary_placed.rpt"/>
+  <File Type="PLACE-PRE-SIMILARITY" Name="clock_with_set_incremental_reuse_pre_placed.rpt"/>
+  <File Type="PLACE-SIMILARITY" Name="clock_with_set_incremental_reuse_placed.rpt"/>
+  <File Type="PLACE-CTRL" Name="clock_with_set_control_sets_placed.rpt"/>
+  <File Type="PLACE-UTIL-PB" Name="clock_with_set_utilization_placed.pb"/>
+  <File Type="PLACE-UTIL" Name="clock_with_set_utilization_placed.rpt"/>
+  <File Type="PLACE-CLK" Name="clock_with_set_clock_utilization_placed.rpt"/>
+  <File Type="PLACE-IO" Name="clock_with_set_io_placed.rpt"/>
+  <File Type="RDI-RDI" Name="clock_with_set.vdi"/>
+  <File Type="PWROPT-TIMING" Name="clock_with_set_timing_summary_pwropted.rpt"/>
+  <File Type="PWROPT-DRC" Name="clock_with_set_drc_pwropted.rpt"/>
+  <File Type="OPT-TIMING" Name="clock_with_set_timing_summary_opted.rpt"/>
+  <File Type="OPT-HWDEF" Name="clock_with_set.hwdef"/>
+  <File Type="OPT-METHODOLOGY-DRC" Name="clock_with_set_methodology_drc_opted.rpt"/>
+  <File Type="OPT-DRC" Name="clock_with_set_drc_opted.rpt"/>
+  <File Type="OPT-DCP" Name="clock_with_set_opt.dcp"/>
+  <File Type="INIT-TIMING" Name="clock_with_set_timing_summary_init.rpt"/>
+  <File Type="PWROPT-DCP" Name="clock_with_set_pwropt.dcp"/>
+  <File Type="REPORTS-TCL" Name="clock_with_set_reports.tcl"/>
+  <File Type="PLACE-DCP" Name="clock_with_set_placed.dcp"/>
+  <File Type="PA-TCL" Name="clock_with_set.tcl"/>
   <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
     <Filter Type="Srcs"/>
+    <File Path="$PSRCDIR/sources_1/imports/文档/KEY_SEG.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../文档/KEY_SEG.v"/>
+        <Attr Name="ImportTime" Val="1545137859"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
     <File Path="$PSRCDIR/sources_1/new/clock_500Hz.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/clock_assembly.v">
       <FileInfo>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
@@ -127,7 +143,7 @@
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
-    <File Path="$PSRCDIR/sources_1/new/clock_assembly.v">
+    <File Path="$PSRCDIR/sources_1/new/clock_with_set.v">
       <FileInfo>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
@@ -188,7 +204,7 @@
     </File>
     <Config>
       <Option Name="DesignMode" Val="RTL"/>
-      <Option Name="TopModule" Val="clock_assembly"/>
+      <Option Name="TopModule" Val="clock_with_set"/>
     </Config>
   </FileSet>
   <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
@@ -197,6 +213,14 @@
       <FileInfo>
         <Attr Name="ImportPath" Val="$PPRDIR/exchange_src/KEY_SEG.xdc"/>
         <Attr Name="ImportTime" Val="1544809987"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/constrs_1/imports/桌面/KEY_SEG1.xdc">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../桌面/KEY_SEG1.xdc"/>
+        <Attr Name="ImportTime" Val="1490691088"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
       </FileInfo>

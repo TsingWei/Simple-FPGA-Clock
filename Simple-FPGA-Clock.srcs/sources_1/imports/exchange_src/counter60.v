@@ -23,7 +23,7 @@
 module counter60(
     input clk,
     input rst,
-    input set_en,
+    input [1:0]set_en,
     input [7:0]set_val,
     output cout,
     output [7:0] dout
@@ -34,8 +34,11 @@ module counter60(
     begin
         if(rst)
             dout<=0;
-        else if(set_en) 
-            dout <= set_val;
+        else if(set_en)
+            if(set_en[0]) 
+                dout[3:0] <= set_val[3:0];
+            else if(set_en[1])
+                dout[7:4] <= set_val[7:4];
         else if(dout[3:0]>=9)
         begin
             dout[3:0]=0;

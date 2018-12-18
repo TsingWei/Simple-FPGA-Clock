@@ -1,17 +1,33 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="synth_1" LaunchPart="xc7a100tfgg484-1" LaunchTime="1545121090">
-  <File Type="PA-TCL" Name="clock_assembly.tcl"/>
-  <File Type="RDS-PROPCONSTRS" Name="clock_assembly_drc_synth.rpt"/>
-  <File Type="REPORTS-TCL" Name="clock_assembly_reports.tcl"/>
-  <File Type="RDS-RDS" Name="clock_assembly.vds"/>
-  <File Type="RDS-UTIL" Name="clock_assembly_utilization_synth.rpt"/>
-  <File Type="RDS-UTIL-PB" Name="clock_assembly_utilization_synth.pb"/>
-  <File Type="RDS-DCP" Name="clock_assembly.dcp"/>
-  <File Type="VDS-TIMINGSUMMARY" Name="clock_assembly_timing_summary_synth.rpt"/>
-  <File Type="VDS-TIMING-PB" Name="clock_assembly_timing_summary_synth.pb"/>
+<GenRun Id="synth_1" LaunchPart="xc7a100tfgg484-1" LaunchTime="1545143296">
+  <File Type="VDS-TIMING-PB" Name="clock_with_set_timing_summary_synth.pb"/>
+  <File Type="VDS-TIMINGSUMMARY" Name="clock_with_set_timing_summary_synth.rpt"/>
+  <File Type="RDS-DCP" Name="clock_with_set.dcp"/>
+  <File Type="RDS-UTIL-PB" Name="clock_with_set_utilization_synth.pb"/>
+  <File Type="RDS-UTIL" Name="clock_with_set_utilization_synth.rpt"/>
+  <File Type="RDS-PROPCONSTRS" Name="clock_with_set_drc_synth.rpt"/>
+  <File Type="RDS-RDS" Name="clock_with_set.vds"/>
+  <File Type="REPORTS-TCL" Name="clock_with_set_reports.tcl"/>
+  <File Type="PA-TCL" Name="clock_with_set.tcl"/>
   <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
     <Filter Type="Srcs"/>
+    <File Path="$PSRCDIR/sources_1/imports/文档/KEY_SEG.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../文档/KEY_SEG.v"/>
+        <Attr Name="ImportTime" Val="1545137859"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
     <File Path="$PSRCDIR/sources_1/new/clock_500Hz.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/clock_assembly.v">
       <FileInfo>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
@@ -73,7 +89,7 @@
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
-    <File Path="$PSRCDIR/sources_1/new/clock_assembly.v">
+    <File Path="$PSRCDIR/sources_1/new/clock_with_set.v">
       <FileInfo>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
@@ -134,7 +150,7 @@
     </File>
     <Config>
       <Option Name="DesignMode" Val="RTL"/>
-      <Option Name="TopModule" Val="clock_assembly"/>
+      <Option Name="TopModule" Val="clock_with_set"/>
     </Config>
   </FileSet>
   <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
@@ -143,6 +159,14 @@
       <FileInfo>
         <Attr Name="ImportPath" Val="$PPRDIR/exchange_src/KEY_SEG.xdc"/>
         <Attr Name="ImportTime" Val="1544809987"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/constrs_1/imports/桌面/KEY_SEG1.xdc">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../桌面/KEY_SEG1.xdc"/>
+        <Attr Name="ImportTime" Val="1490691088"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
       </FileInfo>
