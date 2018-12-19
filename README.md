@@ -13,6 +13,8 @@
 ## 说明
 代码置于`/Simple-FPGA-Clock.srcs`里, 由于Vivado本身问题（几乎每一个操作，包括运行模拟和修改代码等，Vivado都会修改一大串日志和其他关联文件），建议新提交代码放在`/exchange_src`中，pull到本地后，在Vivado内import。
 ## Updates
+### 0.0.7 新的时钟总成完成,带置位功能
+    ![on_board_1.png](https://github.com/TsingWei/Simple-FPGA-Clock/blob/master/img/new_clock.png)
 ### 0.0.6 蜂鸣器完成,走时电路正常,置位功能尚未测试
 * 暂定500hz测试,至少能响了.
 * 之前理所当然写的500hz分频器有问题,虽然是输出500hz的脉冲,但是占空比非常小,看实现原理就知道了,之前就是数够200000次就输出高,下一个clk就恢复低,所以占空比非常低,有点类似电压特别低的PWM的意思,所以蜂鸣器不出声,接到led灯也不亮(等价几mV的电压能亮么). 于是修改了一下把占空比改为50%,果然出声.

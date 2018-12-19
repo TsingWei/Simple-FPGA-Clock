@@ -31,7 +31,7 @@ output reg led2
     wire buzz;
     wire sw;
     //assign led1=clk;
-    clock_500Hz c500(clk,rst,buzz);
+    clock_2000Hz c2000(clk,rst,buzz);
     half_sec_timer ht(clk,rst,sw);
     always@(*) begin
         if(en) begin

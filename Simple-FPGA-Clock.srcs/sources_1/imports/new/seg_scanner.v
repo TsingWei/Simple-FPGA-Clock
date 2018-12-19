@@ -23,6 +23,7 @@
 
 
 module seg_scanner(
+    input [7:0] en_in,
     input [7:0] a,
     input [7:0] b,
     input [7:0] c,
@@ -48,35 +49,35 @@ module seg_scanner(
             case (scan_cnt)
             3'd0: begin
                 out<=a;
-                en<=8'd1;
+                en<=en_in&8'd1;
                 end
             3'd1: begin 
                 out<=b;
-                en<=8'd2;
+                en<=en_in&8'd2;
                 end
             3'd2: begin
                 out<=c;
-                en<=8'd4;
+                en<=en_in&8'd4;
                 end
             3'd3: begin
                 out<=d;
-                en<=8'd8;
+                en<=en_in&8'd8;
                 end
             3'd4: begin 
                 out<=e;
-                en<=8'd16;
+                en<=en_in&8'd16;
                 end
             3'd5: begin
                 out<=f;
-                en<=8'd32;
+                en<=en_in&8'd32;
                 end
             3'd6: begin
                 out<=g;
-                en<=8'd64;
+                en<=en_in&8'd64;
                 end
             3'd7: begin
                 out<=h;
-                en<=8'd128;
+                en<=en_in&8'd128;
                 end
         endcase
             if(scan_cnt==seg_num-1)

@@ -1,12 +1,12 @@
 #-----------------------------------------------------------
 # Vivado v2017.4 (64-bit)
-# SW Build 2086221 on Fri Dec 15 20:54:30 MST 2017
+# SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
 # IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
-# Start of session at: Tue Dec 18 22:28:19 2018
-# Process ID: 13117
-# Current directory: /home/moe/Simple-FPGA-Clock/Simple-FPGA-Clock.runs/synth_1
-# Command line: vivado -log clock_with_set.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source clock_with_set.tcl
-# Log file: /home/moe/Simple-FPGA-Clock/Simple-FPGA-Clock.runs/synth_1/clock_with_set.vds
-# Journal file: /home/moe/Simple-FPGA-Clock/Simple-FPGA-Clock.runs/synth_1/vivado.jou
+# Start of session at: Wed Dec 19 17:34:39 2018
+# Process ID: 11128
+# Current directory: C:/Users/46162/Desktop/Simple-FPGA-Clock/Simple-FPGA-Clock/Simple-FPGA-Clock.runs/synth_1
+# Command line: vivado.exe -log clock_with_set.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source clock_with_set.tcl
+# Log file: C:/Users/46162/Desktop/Simple-FPGA-Clock/Simple-FPGA-Clock/Simple-FPGA-Clock.runs/synth_1/clock_with_set.vds
+# Journal file: C:/Users/46162/Desktop/Simple-FPGA-Clock/Simple-FPGA-Clock/Simple-FPGA-Clock.runs/synth_1\vivado.jou
 #-----------------------------------------------------------
 source clock_with_set.tcl -notrace
