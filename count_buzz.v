@@ -33,7 +33,7 @@ output reg buzz_out
     reg tempcount;
     reg en;
 //    half_sec_timer ht(clk,rst,sw);
-    new_buzz(en,rst,clk,buzzout,cycle);
+    new_buzz nb(en,rst,clk,buzzout,cycle);
     always@(*)
     begin
         buzz_out=buzzout;

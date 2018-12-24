@@ -3,9 +3,9 @@
 // Company: 
 // Engineer: 
 // 
-// Create Date: 2018/12/19 11:48:39
+// Create Date: 2018/12/24 19:55:22
 // Design Name: 
-// Module Name: new_buzz
+// Module Name: display_select
 // Project Name: 
 // Target Devices: 
 // Tool Versions: 
@@ -19,24 +19,17 @@
 // 
 //////////////////////////////////////////////////////////////////////////////////
 
-
-module new_buzz(
-input enable,
-input rst,
-input clk,
-output reg buzzout,
-output cycle
+// select==1: ouput = <1>
+// select==2: ouput = <2>
+module display_select(
+input select,
+input [5:0]en1,
+input [3:0]val1,
+input [5:0]en2,
+input [3:0]val2,
+output [5:0]en,
+output [3:0]val
     );
-    wire buzz;
-    wire sw;
-   assign cycle=sw; 
-   clock_500Hz c500(clk,rst,buzz);
-   half_sec_timer ht(clk,rst,sw);
-   always@(*) 
-   begin
-       if(enable)
-           buzzout = sw & buzz;
-       else 
-           buzzout = 0;
-   end
+assign en = (select)? en1 : en2;
+assign val = (select)? val1 :val2;
 endmodule
