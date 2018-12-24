@@ -24,10 +24,19 @@ module new_buzz(
 input enable,
 input rst,
 input clk,
-output buzzout
+output reg buzzout,
+output cycle
     );
-    //reg buzzout;
     wire buzz;
-    clock_500Hz u1(clk,rst,buzz);
-    assign buzzout = enable&buzz;
+    wire sw;
+   assign cycle=sw; 
+   clock_500Hz c500(clk,rst,buzz);
+   half_sec_timer ht(clk,rst,sw);
+   always@(*) 
+   begin
+       if(enable)
+           buzzout = sw & buzz;
+       else 
+           buzzout = 0;
+   end
 endmodule
