@@ -1,13 +1,13 @@
 #-----------------------------------------------------------
 # Vivado v2017.4 (64-bit)
-# SW Build 2086221 on Fri Dec 15 20:54:30 MST 2017
+# SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
 # IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
-# Start of session at: Tue Dec 18 22:28:19 2018
-# Process ID: 13117
-# Current directory: /home/moe/Simple-FPGA-Clock/Simple-FPGA-Clock.runs/synth_1
-# Command line: vivado -log clock_with_set.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source clock_with_set.tcl
-# Log file: /home/moe/Simple-FPGA-Clock/Simple-FPGA-Clock.runs/synth_1/clock_with_set.vds
-# Journal file: /home/moe/Simple-FPGA-Clock/Simple-FPGA-Clock.runs/synth_1/vivado.jou
+# Start of session at: Wed Dec 19 17:34:39 2018
+# Process ID: 11128
+# Current directory: C:/Users/46162/Desktop/Simple-FPGA-Clock/Simple-FPGA-Clock/Simple-FPGA-Clock.runs/synth_1
+# Command line: vivado.exe -log clock_with_set.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source clock_with_set.tcl
+# Log file: C:/Users/46162/Desktop/Simple-FPGA-Clock/Simple-FPGA-Clock/Simple-FPGA-Clock.runs/synth_1/clock_with_set.vds
+# Journal file: C:/Users/46162/Desktop/Simple-FPGA-Clock/Simple-FPGA-Clock/Simple-FPGA-Clock.runs/synth_1\vivado.jou
 #-----------------------------------------------------------
 source clock_with_set.tcl -notrace
 Command: synth_design -top clock_with_set -part xc7a100tfgg484-1
@@ -15,67 +15,68 @@ Starting synth_design
 Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
 INFO: Launching helper process for spawning children vivado processes
-INFO: Helper process launched with PID 13148 
-WARNING: [Synth 8-2611] redeclaration of ansi port keyboard_val is not allowed [/home/moe/Simple-FPGA-Clock/Simple-FPGA-Clock.srcs/sources_1/imports/鏂囨。/KEY_SEG.v:142]
-WARNING: [Synth 8-976] keyboard_val has already been declared [/home/moe/Simple-FPGA-Clock/Simple-FPGA-Clock.srcs/sources_1/imports/鏂囨。/KEY_SEG.v:142]
-WARNING: [Synth 8-2654] second declaration of keyboard_val ignored [/home/moe/Simple-FPGA-Clock/Simple-FPGA-Clock.srcs/sources_1/imports/鏂囨。/KEY_SEG.v:142]
-INFO: [Synth 8-994] keyboard_val is declared here [/home/moe/Simple-FPGA-Clock/Simple-FPGA-Clock.srcs/sources_1/imports/鏂囨。/KEY_SEG.v:28]
-WARNING: [Synth 8-2611] redeclaration of ansi port dout is not allowed [/home/moe/Simple-FPGA-Clock/Simple-FPGA-Clock.srcs/sources_1/imports/exchange_src/counter60.v:31]
-WARNING: [Synth 8-2611] redeclaration of ansi port cout is not allowed [/home/moe/Simple-FPGA-Clock/Simple-FPGA-Clock.srcs/sources_1/imports/exchange_src/counter60.v:32]
+INFO: Helper process launched with PID 16580 
+WARNING: [Synth 8-2611] redeclaration of ansi port keyboard_val is not allowed [C:/Users/46162/Desktop/Simple-FPGA-Clock/Simple-FPGA-Clock/Simple-FPGA-Clock.srcs/sources_1/imports/文档/KEY_SEG.v:142]
+WARNING: [Synth 8-976] keyboard_val has already been declared [C:/Users/46162/Desktop/Simple-FPGA-Clock/Simple-FPGA-Clock/Simple-FPGA-Clock.srcs/sources_1/imports/文档/KEY_SEG.v:142]
+WARNING: [Synth 8-2654] second declaration of keyboard_val ignored [C:/Users/46162/Desktop/Simple-FPGA-Clock/Simple-FPGA-Clock/Simple-FPGA-Clock.srcs/sources_1/imports/文档/KEY_SEG.v:142]
+INFO: [Synth 8-994] keyboard_val is declared here [C:/Users/46162/Desktop/Simple-FPGA-Clock/Simple-FPGA-Clock/Simple-FPGA-Clock.srcs/sources_1/imports/文档/KEY_SEG.v:28]
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 1256.438 ; gain = 72.273 ; free physical = 104 ; free virtual = 7725
+Starting RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 343.453 ; gain = 112.488
 ---------------------------------------------------------------------------------
-INFO: [Synth 8-638] synthesizing module 'clock_with_set' [/home/moe/Simple-FPGA-Clock/Simple-FPGA-Clock.srcs/sources_1/new/clock_with_set.v:23]
-INFO: [Synth 8-638] synthesizing module 'key_top' [/home/moe/Simple-FPGA-Clock/Simple-FPGA-Clock.srcs/sources_1/imports/鏂囨。/KEY_SEG.v:23]
+INFO: [Synth 8-638] synthesizing module 'clock_with_set' [C:/Users/46162/Desktop/Simple-FPGA-Clock/Simple-FPGA-Clock/Simple-FPGA-Clock.srcs/sources_1/new/clock_with_set.v:23]
+INFO: [Synth 8-638] synthesizing module 'key_top' [C:/Users/46162/Desktop/Simple-FPGA-Clock/Simple-FPGA-Clock/Simple-FPGA-Clock.srcs/sources_1/imports/文档/KEY_SEG.v:23]
 	Parameter NO_KEY_PRESSED bound to: 6'b000001 
 	Parameter SCAN_COL0 bound to: 6'b000010 
 	Parameter SCAN_COL1 bound to: 6'b000100 
 	Parameter SCAN_COL2 bound to: 6'b001000 
 	Parameter SCAN_COL3 bound to: 6'b010000 
 	Parameter KEY_PRESSED bound to: 6'b100000 
-INFO: [Synth 8-155] case statement is not full and has no default [/home/moe/Simple-FPGA-Clock/Simple-FPGA-Clock.srcs/sources_1/imports/鏂囨。/KEY_SEG.v:69]
-INFO: [Synth 8-155] case statement is not full and has no default [/home/moe/Simple-FPGA-Clock/Simple-FPGA-Clock.srcs/sources_1/imports/鏂囨。/KEY_SEG.v:113]
-INFO: [Synth 8-155] case statement is not full and has no default [/home/moe/Simple-FPGA-Clock/Simple-FPGA-Clock.srcs/sources_1/imports/鏂囨。/KEY_SEG.v:148]
-WARNING: [Synth 8-5788] Register col_val_reg in module key_top is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [/home/moe/Simple-FPGA-Clock/Simple-FPGA-Clock.srcs/sources_1/imports/鏂囨。/KEY_SEG.v:129]
-WARNING: [Synth 8-5788] Register row_val_reg in module key_top is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [/home/moe/Simple-FPGA-Clock/Simple-FPGA-Clock.srcs/sources_1/imports/鏂囨。/KEY_SEG.v:130]
-INFO: [Synth 8-256] done synthesizing module 'key_top' (1#1) [/home/moe/Simple-FPGA-Clock/Simple-FPGA-Clock.srcs/sources_1/imports/鏂囨。/KEY_SEG.v:23]
-INFO: [Synth 8-638] synthesizing module 'clock_assembly' [/home/moe/Simple-FPGA-Clock/Simple-FPGA-Clock.srcs/sources_1/new/clock_assembly.v:23]
-INFO: [Synth 8-638] synthesizing module 'half_sec_timer' [/home/moe/Simple-FPGA-Clock/Simple-FPGA-Clock.srcs/sources_1/new/half_sec_timer.v:23]
-INFO: [Synth 8-256] done synthesizing module 'half_sec_timer' (2#1) [/home/moe/Simple-FPGA-Clock/Simple-FPGA-Clock.srcs/sources_1/new/half_sec_timer.v:23]
-INFO: [Synth 8-638] synthesizing module 'counter60' [/home/moe/Simple-FPGA-Clock/Simple-FPGA-Clock.srcs/sources_1/imports/exchange_src/counter60.v:23]
-WARNING: [Synth 8-5788] Register cout_reg in module counter60 is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [/home/moe/Simple-FPGA-Clock/Simple-FPGA-Clock.srcs/sources_1/imports/exchange_src/counter60.v:48]
-INFO: [Synth 8-256] done synthesizing module 'counter60' (3#1) [/home/moe/Simple-FPGA-Clock/Simple-FPGA-Clock.srcs/sources_1/imports/exchange_src/counter60.v:23]
-WARNING: [Synth 8-689] width (1) of port connection 'set_val' does not match port width (8) of module 'counter60' [/home/moe/Simple-FPGA-Clock/Simple-FPGA-Clock.srcs/sources_1/new/clock_assembly.v:54]
-WARNING: [Synth 8-689] width (1) of port connection 'set_val' does not match port width (8) of module 'counter60' [/home/moe/Simple-FPGA-Clock/Simple-FPGA-Clock.srcs/sources_1/new/clock_assembly.v:55]
-INFO: [Synth 8-638] synthesizing module 'counter24' [/home/moe/Simple-FPGA-Clock/Simple-FPGA-Clock.srcs/sources_1/new/counter24.v:23]
-INFO: [Synth 8-638] synthesizing module 'counter10_async' [/home/moe/Simple-FPGA-Clock/Simple-FPGA-Clock.srcs/sources_1/new/counter10.v:23]
-INFO: [Synth 8-256] done synthesizing module 'counter10_async' (4#1) [/home/moe/Simple-FPGA-Clock/Simple-FPGA-Clock.srcs/sources_1/new/counter10.v:23]
-INFO: [Synth 8-638] synthesizing module 'counter10_sync' [/home/moe/Simple-FPGA-Clock/Simple-FPGA-Clock.srcs/sources_1/new/counter10.v:52]
-INFO: [Synth 8-256] done synthesizing module 'counter10_sync' (5#1) [/home/moe/Simple-FPGA-Clock/Simple-FPGA-Clock.srcs/sources_1/new/counter10.v:52]
-INFO: [Synth 8-256] done synthesizing module 'counter24' (6#1) [/home/moe/Simple-FPGA-Clock/Simple-FPGA-Clock.srcs/sources_1/new/counter24.v:23]
-WARNING: [Synth 8-689] width (1) of port connection 'set_val' does not match port width (8) of module 'counter24' [/home/moe/Simple-FPGA-Clock/Simple-FPGA-Clock.srcs/sources_1/new/clock_assembly.v:56]
-INFO: [Synth 8-638] synthesizing module 'seg_assembly' [/home/moe/Simple-FPGA-Clock/Simple-FPGA-Clock.srcs/sources_1/new/seg_assembly.v:24]
-INFO: [Synth 8-638] synthesizing module 'clock_500Hz' [/home/moe/Simple-FPGA-Clock/Simple-FPGA-Clock.srcs/sources_1/new/clock_500Hz.v:23]
-INFO: [Synth 8-256] done synthesizing module 'clock_500Hz' (7#1) [/home/moe/Simple-FPGA-Clock/Simple-FPGA-Clock.srcs/sources_1/new/clock_500Hz.v:23]
-INFO: [Synth 8-638] synthesizing module 'light_7seg' [/home/moe/Simple-FPGA-Clock/Simple-FPGA-Clock.srcs/sources_1/imports/new/light_7seg.v:23]
-INFO: [Synth 8-226] default block is never used [/home/moe/Simple-FPGA-Clock/Simple-FPGA-Clock.srcs/sources_1/imports/new/light_7seg.v:27]
-INFO: [Synth 8-256] done synthesizing module 'light_7seg' (8#1) [/home/moe/Simple-FPGA-Clock/Simple-FPGA-Clock.srcs/sources_1/imports/new/light_7seg.v:23]
-INFO: [Synth 8-638] synthesizing module 'seg_scanner' [/home/moe/Simple-FPGA-Clock/Simple-FPGA-Clock.srcs/sources_1/imports/new/seg_scanner.v:25]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/46162/Desktop/Simple-FPGA-Clock/Simple-FPGA-Clock/Simple-FPGA-Clock.srcs/sources_1/imports/文档/KEY_SEG.v:69]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/46162/Desktop/Simple-FPGA-Clock/Simple-FPGA-Clock/Simple-FPGA-Clock.srcs/sources_1/imports/文档/KEY_SEG.v:113]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/46162/Desktop/Simple-FPGA-Clock/Simple-FPGA-Clock/Simple-FPGA-Clock.srcs/sources_1/imports/文档/KEY_SEG.v:148]
+WARNING: [Synth 8-5788] Register col_val_reg in module key_top is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/46162/Desktop/Simple-FPGA-Clock/Simple-FPGA-Clock/Simple-FPGA-Clock.srcs/sources_1/imports/文档/KEY_SEG.v:129]
+WARNING: [Synth 8-5788] Register row_val_reg in module key_top is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/46162/Desktop/Simple-FPGA-Clock/Simple-FPGA-Clock/Simple-FPGA-Clock.srcs/sources_1/imports/文档/KEY_SEG.v:130]
+INFO: [Synth 8-256] done synthesizing module 'key_top' (1#1) [C:/Users/46162/Desktop/Simple-FPGA-Clock/Simple-FPGA-Clock/Simple-FPGA-Clock.srcs/sources_1/imports/文档/KEY_SEG.v:23]
+INFO: [Synth 8-638] synthesizing module 'new_clock_assembly' [C:/Users/46162/Desktop/Simple-FPGA-Clock/Simple-FPGA-Clock/Simple-FPGA-Clock.srcs/sources_1/new/new_clock_assembly.v:23]
+INFO: [Synth 8-638] synthesizing module 'half_sec_timer' [C:/Users/46162/Desktop/Simple-FPGA-Clock/Simple-FPGA-Clock/Simple-FPGA-Clock.srcs/sources_1/new/half_sec_timer.v:23]
+INFO: [Synth 8-256] done synthesizing module 'half_sec_timer' (2#1) [C:/Users/46162/Desktop/Simple-FPGA-Clock/Simple-FPGA-Clock/Simple-FPGA-Clock.srcs/sources_1/new/half_sec_timer.v:23]
+INFO: [Synth 8-638] synthesizing module 'new_counter_sub' [C:/Users/46162/Desktop/Simple-FPGA-Clock/Simple-FPGA-Clock/Simple-FPGA-Clock.srcs/sources_1/new/new_counter_sub.v:23]
+	Parameter cc bound to: 60 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'new_counter_setter' [C:/Users/46162/Desktop/Simple-FPGA-Clock/Simple-FPGA-Clock/Simple-FPGA-Clock.srcs/sources_1/new/new_counter_setter.v:28]
+	Parameter cout bound to: 60 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'decimal_decoder' [C:/Users/46162/Desktop/Simple-FPGA-Clock/Simple-FPGA-Clock/Simple-FPGA-Clock.srcs/sources_1/new/decimal_decoder.v:25]
+INFO: [Synth 8-256] done synthesizing module 'decimal_decoder' (3#1) [C:/Users/46162/Desktop/Simple-FPGA-Clock/Simple-FPGA-Clock/Simple-FPGA-Clock.srcs/sources_1/new/decimal_decoder.v:25]
+INFO: [Synth 8-638] synthesizing module 'decimal_encoder' [C:/Users/46162/Desktop/Simple-FPGA-Clock/Simple-FPGA-Clock/Simple-FPGA-Clock.srcs/sources_1/new/decimal_encoder.v:23]
+INFO: [Synth 8-256] done synthesizing module 'decimal_encoder' (4#1) [C:/Users/46162/Desktop/Simple-FPGA-Clock/Simple-FPGA-Clock/Simple-FPGA-Clock.srcs/sources_1/new/decimal_encoder.v:23]
+INFO: [Synth 8-256] done synthesizing module 'new_counter_setter' (5#1) [C:/Users/46162/Desktop/Simple-FPGA-Clock/Simple-FPGA-Clock/Simple-FPGA-Clock.srcs/sources_1/new/new_counter_setter.v:28]
+INFO: [Synth 8-638] synthesizing module 'new_counter' [C:/Users/46162/Desktop/Simple-FPGA-Clock/Simple-FPGA-Clock/Simple-FPGA-Clock.srcs/sources_1/new/new_counter_24.v:23]
+	Parameter cout bound to: 60 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'new_counter' (6#1) [C:/Users/46162/Desktop/Simple-FPGA-Clock/Simple-FPGA-Clock/Simple-FPGA-Clock.srcs/sources_1/new/new_counter_24.v:23]
+INFO: [Synth 8-256] done synthesizing module 'new_counter_sub' (7#1) [C:/Users/46162/Desktop/Simple-FPGA-Clock/Simple-FPGA-Clock/Simple-FPGA-Clock.srcs/sources_1/new/new_counter_sub.v:23]
+INFO: [Synth 8-638] synthesizing module 'new_counter_sub__parameterized0' [C:/Users/46162/Desktop/Simple-FPGA-Clock/Simple-FPGA-Clock/Simple-FPGA-Clock.srcs/sources_1/new/new_counter_sub.v:23]
+	Parameter cc bound to: 24 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'new_counter_setter__parameterized0' [C:/Users/46162/Desktop/Simple-FPGA-Clock/Simple-FPGA-Clock/Simple-FPGA-Clock.srcs/sources_1/new/new_counter_setter.v:28]
+	Parameter cout bound to: 24 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'new_counter_setter__parameterized0' (7#1) [C:/Users/46162/Desktop/Simple-FPGA-Clock/Simple-FPGA-Clock/Simple-FPGA-Clock.srcs/sources_1/new/new_counter_setter.v:28]
+INFO: [Synth 8-638] synthesizing module 'new_counter__parameterized0' [C:/Users/46162/Desktop/Simple-FPGA-Clock/Simple-FPGA-Clock/Simple-FPGA-Clock.srcs/sources_1/new/new_counter_24.v:23]
+	Parameter cout bound to: 24 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'new_counter__parameterized0' (7#1) [C:/Users/46162/Desktop/Simple-FPGA-Clock/Simple-FPGA-Clock/Simple-FPGA-Clock.srcs/sources_1/new/new_counter_24.v:23]
+INFO: [Synth 8-256] done synthesizing module 'new_counter_sub__parameterized0' (7#1) [C:/Users/46162/Desktop/Simple-FPGA-Clock/Simple-FPGA-Clock/Simple-FPGA-Clock.srcs/sources_1/new/new_counter_sub.v:23]
+INFO: [Synth 8-638] synthesizing module 'seg_assembly' [C:/Users/46162/Desktop/Simple-FPGA-Clock/Simple-FPGA-Clock/Simple-FPGA-Clock.srcs/sources_1/new/seg_assembly.v:24]
+INFO: [Synth 8-638] synthesizing module 'clock_2000Hz' [C:/Users/46162/Desktop/Simple-FPGA-Clock/Simple-FPGA-Clock/Simple-FPGA-Clock.srcs/sources_1/new/clock_2000Hz.v:23]
+INFO: [Synth 8-256] done synthesizing module 'clock_2000Hz' (8#1) [C:/Users/46162/Desktop/Simple-FPGA-Clock/Simple-FPGA-Clock/Simple-FPGA-Clock.srcs/sources_1/new/clock_2000Hz.v:23]
+INFO: [Synth 8-638] synthesizing module 'light_7seg' [C:/Users/46162/Desktop/Simple-FPGA-Clock/Simple-FPGA-Clock/Simple-FPGA-Clock.srcs/sources_1/imports/new/light_7seg.v:23]
+INFO: [Synth 8-226] default block is never used [C:/Users/46162/Desktop/Simple-FPGA-Clock/Simple-FPGA-Clock/Simple-FPGA-Clock.srcs/sources_1/imports/new/light_7seg.v:27]
+INFO: [Synth 8-256] done synthesizing module 'light_7seg' (9#1) [C:/Users/46162/Desktop/Simple-FPGA-Clock/Simple-FPGA-Clock/Simple-FPGA-Clock.srcs/sources_1/imports/new/light_7seg.v:23]
+INFO: [Synth 8-638] synthesizing module 'seg_scanner' [C:/Users/46162/Desktop/Simple-FPGA-Clock/Simple-FPGA-Clock/Simple-FPGA-Clock.srcs/sources_1/imports/new/seg_scanner.v:25]
 	Parameter seg_num bound to: 8 - type: integer 
-INFO: [Synth 8-155] case statement is not full and has no default [/home/moe/Simple-FPGA-Clock/Simple-FPGA-Clock.srcs/sources_1/imports/new/seg_scanner.v:48]
-INFO: [Synth 8-256] done synthesizing module 'seg_scanner' (9#1) [/home/moe/Simple-FPGA-Clock/Simple-FPGA-Clock.srcs/sources_1/imports/new/seg_scanner.v:25]
-INFO: [Synth 8-256] done synthesizing module 'seg_assembly' (10#1) [/home/moe/Simple-FPGA-Clock/Simple-FPGA-Clock.srcs/sources_1/new/seg_assembly.v:24]
-WARNING: [Synth 8-3848] Net set_sec in module/entity clock_assembly does not have driver. [/home/moe/Simple-FPGA-Clock/Simple-FPGA-Clock.srcs/sources_1/new/clock_assembly.v:54]
-WARNING: [Synth 8-3848] Net set_min in module/entity clock_assembly does not have driver. [/home/moe/Simple-FPGA-Clock/Simple-FPGA-Clock.srcs/sources_1/new/clock_assembly.v:55]
-WARNING: [Synth 8-3848] Net set_hour in module/entity clock_assembly does not have driver. [/home/moe/Simple-FPGA-Clock/Simple-FPGA-Clock.srcs/sources_1/new/clock_assembly.v:56]
-INFO: [Synth 8-256] done synthesizing module 'clock_assembly' (11#1) [/home/moe/Simple-FPGA-Clock/Simple-FPGA-Clock.srcs/sources_1/new/clock_assembly.v:23]
-INFO: [Synth 8-256] done synthesizing module 'clock_with_set' (12#1) [/home/moe/Simple-FPGA-Clock/Simple-FPGA-Clock.srcs/sources_1/new/clock_with_set.v:23]
-WARNING: [Synth 8-3331] design clock_assembly has unconnected port set_val[3]
-WARNING: [Synth 8-3331] design clock_assembly has unconnected port set_val[2]
-WARNING: [Synth 8-3331] design clock_assembly has unconnected port set_val[1]
-WARNING: [Synth 8-3331] design clock_assembly has unconnected port set_val[0]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/46162/Desktop/Simple-FPGA-Clock/Simple-FPGA-Clock/Simple-FPGA-Clock.srcs/sources_1/imports/new/seg_scanner.v:49]
+INFO: [Synth 8-256] done synthesizing module 'seg_scanner' (10#1) [C:/Users/46162/Desktop/Simple-FPGA-Clock/Simple-FPGA-Clock/Simple-FPGA-Clock.srcs/sources_1/imports/new/seg_scanner.v:25]
+INFO: [Synth 8-256] done synthesizing module 'seg_assembly' (11#1) [C:/Users/46162/Desktop/Simple-FPGA-Clock/Simple-FPGA-Clock/Simple-FPGA-Clock.srcs/sources_1/new/seg_assembly.v:24]
+INFO: [Synth 8-256] done synthesizing module 'new_clock_assembly' (12#1) [C:/Users/46162/Desktop/Simple-FPGA-Clock/Simple-FPGA-Clock/Simple-FPGA-Clock.srcs/sources_1/new/new_clock_assembly.v:23]
+INFO: [Synth 8-256] done synthesizing module 'clock_with_set' (13#1) [C:/Users/46162/Desktop/Simple-FPGA-Clock/Simple-FPGA-Clock/Simple-FPGA-Clock.srcs/sources_1/new/clock_with_set.v:23]
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 1283.688 ; gain = 99.523 ; free physical = 166 ; free virtual = 7742
+Finished RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 376.137 ; gain = 145.172
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -84,190 +85,187 @@ Report Check Netlist:
 +------+------------------+-------+---------+-------+------------------+
 |1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
 +------+------------------+-------+---------+-------+------------------+
-WARNING: [Synth 8-3295] tying undriven pin sec:set_val[0] to constant 0 [/home/moe/Simple-FPGA-Clock/Simple-FPGA-Clock.srcs/sources_1/new/clock_assembly.v:54]
-WARNING: [Synth 8-3295] tying undriven pin min:set_val[0] to constant 0 [/home/moe/Simple-FPGA-Clock/Simple-FPGA-Clock.srcs/sources_1/new/clock_assembly.v:55]
-WARNING: [Synth 8-3295] tying undriven pin hour:set_val[0] to constant 0 [/home/moe/Simple-FPGA-Clock/Simple-FPGA-Clock.srcs/sources_1/new/clock_assembly.v:56]
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 1283.688 ; gain = 99.523 ; free physical = 163 ; free virtual = 7741
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 376.137 ; gain = 145.172
 ---------------------------------------------------------------------------------
 INFO: [Device 21-403] Loading part xc7a100tfgg484-1
 INFO: [Project 1-570] Preparing netlist for logic optimization
 
 Processing XDC Constraints
 Initializing timing engine
-Parsing XDC File [/home/moe/Simple-FPGA-Clock/Simple-FPGA-Clock.srcs/constrs_1/imports/exchange_src/KEY_SEG.xdc]
-WARNING: [Vivado 12-584] No ports matched 'h[3]'. [/home/moe/Simple-FPGA-Clock/Simple-FPGA-Clock.srcs/constrs_1/imports/exchange_src/KEY_SEG.xdc:70]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/moe/Simple-FPGA-Clock/Simple-FPGA-Clock.srcs/constrs_1/imports/exchange_src/KEY_SEG.xdc:70]
+Parsing XDC File [C:/Users/46162/Desktop/Simple-FPGA-Clock/Simple-FPGA-Clock/Simple-FPGA-Clock.srcs/constrs_1/imports/exchange_src/KEY_SEG.xdc]
+WARNING: [Vivado 12-584] No ports matched 'h[3]'. [C:/Users/46162/Desktop/Simple-FPGA-Clock/Simple-FPGA-Clock/Simple-FPGA-Clock.srcs/constrs_1/imports/exchange_src/KEY_SEG.xdc:70]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/46162/Desktop/Simple-FPGA-Clock/Simple-FPGA-Clock/Simple-FPGA-Clock.srcs/constrs_1/imports/exchange_src/KEY_SEG.xdc:70]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'h[2]'. [/home/moe/Simple-FPGA-Clock/Simple-FPGA-Clock.srcs/constrs_1/imports/exchange_src/KEY_SEG.xdc:71]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/moe/Simple-FPGA-Clock/Simple-FPGA-Clock.srcs/constrs_1/imports/exchange_src/KEY_SEG.xdc:71]
+WARNING: [Vivado 12-584] No ports matched 'h[2]'. [C:/Users/46162/Desktop/Simple-FPGA-Clock/Simple-FPGA-Clock/Simple-FPGA-Clock.srcs/constrs_1/imports/exchange_src/KEY_SEG.xdc:71]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/46162/Desktop/Simple-FPGA-Clock/Simple-FPGA-Clock/Simple-FPGA-Clock.srcs/constrs_1/imports/exchange_src/KEY_SEG.xdc:71]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'h[1]'. [/home/moe/Simple-FPGA-Clock/Simple-FPGA-Clock.srcs/constrs_1/imports/exchange_src/KEY_SEG.xdc:72]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/moe/Simple-FPGA-Clock/Simple-FPGA-Clock.srcs/constrs_1/imports/exchange_src/KEY_SEG.xdc:72]
+WARNING: [Vivado 12-584] No ports matched 'h[1]'. [C:/Users/46162/Desktop/Simple-FPGA-Clock/Simple-FPGA-Clock/Simple-FPGA-Clock.srcs/constrs_1/imports/exchange_src/KEY_SEG.xdc:72]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/46162/Desktop/Simple-FPGA-Clock/Simple-FPGA-Clock/Simple-FPGA-Clock.srcs/constrs_1/imports/exchange_src/KEY_SEG.xdc:72]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'h[0]'. [/home/moe/Simple-FPGA-Clock/Simple-FPGA-Clock.srcs/constrs_1/imports/exchange_src/KEY_SEG.xdc:73]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/moe/Simple-FPGA-Clock/Simple-FPGA-Clock.srcs/constrs_1/imports/exchange_src/KEY_SEG.xdc:73]
+WARNING: [Vivado 12-584] No ports matched 'h[0]'. [C:/Users/46162/Desktop/Simple-FPGA-Clock/Simple-FPGA-Clock/Simple-FPGA-Clock.srcs/constrs_1/imports/exchange_src/KEY_SEG.xdc:73]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/46162/Desktop/Simple-FPGA-Clock/Simple-FPGA-Clock/Simple-FPGA-Clock.srcs/constrs_1/imports/exchange_src/KEY_SEG.xdc:73]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'g[3]'. [/home/moe/Simple-FPGA-Clock/Simple-FPGA-Clock.srcs/constrs_1/imports/exchange_src/KEY_SEG.xdc:74]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/moe/Simple-FPGA-Clock/Simple-FPGA-Clock.srcs/constrs_1/imports/exchange_src/KEY_SEG.xdc:74]
+WARNING: [Vivado 12-584] No ports matched 'g[3]'. [C:/Users/46162/Desktop/Simple-FPGA-Clock/Simple-FPGA-Clock/Simple-FPGA-Clock.srcs/constrs_1/imports/exchange_src/KEY_SEG.xdc:74]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/46162/Desktop/Simple-FPGA-Clock/Simple-FPGA-Clock/Simple-FPGA-Clock.srcs/constrs_1/imports/exchange_src/KEY_SEG.xdc:74]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'g[2]'. [/home/moe/Simple-FPGA-Clock/Simple-FPGA-Clock.srcs/constrs_1/imports/exchange_src/KEY_SEG.xdc:75]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/moe/Simple-FPGA-Clock/Simple-FPGA-Clock.srcs/constrs_1/imports/exchange_src/KEY_SEG.xdc:75]
+WARNING: [Vivado 12-584] No ports matched 'g[2]'. [C:/Users/46162/Desktop/Simple-FPGA-Clock/Simple-FPGA-Clock/Simple-FPGA-Clock.srcs/constrs_1/imports/exchange_src/KEY_SEG.xdc:75]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/46162/Desktop/Simple-FPGA-Clock/Simple-FPGA-Clock/Simple-FPGA-Clock.srcs/constrs_1/imports/exchange_src/KEY_SEG.xdc:75]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'g[1]'. [/home/moe/Simple-FPGA-Clock/Simple-FPGA-Clock.srcs/constrs_1/imports/exchange_src/KEY_SEG.xdc:76]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/moe/Simple-FPGA-Clock/Simple-FPGA-Clock.srcs/constrs_1/imports/exchange_src/KEY_SEG.xdc:76]
+WARNING: [Vivado 12-584] No ports matched 'g[1]'. [C:/Users/46162/Desktop/Simple-FPGA-Clock/Simple-FPGA-Clock/Simple-FPGA-Clock.srcs/constrs_1/imports/exchange_src/KEY_SEG.xdc:76]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/46162/Desktop/Simple-FPGA-Clock/Simple-FPGA-Clock/Simple-FPGA-Clock.srcs/constrs_1/imports/exchange_src/KEY_SEG.xdc:76]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'g[0]'. [/home/moe/Simple-FPGA-Clock/Simple-FPGA-Clock.srcs/constrs_1/imports/exchange_src/KEY_SEG.xdc:77]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/moe/Simple-FPGA-Clock/Simple-FPGA-Clock.srcs/constrs_1/imports/exchange_src/KEY_SEG.xdc:77]
+WARNING: [Vivado 12-584] No ports matched 'g[0]'. [C:/Users/46162/Desktop/Simple-FPGA-Clock/Simple-FPGA-Clock/Simple-FPGA-Clock.srcs/constrs_1/imports/exchange_src/KEY_SEG.xdc:77]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/46162/Desktop/Simple-FPGA-Clock/Simple-FPGA-Clock/Simple-FPGA-Clock.srcs/constrs_1/imports/exchange_src/KEY_SEG.xdc:77]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'f[3]'. [/home/moe/Simple-FPGA-Clock/Simple-FPGA-Clock.srcs/constrs_1/imports/exchange_src/KEY_SEG.xdc:78]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/moe/Simple-FPGA-Clock/Simple-FPGA-Clock.srcs/constrs_1/imports/exchange_src/KEY_SEG.xdc:78]
+WARNING: [Vivado 12-584] No ports matched 'f[3]'. [C:/Users/46162/Desktop/Simple-FPGA-Clock/Simple-FPGA-Clock/Simple-FPGA-Clock.srcs/constrs_1/imports/exchange_src/KEY_SEG.xdc:78]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/46162/Desktop/Simple-FPGA-Clock/Simple-FPGA-Clock/Simple-FPGA-Clock.srcs/constrs_1/imports/exchange_src/KEY_SEG.xdc:78]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'f[2]'. [/home/moe/Simple-FPGA-Clock/Simple-FPGA-Clock.srcs/constrs_1/imports/exchange_src/KEY_SEG.xdc:79]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/moe/Simple-FPGA-Clock/Simple-FPGA-Clock.srcs/constrs_1/imports/exchange_src/KEY_SEG.xdc:79]
+WARNING: [Vivado 12-584] No ports matched 'f[2]'. [C:/Users/46162/Desktop/Simple-FPGA-Clock/Simple-FPGA-Clock/Simple-FPGA-Clock.srcs/constrs_1/imports/exchange_src/KEY_SEG.xdc:79]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/46162/Desktop/Simple-FPGA-Clock/Simple-FPGA-Clock/Simple-FPGA-Clock.srcs/constrs_1/imports/exchange_src/KEY_SEG.xdc:79]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'f[1]'. [/home/moe/Simple-FPGA-Clock/Simple-FPGA-Clock.srcs/constrs_1/imports/exchange_src/KEY_SEG.xdc:80]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/moe/Simple-FPGA-Clock/Simple-FPGA-Clock.srcs/constrs_1/imports/exchange_src/KEY_SEG.xdc:80]
+WARNING: [Vivado 12-584] No ports matched 'f[1]'. [C:/Users/46162/Desktop/Simple-FPGA-Clock/Simple-FPGA-Clock/Simple-FPGA-Clock.srcs/constrs_1/imports/exchange_src/KEY_SEG.xdc:80]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/46162/Desktop/Simple-FPGA-Clock/Simple-FPGA-Clock/Simple-FPGA-Clock.srcs/constrs_1/imports/exchange_src/KEY_SEG.xdc:80]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'f[0]'. [/home/moe/Simple-FPGA-Clock/Simple-FPGA-Clock.srcs/constrs_1/imports/exchange_src/KEY_SEG.xdc:81]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/moe/Simple-FPGA-Clock/Simple-FPGA-Clock.srcs/constrs_1/imports/exchange_src/KEY_SEG.xdc:81]
+WARNING: [Vivado 12-584] No ports matched 'f[0]'. [C:/Users/46162/Desktop/Simple-FPGA-Clock/Simple-FPGA-Clock/Simple-FPGA-Clock.srcs/constrs_1/imports/exchange_src/KEY_SEG.xdc:81]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/46162/Desktop/Simple-FPGA-Clock/Simple-FPGA-Clock/Simple-FPGA-Clock.srcs/constrs_1/imports/exchange_src/KEY_SEG.xdc:81]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'e[3]'. [/home/moe/Simple-FPGA-Clock/Simple-FPGA-Clock.srcs/constrs_1/imports/exchange_src/KEY_SEG.xdc:82]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/moe/Simple-FPGA-Clock/Simple-FPGA-Clock.srcs/constrs_1/imports/exchange_src/KEY_SEG.xdc:82]
+WARNING: [Vivado 12-584] No ports matched 'e[3]'. [C:/Users/46162/Desktop/Simple-FPGA-Clock/Simple-FPGA-Clock/Simple-FPGA-Clock.srcs/constrs_1/imports/exchange_src/KEY_SEG.xdc:82]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/46162/Desktop/Simple-FPGA-Clock/Simple-FPGA-Clock/Simple-FPGA-Clock.srcs/constrs_1/imports/exchange_src/KEY_SEG.xdc:82]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'e[2]'. [/home/moe/Simple-FPGA-Clock/Simple-FPGA-Clock.srcs/constrs_1/imports/exchange_src/KEY_SEG.xdc:83]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/moe/Simple-FPGA-Clock/Simple-FPGA-Clock.srcs/constrs_1/imports/exchange_src/KEY_SEG.xdc:83]
+WARNING: [Vivado 12-584] No ports matched 'e[2]'. [C:/Users/46162/Desktop/Simple-FPGA-Clock/Simple-FPGA-Clock/Simple-FPGA-Clock.srcs/constrs_1/imports/exchange_src/KEY_SEG.xdc:83]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/46162/Desktop/Simple-FPGA-Clock/Simple-FPGA-Clock/Simple-FPGA-Clock.srcs/constrs_1/imports/exchange_src/KEY_SEG.xdc:83]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'e[1]'. [/home/moe/Simple-FPGA-Clock/Simple-FPGA-Clock.srcs/constrs_1/imports/exchange_src/KEY_SEG.xdc:84]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/moe/Simple-FPGA-Clock/Simple-FPGA-Clock.srcs/constrs_1/imports/exchange_src/KEY_SEG.xdc:84]
+WARNING: [Vivado 12-584] No ports matched 'e[1]'. [C:/Users/46162/Desktop/Simple-FPGA-Clock/Simple-FPGA-Clock/Simple-FPGA-Clock.srcs/constrs_1/imports/exchange_src/KEY_SEG.xdc:84]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/46162/Desktop/Simple-FPGA-Clock/Simple-FPGA-Clock/Simple-FPGA-Clock.srcs/constrs_1/imports/exchange_src/KEY_SEG.xdc:84]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'e[0]'. [/home/moe/Simple-FPGA-Clock/Simple-FPGA-Clock.srcs/constrs_1/imports/exchange_src/KEY_SEG.xdc:85]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/moe/Simple-FPGA-Clock/Simple-FPGA-Clock.srcs/constrs_1/imports/exchange_src/KEY_SEG.xdc:85]
+WARNING: [Vivado 12-584] No ports matched 'e[0]'. [C:/Users/46162/Desktop/Simple-FPGA-Clock/Simple-FPGA-Clock/Simple-FPGA-Clock.srcs/constrs_1/imports/exchange_src/KEY_SEG.xdc:85]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/46162/Desktop/Simple-FPGA-Clock/Simple-FPGA-Clock/Simple-FPGA-Clock.srcs/constrs_1/imports/exchange_src/KEY_SEG.xdc:85]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'd[3]'. [/home/moe/Simple-FPGA-Clock/Simple-FPGA-Clock.srcs/constrs_1/imports/exchange_src/KEY_SEG.xdc:86]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/moe/Simple-FPGA-Clock/Simple-FPGA-Clock.srcs/constrs_1/imports/exchange_src/KEY_SEG.xdc:86]
+WARNING: [Vivado 12-584] No ports matched 'd[3]'. [C:/Users/46162/Desktop/Simple-FPGA-Clock/Simple-FPGA-Clock/Simple-FPGA-Clock.srcs/constrs_1/imports/exchange_src/KEY_SEG.xdc:86]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/46162/Desktop/Simple-FPGA-Clock/Simple-FPGA-Clock/Simple-FPGA-Clock.srcs/constrs_1/imports/exchange_src/KEY_SEG.xdc:86]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'd[2]'. [/home/moe/Simple-FPGA-Clock/Simple-FPGA-Clock.srcs/constrs_1/imports/exchange_src/KEY_SEG.xdc:87]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/moe/Simple-FPGA-Clock/Simple-FPGA-Clock.srcs/constrs_1/imports/exchange_src/KEY_SEG.xdc:87]
+WARNING: [Vivado 12-584] No ports matched 'd[2]'. [C:/Users/46162/Desktop/Simple-FPGA-Clock/Simple-FPGA-Clock/Simple-FPGA-Clock.srcs/constrs_1/imports/exchange_src/KEY_SEG.xdc:87]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/46162/Desktop/Simple-FPGA-Clock/Simple-FPGA-Clock/Simple-FPGA-Clock.srcs/constrs_1/imports/exchange_src/KEY_SEG.xdc:87]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'd[1]'. [/home/moe/Simple-FPGA-Clock/Simple-FPGA-Clock.srcs/constrs_1/imports/exchange_src/KEY_SEG.xdc:88]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/moe/Simple-FPGA-Clock/Simple-FPGA-Clock.srcs/constrs_1/imports/exchange_src/KEY_SEG.xdc:88]
+WARNING: [Vivado 12-584] No ports matched 'd[1]'. [C:/Users/46162/Desktop/Simple-FPGA-Clock/Simple-FPGA-Clock/Simple-FPGA-Clock.srcs/constrs_1/imports/exchange_src/KEY_SEG.xdc:88]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/46162/Desktop/Simple-FPGA-Clock/Simple-FPGA-Clock/Simple-FPGA-Clock.srcs/constrs_1/imports/exchange_src/KEY_SEG.xdc:88]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'd[0]'. [/home/moe/Simple-FPGA-Clock/Simple-FPGA-Clock.srcs/constrs_1/imports/exchange_src/KEY_SEG.xdc:89]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/moe/Simple-FPGA-Clock/Simple-FPGA-Clock.srcs/constrs_1/imports/exchange_src/KEY_SEG.xdc:89]
+WARNING: [Vivado 12-584] No ports matched 'd[0]'. [C:/Users/46162/Desktop/Simple-FPGA-Clock/Simple-FPGA-Clock/Simple-FPGA-Clock.srcs/constrs_1/imports/exchange_src/KEY_SEG.xdc:89]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/46162/Desktop/Simple-FPGA-Clock/Simple-FPGA-Clock/Simple-FPGA-Clock.srcs/constrs_1/imports/exchange_src/KEY_SEG.xdc:89]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'c[3]'. [/home/moe/Simple-FPGA-Clock/Simple-FPGA-Clock.srcs/constrs_1/imports/exchange_src/KEY_SEG.xdc:90]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/moe/Simple-FPGA-Clock/Simple-FPGA-Clock.srcs/constrs_1/imports/exchange_src/KEY_SEG.xdc:90]
+WARNING: [Vivado 12-584] No ports matched 'c[3]'. [C:/Users/46162/Desktop/Simple-FPGA-Clock/Simple-FPGA-Clock/Simple-FPGA-Clock.srcs/constrs_1/imports/exchange_src/KEY_SEG.xdc:90]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/46162/Desktop/Simple-FPGA-Clock/Simple-FPGA-Clock/Simple-FPGA-Clock.srcs/constrs_1/imports/exchange_src/KEY_SEG.xdc:90]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'c[2]'. [/home/moe/Simple-FPGA-Clock/Simple-FPGA-Clock.srcs/constrs_1/imports/exchange_src/KEY_SEG.xdc:91]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/moe/Simple-FPGA-Clock/Simple-FPGA-Clock.srcs/constrs_1/imports/exchange_src/KEY_SEG.xdc:91]
+WARNING: [Vivado 12-584] No ports matched 'c[2]'. [C:/Users/46162/Desktop/Simple-FPGA-Clock/Simple-FPGA-Clock/Simple-FPGA-Clock.srcs/constrs_1/imports/exchange_src/KEY_SEG.xdc:91]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/46162/Desktop/Simple-FPGA-Clock/Simple-FPGA-Clock/Simple-FPGA-Clock.srcs/constrs_1/imports/exchange_src/KEY_SEG.xdc:91]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'c[1]'. [/home/moe/Simple-FPGA-Clock/Simple-FPGA-Clock.srcs/constrs_1/imports/exchange_src/KEY_SEG.xdc:92]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/moe/Simple-FPGA-Clock/Simple-FPGA-Clock.srcs/constrs_1/imports/exchange_src/KEY_SEG.xdc:92]
+WARNING: [Vivado 12-584] No ports matched 'c[1]'. [C:/Users/46162/Desktop/Simple-FPGA-Clock/Simple-FPGA-Clock/Simple-FPGA-Clock.srcs/constrs_1/imports/exchange_src/KEY_SEG.xdc:92]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/46162/Desktop/Simple-FPGA-Clock/Simple-FPGA-Clock/Simple-FPGA-Clock.srcs/constrs_1/imports/exchange_src/KEY_SEG.xdc:92]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'c[0]'. [/home/moe/Simple-FPGA-Clock/Simple-FPGA-Clock.srcs/constrs_1/imports/exchange_src/KEY_SEG.xdc:93]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/moe/Simple-FPGA-Clock/Simple-FPGA-Clock.srcs/constrs_1/imports/exchange_src/KEY_SEG.xdc:93]
+WARNING: [Vivado 12-584] No ports matched 'c[0]'. [C:/Users/46162/Desktop/Simple-FPGA-Clock/Simple-FPGA-Clock/Simple-FPGA-Clock.srcs/constrs_1/imports/exchange_src/KEY_SEG.xdc:93]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/46162/Desktop/Simple-FPGA-Clock/Simple-FPGA-Clock/Simple-FPGA-Clock.srcs/constrs_1/imports/exchange_src/KEY_SEG.xdc:93]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'b[3]'. [/home/moe/Simple-FPGA-Clock/Simple-FPGA-Clock.srcs/constrs_1/imports/exchange_src/KEY_SEG.xdc:94]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/moe/Simple-FPGA-Clock/Simple-FPGA-Clock.srcs/constrs_1/imports/exchange_src/KEY_SEG.xdc:94]
+WARNING: [Vivado 12-584] No ports matched 'b[3]'. [C:/Users/46162/Desktop/Simple-FPGA-Clock/Simple-FPGA-Clock/Simple-FPGA-Clock.srcs/constrs_1/imports/exchange_src/KEY_SEG.xdc:94]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/46162/Desktop/Simple-FPGA-Clock/Simple-FPGA-Clock/Simple-FPGA-Clock.srcs/constrs_1/imports/exchange_src/KEY_SEG.xdc:94]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'b[2]'. [/home/moe/Simple-FPGA-Clock/Simple-FPGA-Clock.srcs/constrs_1/imports/exchange_src/KEY_SEG.xdc:95]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/moe/Simple-FPGA-Clock/Simple-FPGA-Clock.srcs/constrs_1/imports/exchange_src/KEY_SEG.xdc:95]
+WARNING: [Vivado 12-584] No ports matched 'b[2]'. [C:/Users/46162/Desktop/Simple-FPGA-Clock/Simple-FPGA-Clock/Simple-FPGA-Clock.srcs/constrs_1/imports/exchange_src/KEY_SEG.xdc:95]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/46162/Desktop/Simple-FPGA-Clock/Simple-FPGA-Clock/Simple-FPGA-Clock.srcs/constrs_1/imports/exchange_src/KEY_SEG.xdc:95]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'b[1]'. [/home/moe/Simple-FPGA-Clock/Simple-FPGA-Clock.srcs/constrs_1/imports/exchange_src/KEY_SEG.xdc:96]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/moe/Simple-FPGA-Clock/Simple-FPGA-Clock.srcs/constrs_1/imports/exchange_src/KEY_SEG.xdc:96]
+WARNING: [Vivado 12-584] No ports matched 'b[1]'. [C:/Users/46162/Desktop/Simple-FPGA-Clock/Simple-FPGA-Clock/Simple-FPGA-Clock.srcs/constrs_1/imports/exchange_src/KEY_SEG.xdc:96]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/46162/Desktop/Simple-FPGA-Clock/Simple-FPGA-Clock/Simple-FPGA-Clock.srcs/constrs_1/imports/exchange_src/KEY_SEG.xdc:96]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'b[0]'. [/home/moe/Simple-FPGA-Clock/Simple-FPGA-Clock.srcs/constrs_1/imports/exchange_src/KEY_SEG.xdc:97]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/moe/Simple-FPGA-Clock/Simple-FPGA-Clock.srcs/constrs_1/imports/exchange_src/KEY_SEG.xdc:97]
+WARNING: [Vivado 12-584] No ports matched 'b[0]'. [C:/Users/46162/Desktop/Simple-FPGA-Clock/Simple-FPGA-Clock/Simple-FPGA-Clock.srcs/constrs_1/imports/exchange_src/KEY_SEG.xdc:97]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/46162/Desktop/Simple-FPGA-Clock/Simple-FPGA-Clock/Simple-FPGA-Clock.srcs/constrs_1/imports/exchange_src/KEY_SEG.xdc:97]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'a[3]'. [/home/moe/Simple-FPGA-Clock/Simple-FPGA-Clock.srcs/constrs_1/imports/exchange_src/KEY_SEG.xdc:98]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/moe/Simple-FPGA-Clock/Simple-FPGA-Clock.srcs/constrs_1/imports/exchange_src/KEY_SEG.xdc:98]
+WARNING: [Vivado 12-584] No ports matched 'a[3]'. [C:/Users/46162/Desktop/Simple-FPGA-Clock/Simple-FPGA-Clock/Simple-FPGA-Clock.srcs/constrs_1/imports/exchange_src/KEY_SEG.xdc:98]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/46162/Desktop/Simple-FPGA-Clock/Simple-FPGA-Clock/Simple-FPGA-Clock.srcs/constrs_1/imports/exchange_src/KEY_SEG.xdc:98]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'a[2]'. [/home/moe/Simple-FPGA-Clock/Simple-FPGA-Clock.srcs/constrs_1/imports/exchange_src/KEY_SEG.xdc:99]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/moe/Simple-FPGA-Clock/Simple-FPGA-Clock.srcs/constrs_1/imports/exchange_src/KEY_SEG.xdc:99]
+WARNING: [Vivado 12-584] No ports matched 'a[2]'. [C:/Users/46162/Desktop/Simple-FPGA-Clock/Simple-FPGA-Clock/Simple-FPGA-Clock.srcs/constrs_1/imports/exchange_src/KEY_SEG.xdc:99]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/46162/Desktop/Simple-FPGA-Clock/Simple-FPGA-Clock/Simple-FPGA-Clock.srcs/constrs_1/imports/exchange_src/KEY_SEG.xdc:99]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'a[1]'. [/home/moe/Simple-FPGA-Clock/Simple-FPGA-Clock.srcs/constrs_1/imports/exchange_src/KEY_SEG.xdc:100]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/moe/Simple-FPGA-Clock/Simple-FPGA-Clock.srcs/constrs_1/imports/exchange_src/KEY_SEG.xdc:100]
+WARNING: [Vivado 12-584] No ports matched 'a[1]'. [C:/Users/46162/Desktop/Simple-FPGA-Clock/Simple-FPGA-Clock/Simple-FPGA-Clock.srcs/constrs_1/imports/exchange_src/KEY_SEG.xdc:100]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/46162/Desktop/Simple-FPGA-Clock/Simple-FPGA-Clock/Simple-FPGA-Clock.srcs/constrs_1/imports/exchange_src/KEY_SEG.xdc:100]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'a[0]'. [/home/moe/Simple-FPGA-Clock/Simple-FPGA-Clock.srcs/constrs_1/imports/exchange_src/KEY_SEG.xdc:101]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/moe/Simple-FPGA-Clock/Simple-FPGA-Clock.srcs/constrs_1/imports/exchange_src/KEY_SEG.xdc:101]
+WARNING: [Vivado 12-584] No ports matched 'a[0]'. [C:/Users/46162/Desktop/Simple-FPGA-Clock/Simple-FPGA-Clock/Simple-FPGA-Clock.srcs/constrs_1/imports/exchange_src/KEY_SEG.xdc:101]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/46162/Desktop/Simple-FPGA-Clock/Simple-FPGA-Clock/Simple-FPGA-Clock.srcs/constrs_1/imports/exchange_src/KEY_SEG.xdc:101]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'a[3]'. [/home/moe/Simple-FPGA-Clock/Simple-FPGA-Clock.srcs/constrs_1/imports/exchange_src/KEY_SEG.xdc:102]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/moe/Simple-FPGA-Clock/Simple-FPGA-Clock.srcs/constrs_1/imports/exchange_src/KEY_SEG.xdc:102]
+WARNING: [Vivado 12-584] No ports matched 'a[3]'. [C:/Users/46162/Desktop/Simple-FPGA-Clock/Simple-FPGA-Clock/Simple-FPGA-Clock.srcs/constrs_1/imports/exchange_src/KEY_SEG.xdc:102]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/46162/Desktop/Simple-FPGA-Clock/Simple-FPGA-Clock/Simple-FPGA-Clock.srcs/constrs_1/imports/exchange_src/KEY_SEG.xdc:102]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'a[2]'. [/home/moe/Simple-FPGA-Clock/Simple-FPGA-Clock.srcs/constrs_1/imports/exchange_src/KEY_SEG.xdc:103]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/moe/Simple-FPGA-Clock/Simple-FPGA-Clock.srcs/constrs_1/imports/exchange_src/KEY_SEG.xdc:103]
+WARNING: [Vivado 12-584] No ports matched 'a[2]'. [C:/Users/46162/Desktop/Simple-FPGA-Clock/Simple-FPGA-Clock/Simple-FPGA-Clock.srcs/constrs_1/imports/exchange_src/KEY_SEG.xdc:103]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/46162/Desktop/Simple-FPGA-Clock/Simple-FPGA-Clock/Simple-FPGA-Clock.srcs/constrs_1/imports/exchange_src/KEY_SEG.xdc:103]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'a[0]'. [/home/moe/Simple-FPGA-Clock/Simple-FPGA-Clock.srcs/constrs_1/imports/exchange_src/KEY_SEG.xdc:104]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/moe/Simple-FPGA-Clock/Simple-FPGA-Clock.srcs/constrs_1/imports/exchange_src/KEY_SEG.xdc:104]
+WARNING: [Vivado 12-584] No ports matched 'a[0]'. [C:/Users/46162/Desktop/Simple-FPGA-Clock/Simple-FPGA-Clock/Simple-FPGA-Clock.srcs/constrs_1/imports/exchange_src/KEY_SEG.xdc:104]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/46162/Desktop/Simple-FPGA-Clock/Simple-FPGA-Clock/Simple-FPGA-Clock.srcs/constrs_1/imports/exchange_src/KEY_SEG.xdc:104]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'a[1]'. [/home/moe/Simple-FPGA-Clock/Simple-FPGA-Clock.srcs/constrs_1/imports/exchange_src/KEY_SEG.xdc:105]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/moe/Simple-FPGA-Clock/Simple-FPGA-Clock.srcs/constrs_1/imports/exchange_src/KEY_SEG.xdc:105]
+WARNING: [Vivado 12-584] No ports matched 'a[1]'. [C:/Users/46162/Desktop/Simple-FPGA-Clock/Simple-FPGA-Clock/Simple-FPGA-Clock.srcs/constrs_1/imports/exchange_src/KEY_SEG.xdc:105]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/46162/Desktop/Simple-FPGA-Clock/Simple-FPGA-Clock/Simple-FPGA-Clock.srcs/constrs_1/imports/exchange_src/KEY_SEG.xdc:105]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'b[3]'. [/home/moe/Simple-FPGA-Clock/Simple-FPGA-Clock.srcs/constrs_1/imports/exchange_src/KEY_SEG.xdc:106]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/moe/Simple-FPGA-Clock/Simple-FPGA-Clock.srcs/constrs_1/imports/exchange_src/KEY_SEG.xdc:106]
+WARNING: [Vivado 12-584] No ports matched 'b[3]'. [C:/Users/46162/Desktop/Simple-FPGA-Clock/Simple-FPGA-Clock/Simple-FPGA-Clock.srcs/constrs_1/imports/exchange_src/KEY_SEG.xdc:106]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/46162/Desktop/Simple-FPGA-Clock/Simple-FPGA-Clock/Simple-FPGA-Clock.srcs/constrs_1/imports/exchange_src/KEY_SEG.xdc:106]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'b[2]'. [/home/moe/Simple-FPGA-Clock/Simple-FPGA-Clock.srcs/constrs_1/imports/exchange_src/KEY_SEG.xdc:107]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/moe/Simple-FPGA-Clock/Simple-FPGA-Clock.srcs/constrs_1/imports/exchange_src/KEY_SEG.xdc:107]
+WARNING: [Vivado 12-584] No ports matched 'b[2]'. [C:/Users/46162/Desktop/Simple-FPGA-Clock/Simple-FPGA-Clock/Simple-FPGA-Clock.srcs/constrs_1/imports/exchange_src/KEY_SEG.xdc:107]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/46162/Desktop/Simple-FPGA-Clock/Simple-FPGA-Clock/Simple-FPGA-Clock.srcs/constrs_1/imports/exchange_src/KEY_SEG.xdc:107]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'b[1]'. [/home/moe/Simple-FPGA-Clock/Simple-FPGA-Clock.srcs/constrs_1/imports/exchange_src/KEY_SEG.xdc:108]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/moe/Simple-FPGA-Clock/Simple-FPGA-Clock.srcs/constrs_1/imports/exchange_src/KEY_SEG.xdc:108]
+WARNING: [Vivado 12-584] No ports matched 'b[1]'. [C:/Users/46162/Desktop/Simple-FPGA-Clock/Simple-FPGA-Clock/Simple-FPGA-Clock.srcs/constrs_1/imports/exchange_src/KEY_SEG.xdc:108]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/46162/Desktop/Simple-FPGA-Clock/Simple-FPGA-Clock/Simple-FPGA-Clock.srcs/constrs_1/imports/exchange_src/KEY_SEG.xdc:108]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'b[0]'. [/home/moe/Simple-FPGA-Clock/Simple-FPGA-Clock.srcs/constrs_1/imports/exchange_src/KEY_SEG.xdc:109]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/moe/Simple-FPGA-Clock/Simple-FPGA-Clock.srcs/constrs_1/imports/exchange_src/KEY_SEG.xdc:109]
+WARNING: [Vivado 12-584] No ports matched 'b[0]'. [C:/Users/46162/Desktop/Simple-FPGA-Clock/Simple-FPGA-Clock/Simple-FPGA-Clock.srcs/constrs_1/imports/exchange_src/KEY_SEG.xdc:109]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/46162/Desktop/Simple-FPGA-Clock/Simple-FPGA-Clock/Simple-FPGA-Clock.srcs/constrs_1/imports/exchange_src/KEY_SEG.xdc:109]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'buzz_out'. [/home/moe/Simple-FPGA-Clock/Simple-FPGA-Clock.srcs/constrs_1/imports/exchange_src/KEY_SEG.xdc:115]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/moe/Simple-FPGA-Clock/Simple-FPGA-Clock.srcs/constrs_1/imports/exchange_src/KEY_SEG.xdc:115]
+WARNING: [Vivado 12-584] No ports matched 'buzz_out'. [C:/Users/46162/Desktop/Simple-FPGA-Clock/Simple-FPGA-Clock/Simple-FPGA-Clock.srcs/constrs_1/imports/exchange_src/KEY_SEG.xdc:115]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/46162/Desktop/Simple-FPGA-Clock/Simple-FPGA-Clock/Simple-FPGA-Clock.srcs/constrs_1/imports/exchange_src/KEY_SEG.xdc:115]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'en'. [/home/moe/Simple-FPGA-Clock/Simple-FPGA-Clock.srcs/constrs_1/imports/exchange_src/KEY_SEG.xdc:116]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/moe/Simple-FPGA-Clock/Simple-FPGA-Clock.srcs/constrs_1/imports/exchange_src/KEY_SEG.xdc:116]
+WARNING: [Vivado 12-584] No ports matched 'en'. [C:/Users/46162/Desktop/Simple-FPGA-Clock/Simple-FPGA-Clock/Simple-FPGA-Clock.srcs/constrs_1/imports/exchange_src/KEY_SEG.xdc:116]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/46162/Desktop/Simple-FPGA-Clock/Simple-FPGA-Clock/Simple-FPGA-Clock.srcs/constrs_1/imports/exchange_src/KEY_SEG.xdc:116]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'en'. [/home/moe/Simple-FPGA-Clock/Simple-FPGA-Clock.srcs/constrs_1/imports/exchange_src/KEY_SEG.xdc:117]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/moe/Simple-FPGA-Clock/Simple-FPGA-Clock.srcs/constrs_1/imports/exchange_src/KEY_SEG.xdc:117]
+WARNING: [Vivado 12-584] No ports matched 'en'. [C:/Users/46162/Desktop/Simple-FPGA-Clock/Simple-FPGA-Clock/Simple-FPGA-Clock.srcs/constrs_1/imports/exchange_src/KEY_SEG.xdc:117]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/46162/Desktop/Simple-FPGA-Clock/Simple-FPGA-Clock/Simple-FPGA-Clock.srcs/constrs_1/imports/exchange_src/KEY_SEG.xdc:117]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'buzz_out'. [/home/moe/Simple-FPGA-Clock/Simple-FPGA-Clock.srcs/constrs_1/imports/exchange_src/KEY_SEG.xdc:118]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/moe/Simple-FPGA-Clock/Simple-FPGA-Clock.srcs/constrs_1/imports/exchange_src/KEY_SEG.xdc:118]
+WARNING: [Vivado 12-584] No ports matched 'buzz_out'. [C:/Users/46162/Desktop/Simple-FPGA-Clock/Simple-FPGA-Clock/Simple-FPGA-Clock.srcs/constrs_1/imports/exchange_src/KEY_SEG.xdc:118]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/46162/Desktop/Simple-FPGA-Clock/Simple-FPGA-Clock/Simple-FPGA-Clock.srcs/constrs_1/imports/exchange_src/KEY_SEG.xdc:118]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'led1'. [/home/moe/Simple-FPGA-Clock/Simple-FPGA-Clock.srcs/constrs_1/imports/exchange_src/KEY_SEG.xdc:120]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/moe/Simple-FPGA-Clock/Simple-FPGA-Clock.srcs/constrs_1/imports/exchange_src/KEY_SEG.xdc:120]
+WARNING: [Vivado 12-584] No ports matched 'led1'. [C:/Users/46162/Desktop/Simple-FPGA-Clock/Simple-FPGA-Clock/Simple-FPGA-Clock.srcs/constrs_1/imports/exchange_src/KEY_SEG.xdc:120]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/46162/Desktop/Simple-FPGA-Clock/Simple-FPGA-Clock/Simple-FPGA-Clock.srcs/constrs_1/imports/exchange_src/KEY_SEG.xdc:120]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'led2'. [/home/moe/Simple-FPGA-Clock/Simple-FPGA-Clock.srcs/constrs_1/imports/exchange_src/KEY_SEG.xdc:121]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/moe/Simple-FPGA-Clock/Simple-FPGA-Clock.srcs/constrs_1/imports/exchange_src/KEY_SEG.xdc:121]
+WARNING: [Vivado 12-584] No ports matched 'led2'. [C:/Users/46162/Desktop/Simple-FPGA-Clock/Simple-FPGA-Clock/Simple-FPGA-Clock.srcs/constrs_1/imports/exchange_src/KEY_SEG.xdc:121]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/46162/Desktop/Simple-FPGA-Clock/Simple-FPGA-Clock/Simple-FPGA-Clock.srcs/constrs_1/imports/exchange_src/KEY_SEG.xdc:121]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'led1'. [/home/moe/Simple-FPGA-Clock/Simple-FPGA-Clock.srcs/constrs_1/imports/exchange_src/KEY_SEG.xdc:122]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/moe/Simple-FPGA-Clock/Simple-FPGA-Clock.srcs/constrs_1/imports/exchange_src/KEY_SEG.xdc:122]
+WARNING: [Vivado 12-584] No ports matched 'led1'. [C:/Users/46162/Desktop/Simple-FPGA-Clock/Simple-FPGA-Clock/Simple-FPGA-Clock.srcs/constrs_1/imports/exchange_src/KEY_SEG.xdc:122]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/46162/Desktop/Simple-FPGA-Clock/Simple-FPGA-Clock/Simple-FPGA-Clock.srcs/constrs_1/imports/exchange_src/KEY_SEG.xdc:122]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'led2'. [/home/moe/Simple-FPGA-Clock/Simple-FPGA-Clock.srcs/constrs_1/imports/exchange_src/KEY_SEG.xdc:123]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/moe/Simple-FPGA-Clock/Simple-FPGA-Clock.srcs/constrs_1/imports/exchange_src/KEY_SEG.xdc:123]
+WARNING: [Vivado 12-584] No ports matched 'led2'. [C:/Users/46162/Desktop/Simple-FPGA-Clock/Simple-FPGA-Clock/Simple-FPGA-Clock.srcs/constrs_1/imports/exchange_src/KEY_SEG.xdc:123]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/46162/Desktop/Simple-FPGA-Clock/Simple-FPGA-Clock/Simple-FPGA-Clock.srcs/constrs_1/imports/exchange_src/KEY_SEG.xdc:123]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-Finished Parsing XDC File [/home/moe/Simple-FPGA-Clock/Simple-FPGA-Clock.srcs/constrs_1/imports/exchange_src/KEY_SEG.xdc]
-INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [/home/moe/Simple-FPGA-Clock/Simple-FPGA-Clock.srcs/constrs_1/imports/exchange_src/KEY_SEG.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/clock_with_set_propImpl.xdc].
+Finished Parsing XDC File [C:/Users/46162/Desktop/Simple-FPGA-Clock/Simple-FPGA-Clock/Simple-FPGA-Clock.srcs/constrs_1/imports/exchange_src/KEY_SEG.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/46162/Desktop/Simple-FPGA-Clock/Simple-FPGA-Clock/Simple-FPGA-Clock.srcs/constrs_1/imports/exchange_src/KEY_SEG.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/clock_with_set_propImpl.xdc].
 Resolution: To avoid this warning, move constraints listed in [.Xil/clock_with_set_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
-Parsing XDC File [/home/moe/Simple-FPGA-Clock/Simple-FPGA-Clock.srcs/constrs_1/imports/妗岄潰/KEY_SEG1.xdc]
-Finished Parsing XDC File [/home/moe/Simple-FPGA-Clock/Simple-FPGA-Clock.srcs/constrs_1/imports/妗岄潰/KEY_SEG1.xdc]
-INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [/home/moe/Simple-FPGA-Clock/Simple-FPGA-Clock.srcs/constrs_1/imports/妗岄潰/KEY_SEG1.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/clock_with_set_propImpl.xdc].
+Parsing XDC File [C:/Users/46162/Desktop/Simple-FPGA-Clock/Simple-FPGA-Clock/Simple-FPGA-Clock.srcs/constrs_1/imports/桌面/KEY_SEG1.xdc]
+Finished Parsing XDC File [C:/Users/46162/Desktop/Simple-FPGA-Clock/Simple-FPGA-Clock/Simple-FPGA-Clock.srcs/constrs_1/imports/桌面/KEY_SEG1.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/46162/Desktop/Simple-FPGA-Clock/Simple-FPGA-Clock/Simple-FPGA-Clock.srcs/constrs_1/imports/桌面/KEY_SEG1.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/clock_with_set_propImpl.xdc].
 Resolution: To avoid this warning, move constraints listed in [.Xil/clock_with_set_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
 Completed Processing XDC Constraints
 
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1623.945 ; gain = 0.000 ; free physical = 113 ; free virtual = 7463
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 728.969 ; gain = 0.000
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:32 ; elapsed = 00:00:48 . Memory (MB): peak = 1623.945 ; gain = 439.781 ; free physical = 120 ; free virtual = 7527
+Finished Constraint Validation : Time (s): cpu = 00:00:21 ; elapsed = 00:00:22 . Memory (MB): peak = 728.969 ; gain = 498.004
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7a100tfgg484-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:32 ; elapsed = 00:00:48 . Memory (MB): peak = 1623.945 ; gain = 439.781 ; free physical = 113 ; free virtual = 7526
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:21 ; elapsed = 00:00:22 . Memory (MB): peak = 728.969 ; gain = 498.004
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:32 ; elapsed = 00:00:48 . Memory (MB): peak = 1623.945 ; gain = 439.781 ; free physical = 102 ; free virtual = 7527
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:21 ; elapsed = 00:00:22 . Memory (MB): peak = 728.969 ; gain = 498.004
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-3898] No Re-encoding of one hot register 'current_state_reg' in module 'key_top'
 INFO: [Synth 8-5546] ROM "next_state" won't be mapped to RAM because it is too sparse
@@ -275,14 +273,12 @@ INFO: [Synth 8-5546] ROM "col" won't be mapped to RAM because it is too sparse
 INFO: [Synth 8-5546] ROM "key_pressed_flag" won't be mapped to RAM because it is too sparse
 INFO: [Synth 8-5546] ROM "col_val" won't be mapped to RAM because it is too sparse
 INFO: [Synth 8-5546] ROM "keyboard_val" won't be mapped to RAM because it is too sparse
-WARNING: [Synth 8-6014] Unused sequential element cnt_reg was removed.  [/home/moe/Simple-FPGA-Clock/Simple-FPGA-Clock.srcs/sources_1/imports/鏂囨。/KEY_SEG.v:39]
+WARNING: [Synth 8-6014] Unused sequential element cnt_reg was removed.  [C:/Users/46162/Desktop/Simple-FPGA-Clock/Simple-FPGA-Clock/Simple-FPGA-Clock.srcs/sources_1/imports/文档/KEY_SEG.v:39]
 INFO: [Synth 8-5545] ROM "cout" won't be mapped to RAM because address size (27) is larger than maximum supported(25)
-INFO: [Synth 8-5544] ROM "cout" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
-INFO: [Synth 8-5544] ROM "cout" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
 INFO: [Synth 8-5545] ROM "cout" won't be mapped to RAM because address size (27) is larger than maximum supported(25)
-WARNING: [Synth 8-327] inferring latch for variable 'next_state_reg' [/home/moe/Simple-FPGA-Clock/Simple-FPGA-Clock.srcs/sources_1/imports/鏂囨。/KEY_SEG.v:72]
+WARNING: [Synth 8-327] inferring latch for variable 'next_state_reg' [C:/Users/46162/Desktop/Simple-FPGA-Clock/Simple-FPGA-Clock/Simple-FPGA-Clock.srcs/sources_1/imports/文档/KEY_SEG.v:72]
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:33 ; elapsed = 00:00:49 . Memory (MB): peak = 1623.945 ; gain = 439.781 ; free physical = 113 ; free virtual = 7519
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:21 ; elapsed = 00:00:23 . Memory (MB): peak = 728.969 ; gain = 498.004
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -296,27 +292,24 @@ Start RTL Component Statistics
 Detailed RTL Component Info : 
 +---Adders : 
 	   2 Input     27 Bit       Adders := 2     
-	   2 Input      4 Bit       Adders := 7     
+	   2 Input      6 Bit       Adders := 3     
+	   2 Input      4 Bit       Adders := 1     
 +---Registers : 
 	               27 Bit    Registers := 2     
-	                8 Bit    Registers := 4     
-	                6 Bit    Registers := 1     
-	                4 Bit    Registers := 7     
-	                1 Bit    Registers := 8     
+	                8 Bit    Registers := 2     
+	                6 Bit    Registers := 7     
+	                4 Bit    Registers := 5     
+	                1 Bit    Registers := 6     
 +---Muxes : 
 	   2 Input     27 Bit        Muxes := 2     
-	   2 Input      8 Bit        Muxes := 11    
-	   5 Input      8 Bit        Muxes := 2     
-	   4 Input      8 Bit        Muxes := 2     
-	   8 Input      8 Bit        Muxes := 1     
-	   2 Input      6 Bit        Muxes := 5     
+	   2 Input      6 Bit        Muxes := 32    
 	   7 Input      4 Bit        Muxes := 1     
 	  17 Input      4 Bit        Muxes := 1     
-	   2 Input      4 Bit        Muxes := 12    
+	   2 Input      4 Bit        Muxes := 4     
 	   2 Input      2 Bit        Muxes := 1     
 	   7 Input      1 Bit        Muxes := 4     
 	  17 Input      1 Bit        Muxes := 1     
-	   2 Input      1 Bit        Muxes := 20    
+	   2 Input      1 Bit        Muxes := 3     
 	   8 Input      1 Bit        Muxes := 1     
 ---------------------------------------------------------------------------------
 Finished RTL Component Statistics 
@@ -348,44 +341,41 @@ Detailed RTL Component Info :
 +---Muxes : 
 	   2 Input     27 Bit        Muxes := 1     
 	   2 Input      1 Bit        Muxes := 1     
-Module counter60 
+Module decimal_decoder 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      4 Bit        Muxes := 1     
+Module new_counter_setter 
+Detailed RTL Component Info : 
++---Registers : 
+	                6 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      6 Bit        Muxes := 4     
+Module new_counter 
 Detailed RTL Component Info : 
 +---Adders : 
-	   2 Input      4 Bit       Adders := 2     
+	   2 Input      6 Bit       Adders := 1     
 +---Registers : 
-	                8 Bit    Registers := 1     
+	                6 Bit    Registers := 1     
 	                1 Bit    Registers := 1     
 +---Muxes : 
-	   2 Input      8 Bit        Muxes := 5     
-	   5 Input      8 Bit        Muxes := 1     
-	   4 Input      8 Bit        Muxes := 1     
-	   2 Input      4 Bit        Muxes := 2     
-	   2 Input      1 Bit        Muxes := 7     
-Module counter10_async 
+	   2 Input      6 Bit        Muxes := 5     
+Module new_counter_setter__parameterized0 
+Detailed RTL Component Info : 
++---Registers : 
+	                6 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      6 Bit        Muxes := 4     
+Module new_counter__parameterized0 
 Detailed RTL Component Info : 
 +---Adders : 
-	   2 Input      4 Bit       Adders := 1     
+	   2 Input      6 Bit       Adders := 1     
 +---Registers : 
-	                4 Bit    Registers := 1     
+	                6 Bit    Registers := 1     
 	                1 Bit    Registers := 1     
 +---Muxes : 
-	   2 Input      4 Bit        Muxes := 5     
-	   2 Input      1 Bit        Muxes := 1     
-Module counter10_sync 
-Detailed RTL Component Info : 
-+---Adders : 
-	   2 Input      4 Bit       Adders := 1     
-+---Registers : 
-	                4 Bit    Registers := 1     
-	                1 Bit    Registers := 1     
-+---Muxes : 
-	   2 Input      4 Bit        Muxes := 2     
-	   2 Input      1 Bit        Muxes := 2     
-Module counter24 
-Detailed RTL Component Info : 
-+---Registers : 
-	                1 Bit    Registers := 1     
-Module clock_500Hz 
+	   2 Input      6 Bit        Muxes := 5     
+Module clock_2000Hz 
 Detailed RTL Component Info : 
 +---Adders : 
 	   2 Input     27 Bit       Adders := 1     
@@ -403,8 +393,6 @@ Detailed RTL Component Info :
 	                8 Bit    Registers := 2     
 	                4 Bit    Registers := 1     
 +---Muxes : 
-	   2 Input      8 Bit        Muxes := 1     
-	   8 Input      8 Bit        Muxes := 1     
 	   2 Input      4 Bit        Muxes := 1     
 	   2 Input      1 Bit        Muxes := 1     
 	   8 Input      1 Bit        Muxes := 1     
@@ -423,106 +411,19 @@ Finished Part Resource Summary
 ---------------------------------------------------------------------------------
 Start Cross Boundary and Area Optimization
 ---------------------------------------------------------------------------------
-WARNING: [Synth 8-6014] Unused sequential element nolabel_line33/keyboard_val_reg was removed.  [/home/moe/Simple-FPGA-Clock/Simple-FPGA-Clock.srcs/sources_1/imports/鏂囨。/KEY_SEG.v:145]
-WARNING: [Synth 8-6014] Unused sequential element nolabel_line34/hour/l/cout_reg was removed.  [/home/moe/Simple-FPGA-Clock/Simple-FPGA-Clock.srcs/sources_1/new/counter10.v:36]
-INFO: [Synth 8-5546] ROM "nolabel_line33/keyboard_val" won't be mapped to RAM because it is too sparse
-INFO: [Synth 8-5545] ROM "nolabel_line34/sec_clock/cout" won't be mapped to RAM because address size (27) is larger than maximum supported(25)
-INFO: [Synth 8-5545] ROM "nolabel_line34/seg7/c500/cout" won't be mapped to RAM because address size (27) is larger than maximum supported(25)
-WARNING: [Synth 8-6014] Unused sequential element nolabel_line33/cnt_reg was removed.  [/home/moe/Simple-FPGA-Clock/Simple-FPGA-Clock.srcs/sources_1/imports/鏂囨。/KEY_SEG.v:39]
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\nolabel_line34/min/dout_reg[4] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\nolabel_line34/min/dout_reg[5] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\nolabel_line34/min/dout_reg[6] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\nolabel_line34/min/dout_reg[7] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\nolabel_line34/min/dout_reg[0] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\nolabel_line34/min/dout_reg[1] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\nolabel_line34/min/dout_reg[2] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\nolabel_line34/min/dout_reg[3] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\nolabel_line34/sec/dout_reg[4] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\nolabel_line34/sec/dout_reg[5] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\nolabel_line34/sec/dout_reg[6] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\nolabel_line34/sec/dout_reg[7] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\nolabel_line34/sec/dout_reg[0] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\nolabel_line34/sec/dout_reg[1] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\nolabel_line34/sec/dout_reg[2] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\nolabel_line34/sec/dout_reg[3] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\nolabel_line34/hour/r/dout_reg[0] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\nolabel_line34/hour/r/dout_reg[1] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\nolabel_line34/hour/r/dout_reg[2] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\nolabel_line34/hour/r/dout_reg[3] )
-INFO: [Synth 8-3886] merging instance 'nolabel_line34/seg7/sc/out_reg[0]' (FDPE) to 'nolabel_line34/seg7/sc/out_reg[1]'
-INFO: [Synth 8-3886] merging instance 'nolabel_line34/seg7/sc/out_reg[1]' (FDPE) to 'nolabel_line34/seg7/sc/out_reg[2]'
-INFO: [Synth 8-3886] merging instance 'nolabel_line34/seg7/sc/out_reg[2]' (FDPE) to 'nolabel_line34/seg7/sc/out_reg[3]'
-INFO: [Synth 8-3886] merging instance 'nolabel_line34/seg7/sc/out_reg[3]' (FDPE) to 'nolabel_line34/seg7/sc/out_reg[4]'
-INFO: [Synth 8-3886] merging instance 'nolabel_line34/seg7/sc/out_reg[4]' (FDPE) to 'nolabel_line34/seg7/sc/out_reg[5]'
-INFO: [Synth 8-3886] merging instance 'nolabel_line34/seg7/sc/out_reg[5]' (FDPE) to 'nolabel_line34/seg7/sc/out_reg[7]'
-WARNING: [Synth 8-3332] Sequential element (nolabel_line33/row_val_reg[3]) is unused and will be removed from module clock_with_set.
-WARNING: [Synth 8-3332] Sequential element (nolabel_line33/row_val_reg[2]) is unused and will be removed from module clock_with_set.
-WARNING: [Synth 8-3332] Sequential element (nolabel_line33/row_val_reg[1]) is unused and will be removed from module clock_with_set.
-WARNING: [Synth 8-3332] Sequential element (nolabel_line33/row_val_reg[0]) is unused and will be removed from module clock_with_set.
-WARNING: [Synth 8-3332] Sequential element (nolabel_line33/col_val_reg[3]) is unused and will be removed from module clock_with_set.
-WARNING: [Synth 8-3332] Sequential element (nolabel_line33/col_val_reg[2]) is unused and will be removed from module clock_with_set.
-WARNING: [Synth 8-3332] Sequential element (nolabel_line33/col_val_reg[1]) is unused and will be removed from module clock_with_set.
-WARNING: [Synth 8-3332] Sequential element (nolabel_line33/col_val_reg[0]) is unused and will be removed from module clock_with_set.
-WARNING: [Synth 8-3332] Sequential element (nolabel_line33/key_pressed_flag_reg) is unused and will be removed from module clock_with_set.
-WARNING: [Synth 8-3332] Sequential element (nolabel_line34/sec_clock/cnt_reg[26]) is unused and will be removed from module clock_with_set.
-WARNING: [Synth 8-3332] Sequential element (nolabel_line34/sec_clock/cnt_reg[25]) is unused and will be removed from module clock_with_set.
-WARNING: [Synth 8-3332] Sequential element (nolabel_line34/sec_clock/cnt_reg[24]) is unused and will be removed from module clock_with_set.
-WARNING: [Synth 8-3332] Sequential element (nolabel_line34/sec_clock/cnt_reg[23]) is unused and will be removed from module clock_with_set.
-WARNING: [Synth 8-3332] Sequential element (nolabel_line34/sec_clock/cnt_reg[22]) is unused and will be removed from module clock_with_set.
-WARNING: [Synth 8-3332] Sequential element (nolabel_line34/sec_clock/cnt_reg[21]) is unused and will be removed from module clock_with_set.
-WARNING: [Synth 8-3332] Sequential element (nolabel_line34/sec_clock/cnt_reg[20]) is unused and will be removed from module clock_with_set.
-WARNING: [Synth 8-3332] Sequential element (nolabel_line34/sec_clock/cnt_reg[19]) is unused and will be removed from module clock_with_set.
-WARNING: [Synth 8-3332] Sequential element (nolabel_line34/sec_clock/cnt_reg[18]) is unused and will be removed from module clock_with_set.
-WARNING: [Synth 8-3332] Sequential element (nolabel_line34/sec_clock/cnt_reg[17]) is unused and will be removed from module clock_with_set.
-WARNING: [Synth 8-3332] Sequential element (nolabel_line34/sec_clock/cnt_reg[16]) is unused and will be removed from module clock_with_set.
-WARNING: [Synth 8-3332] Sequential element (nolabel_line34/sec_clock/cnt_reg[15]) is unused and will be removed from module clock_with_set.
-WARNING: [Synth 8-3332] Sequential element (nolabel_line34/sec_clock/cnt_reg[14]) is unused and will be removed from module clock_with_set.
-WARNING: [Synth 8-3332] Sequential element (nolabel_line34/sec_clock/cnt_reg[13]) is unused and will be removed from module clock_with_set.
-WARNING: [Synth 8-3332] Sequential element (nolabel_line34/sec_clock/cnt_reg[12]) is unused and will be removed from module clock_with_set.
-WARNING: [Synth 8-3332] Sequential element (nolabel_line34/sec_clock/cnt_reg[11]) is unused and will be removed from module clock_with_set.
-WARNING: [Synth 8-3332] Sequential element (nolabel_line34/sec_clock/cnt_reg[10]) is unused and will be removed from module clock_with_set.
-WARNING: [Synth 8-3332] Sequential element (nolabel_line34/sec_clock/cnt_reg[9]) is unused and will be removed from module clock_with_set.
-WARNING: [Synth 8-3332] Sequential element (nolabel_line34/sec_clock/cnt_reg[8]) is unused and will be removed from module clock_with_set.
-WARNING: [Synth 8-3332] Sequential element (nolabel_line34/sec_clock/cnt_reg[7]) is unused and will be removed from module clock_with_set.
-WARNING: [Synth 8-3332] Sequential element (nolabel_line34/sec_clock/cnt_reg[6]) is unused and will be removed from module clock_with_set.
-WARNING: [Synth 8-3332] Sequential element (nolabel_line34/sec_clock/cnt_reg[5]) is unused and will be removed from module clock_with_set.
-WARNING: [Synth 8-3332] Sequential element (nolabel_line34/sec_clock/cnt_reg[4]) is unused and will be removed from module clock_with_set.
-WARNING: [Synth 8-3332] Sequential element (nolabel_line34/sec_clock/cnt_reg[3]) is unused and will be removed from module clock_with_set.
-WARNING: [Synth 8-3332] Sequential element (nolabel_line34/sec_clock/cnt_reg[2]) is unused and will be removed from module clock_with_set.
-WARNING: [Synth 8-3332] Sequential element (nolabel_line34/sec_clock/cnt_reg[1]) is unused and will be removed from module clock_with_set.
-WARNING: [Synth 8-3332] Sequential element (nolabel_line34/sec_clock/cnt_reg[0]) is unused and will be removed from module clock_with_set.
-WARNING: [Synth 8-3332] Sequential element (nolabel_line34/sec_clock/cout_reg) is unused and will be removed from module clock_with_set.
-WARNING: [Synth 8-3332] Sequential element (nolabel_line34/sec/dout_reg[7]) is unused and will be removed from module clock_with_set.
-WARNING: [Synth 8-3332] Sequential element (nolabel_line34/sec/dout_reg[6]) is unused and will be removed from module clock_with_set.
-WARNING: [Synth 8-3332] Sequential element (nolabel_line34/sec/dout_reg[5]) is unused and will be removed from module clock_with_set.
-WARNING: [Synth 8-3332] Sequential element (nolabel_line34/sec/dout_reg[4]) is unused and will be removed from module clock_with_set.
-WARNING: [Synth 8-3332] Sequential element (nolabel_line34/sec/dout_reg[3]) is unused and will be removed from module clock_with_set.
-WARNING: [Synth 8-3332] Sequential element (nolabel_line34/sec/dout_reg[2]) is unused and will be removed from module clock_with_set.
-WARNING: [Synth 8-3332] Sequential element (nolabel_line34/sec/dout_reg[1]) is unused and will be removed from module clock_with_set.
-WARNING: [Synth 8-3332] Sequential element (nolabel_line34/sec/dout_reg[0]) is unused and will be removed from module clock_with_set.
-WARNING: [Synth 8-3332] Sequential element (nolabel_line34/sec/cout_reg) is unused and will be removed from module clock_with_set.
-WARNING: [Synth 8-3332] Sequential element (nolabel_line34/min/dout_reg[7]) is unused and will be removed from module clock_with_set.
-WARNING: [Synth 8-3332] Sequential element (nolabel_line34/min/dout_reg[6]) is unused and will be removed from module clock_with_set.
-WARNING: [Synth 8-3332] Sequential element (nolabel_line34/min/dout_reg[5]) is unused and will be removed from module clock_with_set.
-WARNING: [Synth 8-3332] Sequential element (nolabel_line34/min/dout_reg[4]) is unused and will be removed from module clock_with_set.
-WARNING: [Synth 8-3332] Sequential element (nolabel_line34/min/dout_reg[3]) is unused and will be removed from module clock_with_set.
-WARNING: [Synth 8-3332] Sequential element (nolabel_line34/min/dout_reg[2]) is unused and will be removed from module clock_with_set.
-WARNING: [Synth 8-3332] Sequential element (nolabel_line34/min/dout_reg[1]) is unused and will be removed from module clock_with_set.
-WARNING: [Synth 8-3332] Sequential element (nolabel_line34/min/dout_reg[0]) is unused and will be removed from module clock_with_set.
-WARNING: [Synth 8-3332] Sequential element (nolabel_line34/min/cout_reg) is unused and will be removed from module clock_with_set.
-WARNING: [Synth 8-3332] Sequential element (nolabel_line34/hour/m_rst_reg) is unused and will be removed from module clock_with_set.
-WARNING: [Synth 8-3332] Sequential element (nolabel_line34/hour/r/cout_reg) is unused and will be removed from module clock_with_set.
-WARNING: [Synth 8-3332] Sequential element (nolabel_line34/hour/l/dout_reg[3]) is unused and will be removed from module clock_with_set.
-WARNING: [Synth 8-3332] Sequential element (nolabel_line34/hour/l/dout_reg[2]) is unused and will be removed from module clock_with_set.
-WARNING: [Synth 8-3332] Sequential element (nolabel_line34/hour/l/dout_reg[1]) is unused and will be removed from module clock_with_set.
-WARNING: [Synth 8-3332] Sequential element (nolabel_line34/hour/l/dout_reg[0]) is unused and will be removed from module clock_with_set.
-WARNING: [Synth 8-3332] Sequential element (nolabel_line34/hour/r/dout_reg[3]) is unused and will be removed from module clock_with_set.
-WARNING: [Synth 8-3332] Sequential element (nolabel_line34/hour/r/dout_reg[2]) is unused and will be removed from module clock_with_set.
-WARNING: [Synth 8-3332] Sequential element (nolabel_line34/hour/r/dout_reg[1]) is unused and will be removed from module clock_with_set.
-WARNING: [Synth 8-3332] Sequential element (nolabel_line34/hour/r/dout_reg[0]) is unused and will be removed from module clock_with_set.
-WARNING: [Synth 8-3332] Sequential element (nolabel_line34/seg7/sc/out_reg[6]) is unused and will be removed from module clock_with_set.
+INFO: [Synth 8-5546] ROM "keyboard_val" won't be mapped to RAM because it is too sparse
+WARNING: [Synth 8-6014] Unused sequential element cnt_reg was removed.  [C:/Users/46162/Desktop/Simple-FPGA-Clock/Simple-FPGA-Clock/Simple-FPGA-Clock.srcs/sources_1/imports/文档/KEY_SEG.v:39]
+WARNING: [Synth 8-6014] Unused sequential element hour/nc/clk_out_reg was removed.  [C:/Users/46162/Desktop/Simple-FPGA-Clock/Simple-FPGA-Clock/Simple-FPGA-Clock.srcs/sources_1/new/new_counter_24.v:36]
+INFO: [Synth 8-5545] ROM "sec_clock/cout" won't be mapped to RAM because address size (27) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "seg7/c2000/cout" won't be mapped to RAM because address size (27) is larger than maximum supported(25)
+INFO: [Synth 8-3886] merging instance 'can/seg7/sc/en_reg[2]' (FDPE) to 'can/seg7/sc/en_reg[5]'
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\can/seg7/sc/out_reg[7] )
+WARNING: [Synth 8-3332] Sequential element (can/seg7/sc/out_reg[7]) is unused and will be removed from module clock_with_set.
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\can/hour/nc/cnt_reg[5]_C )
+WARNING: [Synth 8-3332] Sequential element (can/seg7/sc/scan_cnt_reg[3]) is unused and will be removed from module clock_with_set.
+WARNING: [Synth 8-3332] Sequential element (can/hour/nc/cnt_reg[5]_C) is unused and will be removed from module clock_with_set.
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:34 ; elapsed = 00:00:50 . Memory (MB): peak = 1623.945 ; gain = 439.781 ; free physical = 124 ; free virtual = 7510
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:25 ; elapsed = 00:00:27 . Memory (MB): peak = 728.969 ; gain = 498.004
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -534,13 +435,13 @@ Report RTL Partitions:
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:41 ; elapsed = 00:01:01 . Memory (MB): peak = 1623.945 ; gain = 439.781 ; free physical = 123 ; free virtual = 7348
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:36 ; elapsed = 00:00:38 . Memory (MB): peak = 738.535 ; gain = 507.570
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:42 ; elapsed = 00:01:01 . Memory (MB): peak = 1623.945 ; gain = 439.781 ; free physical = 118 ; free virtual = 7349
+Finished Timing Optimization : Time (s): cpu = 00:00:36 ; elapsed = 00:00:38 . Memory (MB): peak = 738.906 ; gain = 507.941
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -552,7 +453,7 @@ Report RTL Partitions:
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:42 ; elapsed = 00:01:01 . Memory (MB): peak = 1623.945 ; gain = 439.781 ; free physical = 116 ; free virtual = 7350
+Finished Technology Mapping : Time (s): cpu = 00:00:36 ; elapsed = 00:00:38 . Memory (MB): peak = 772.270 ; gain = 541.305
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -572,19 +473,17 @@ Finished Flattening Before IO Insertion
 ---------------------------------------------------------------------------------
 Start Final Netlist Cleanup
 ---------------------------------------------------------------------------------
-INFO: [Synth 8-5365] Flop nolabel_line34/seg7/sc/en_reg[0] is being inverted and renamed to nolabel_line34/seg7/sc/en_reg[0]_inv.
-INFO: [Synth 8-5365] Flop nolabel_line34/seg7/sc/en_reg[1] is being inverted and renamed to nolabel_line34/seg7/sc/en_reg[1]_inv.
-INFO: [Synth 8-5365] Flop nolabel_line34/seg7/sc/en_reg[2] is being inverted and renamed to nolabel_line34/seg7/sc/en_reg[2]_inv.
-INFO: [Synth 8-5365] Flop nolabel_line34/seg7/sc/en_reg[3] is being inverted and renamed to nolabel_line34/seg7/sc/en_reg[3]_inv.
-INFO: [Synth 8-5365] Flop nolabel_line34/seg7/sc/en_reg[4] is being inverted and renamed to nolabel_line34/seg7/sc/en_reg[4]_inv.
-INFO: [Synth 8-5365] Flop nolabel_line34/seg7/sc/en_reg[5] is being inverted and renamed to nolabel_line34/seg7/sc/en_reg[5]_inv.
-INFO: [Synth 8-5365] Flop nolabel_line34/seg7/sc/en_reg[6] is being inverted and renamed to nolabel_line34/seg7/sc/en_reg[6]_inv.
-INFO: [Synth 8-5365] Flop nolabel_line34/seg7/sc/en_reg[7] is being inverted and renamed to nolabel_line34/seg7/sc/en_reg[7]_inv.
+INFO: [Synth 8-5365] Flop can/seg7/sc/en_reg[0] is being inverted and renamed to can/seg7/sc/en_reg[0]_inv.
+INFO: [Synth 8-5365] Flop can/seg7/sc/en_reg[1] is being inverted and renamed to can/seg7/sc/en_reg[1]_inv.
+INFO: [Synth 8-5365] Flop can/seg7/sc/en_reg[3] is being inverted and renamed to can/seg7/sc/en_reg[3]_inv.
+INFO: [Synth 8-5365] Flop can/seg7/sc/en_reg[4] is being inverted and renamed to can/seg7/sc/en_reg[4]_inv.
+INFO: [Synth 8-5365] Flop can/seg7/sc/en_reg[6] is being inverted and renamed to can/seg7/sc/en_reg[6]_inv.
+INFO: [Synth 8-5365] Flop can/seg7/sc/en_reg[7] is being inverted and renamed to can/seg7/sc/en_reg[7]_inv.
 ---------------------------------------------------------------------------------
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:42 ; elapsed = 00:01:02 . Memory (MB): peak = 1623.945 ; gain = 439.781 ; free physical = 111 ; free virtual = 7350
+Finished IO Insertion : Time (s): cpu = 00:00:37 ; elapsed = 00:00:39 . Memory (MB): peak = 772.270 ; gain = 541.305
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -597,7 +496,7 @@ Report Check Netlist:
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:42 ; elapsed = 00:01:02 . Memory (MB): peak = 1623.945 ; gain = 439.781 ; free physical = 111 ; free virtual = 7350
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:37 ; elapsed = 00:00:39 . Memory (MB): peak = 772.270 ; gain = 541.305
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -609,25 +508,25 @@ Report RTL Partitions:
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:42 ; elapsed = 00:01:02 . Memory (MB): peak = 1623.945 ; gain = 439.781 ; free physical = 108 ; free virtual = 7350
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:37 ; elapsed = 00:00:39 . Memory (MB): peak = 772.270 ; gain = 541.305
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:42 ; elapsed = 00:01:02 . Memory (MB): peak = 1623.945 ; gain = 439.781 ; free physical = 108 ; free virtual = 7350
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:37 ; elapsed = 00:00:39 . Memory (MB): peak = 772.270 ; gain = 541.305
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:42 ; elapsed = 00:01:02 . Memory (MB): peak = 1623.945 ; gain = 439.781 ; free physical = 108 ; free virtual = 7350
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:37 ; elapsed = 00:00:39 . Memory (MB): peak = 772.270 ; gain = 541.305
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:42 ; elapsed = 00:01:02 . Memory (MB): peak = 1623.945 ; gain = 439.781 ; free physical = 108 ; free virtual = 7349
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:37 ; elapsed = 00:00:39 . Memory (MB): peak = 772.270 ; gain = 541.305
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -644,52 +543,65 @@ Report Cell Usage:
 |      |Cell   |Count |
 +------+-------+------+
 |1     |BUFG   |     1|
-|2     |CARRY4 |    12|
+|2     |CARRY4 |    19|
 |3     |LUT1   |     3|
-|4     |LUT2   |     4|
-|5     |LUT3   |    38|
-|6     |LUT4   |     8|
-|7     |LUT5   |     4|
-|8     |LUT6   |     5|
-|9     |FDCE   |    41|
-|10    |FDPE   |     2|
-|11    |FDRE   |    28|
-|12    |LD     |     6|
-|13    |IBUF   |     6|
-|14    |OBUF   |    20|
+|4     |LUT2   |    13|
+|5     |LUT3   |    80|
+|6     |LUT4   |    55|
+|7     |LUT5   |    42|
+|8     |LUT6   |   119|
+|9     |MUXF7  |     1|
+|10    |FDCE   |    62|
+|11    |FDPE   |    27|
+|12    |FDRE   |    82|
+|13    |LD     |     6|
+|14    |LDC    |    18|
+|15    |IBUF   |    12|
+|16    |OBUF   |    24|
 +------+-------+------+
 
 Report Instance Areas: 
-+------+-----------------+---------------+------+
-|      |Instance         |Module         |Cells |
-+------+-----------------+---------------+------+
-|1     |top              |               |   178|
-|2     |  nolabel_line33 |key_top        |    55|
-|3     |  nolabel_line34 |clock_assembly |    96|
-|4     |    seg7         |seg_assembly   |    96|
-|5     |      c500       |clock_500Hz    |    70|
-|6     |      sc         |seg_scanner    |    26|
-+------+-----------------+---------------+------+
++------+--------------+-----------------------------------+------+
+|      |Instance      |Module                             |Cells |
++------+--------------+-----------------------------------+------+
+|1     |top           |                                   |   564|
+|2     |  can         |new_clock_assembly                 |   420|
+|3     |    hour      |new_counter_sub__parameterized0    |    80|
+|4     |      nc      |new_counter__parameterized0        |    62|
+|5     |      ncs     |new_counter_setter__parameterized0 |    18|
+|6     |    min       |new_counter_sub                    |    83|
+|7     |      nc      |new_counter_1                      |    65|
+|8     |      ncs     |new_counter_setter_2               |    18|
+|9     |    sec       |new_counter_sub_0                  |    87|
+|10    |      nc      |new_counter                        |    69|
+|11    |      ncs     |new_counter_setter                 |    18|
+|12    |    sec_clock |half_sec_timer                     |    69|
+|13    |    seg7      |seg_assembly                       |   101|
+|14    |      c2000   |clock_2000Hz                       |    69|
+|15    |      sc      |seg_scanner                        |    31|
+|16    |  kt          |key_top                            |   107|
++------+--------------+-----------------------------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:42 ; elapsed = 00:01:02 . Memory (MB): peak = 1623.945 ; gain = 439.781 ; free physical = 108 ; free virtual = 7350
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:37 ; elapsed = 00:00:39 . Memory (MB): peak = 772.270 ; gain = 541.305
 ---------------------------------------------------------------------------------
-Synthesis finished with 0 errors, 0 critical warnings and 71 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:33 ; elapsed = 00:00:39 . Memory (MB): peak = 1623.945 ; gain = 99.523 ; free physical = 160 ; free virtual = 7403
-Synthesis Optimization Complete : Time (s): cpu = 00:00:42 ; elapsed = 00:01:02 . Memory (MB): peak = 1623.953 ; gain = 439.781 ; free physical = 156 ; free virtual = 7404
+Synthesis finished with 0 errors, 0 critical warnings and 7 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:24 ; elapsed = 00:00:32 . Memory (MB): peak = 772.270 ; gain = 188.473
+Synthesis Optimization Complete : Time (s): cpu = 00:00:38 ; elapsed = 00:00:39 . Memory (MB): peak = 772.270 ; gain = 541.305
 INFO: [Project 1-571] Translating synthesized netlist
-INFO: [Netlist 29-17] Analyzing 24 Unisim elements for replacement
+INFO: [Netlist 29-17] Analyzing 56 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
 INFO: [Project 1-111] Unisim Transformation Summary:
-  A total of 6 instances were transformed.
+  A total of 24 instances were transformed.
   LD => LDCE: 6 instances
+  LDC => LDCE: 18 instances
 
 INFO: [Common 17-83] Releasing license: Synthesis
-90 Infos, 140 Warnings, 48 Critical Warnings and 0 Errors encountered.
+71 Infos, 60 Warnings, 48 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:45 ; elapsed = 00:01:05 . Memory (MB): peak = 1623.953 ; gain = 453.168 ; free physical = 173 ; free virtual = 7413
-INFO: [Common 17-1381] The checkpoint '/home/moe/Simple-FPGA-Clock/Simple-FPGA-Clock.runs/synth_1/clock_with_set.dcp' has been generated.
+synth_design: Time (s): cpu = 00:00:40 ; elapsed = 00:00:43 . Memory (MB): peak = 772.270 ; gain = 545.539
+INFO: [Common 17-1381] The checkpoint 'C:/Users/46162/Desktop/Simple-FPGA-Clock/Simple-FPGA-Clock/Simple-FPGA-Clock.runs/synth_1/clock_with_set.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file clock_with_set_utilization_synth.rpt -pb clock_with_set_utilization_synth.pb
-report_utilization: Time (s): cpu = 00:00:00.14 ; elapsed = 00:00:00.33 . Memory (MB): peak = 1647.957 ; gain = 0.000 ; free physical = 148 ; free virtual = 7413
-INFO: [Common 17-206] Exiting Vivado at Tue Dec 18 22:29:51 2018...
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.051 . Memory (MB): peak = 772.270 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Wed Dec 19 17:35:26 2018...

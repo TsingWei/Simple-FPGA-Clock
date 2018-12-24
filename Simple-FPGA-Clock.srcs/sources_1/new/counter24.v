@@ -24,14 +24,14 @@ module counter24(
     input clk,
     input rst,
     input [1:0]set_en,
-    input [7:0]set_val,
+    input [3:0]set_val,
     output cout,
     output [7:0] dout
     );
     reg m_rst;
     wire m_clk;
-    counter10_async l(m_clk,m_rst,set_en[1],set_val[7:4],cout,dout[7:4]);
-    counter10_sync r(clk,m_rst,set_en[0],set_val[3:0],m_clk,dout[3:0]);
+    counter10_async l(m_clk,m_rst,set_en[1],set_val,cout,dout[7:4]);
+    counter10_sync r(clk,m_rst,set_en[0],set_val,m_clk,dout[3:0]);
     always@(posedge clk,posedge rst) begin
         if(rst || dout >= 8'h23) begin 
             m_rst <=1;

@@ -20,8 +20,9 @@
 // 
 //////////////////////////////////////////////////////////////////////////////////
 
-
+//需要2000Hz的时钟才能正常显示
 module seg_assembly(
+    input [7:0] en_in,
     input [3:0] a,
     input [3:0] b,
     input [3:0] c,
@@ -46,14 +47,14 @@ module seg_assembly(
     wire [7:0] f1;
     wire [7:0] g1;
     wire [7:0] h1;
-    clock_500Hz c500(clk,rst,m_clk);
+    clock_2000Hz c2000(clk,rst,m_clk);
     light_7seg l1(a,a1);
     light_7seg l2(b,b1);
-    light_7seg l3(c,c1);
+    light_7seg l3(c,c1);//--
     light_7seg l4(d,d1);
     light_7seg l5(e,e1);
-    light_7seg l6(f,f1);
+    light_7seg l6(f,f1);//--
     light_7seg l7(g,g1);
     light_7seg l8(h,h1);
-    seg_scanner sc(a1,b1,c1,d1,e1,f1,g1,h1,rst,m_clk,seg_out,en);
+    seg_scanner sc(en_in,a1,b1,c1,d1,e1,f1,g1,h1,rst,m_clk,seg_out,en);
 endmodule

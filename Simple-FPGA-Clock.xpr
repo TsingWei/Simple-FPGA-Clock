@@ -64,8 +64,16 @@
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
+      <File Path="$PSRCDIR/sources_1/new/clock_with_set.v">
+        <FileInfo>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
       <File Path="$PSRCDIR/sources_1/new/clock_500Hz.v">
         <FileInfo>
+          <Attr Name="AutoDisabled" Val="1"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
           <Attr Name="UsedIn" Val="simulation"/>
@@ -73,6 +81,7 @@
       </File>
       <File Path="$PSRCDIR/sources_1/new/clock_assembly.v">
         <FileInfo>
+          <Attr Name="AutoDisabled" Val="1"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
           <Attr Name="UsedIn" Val="simulation"/>
@@ -80,6 +89,7 @@
       </File>
       <File Path="$PSRCDIR/sources_1/new/counter10.v">
         <FileInfo>
+          <Attr Name="AutoDisabled" Val="1"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
           <Attr Name="UsedIn" Val="simulation"/>
@@ -87,6 +97,7 @@
       </File>
       <File Path="$PSRCDIR/sources_1/new/counter24.v">
         <FileInfo>
+          <Attr Name="AutoDisabled" Val="1"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
           <Attr Name="UsedIn" Val="simulation"/>
@@ -94,6 +105,7 @@
       </File>
       <File Path="$PSRCDIR/sources_1/imports/exchange_src/counter60.v">
         <FileInfo>
+          <Attr Name="AutoDisabled" Val="1"/>
           <Attr Name="ImportPath" Val="$PPRDIR/exchange_src/counter60.v"/>
           <Attr Name="ImportTime" Val="1544807048"/>
           <Attr Name="UsedIn" Val="synthesis"/>
@@ -103,6 +115,7 @@
       </File>
       <File Path="$PSRCDIR/sources_1/new/half_sec_timer.v">
         <FileInfo>
+          <Attr Name="AutoDisabled" Val="1"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
           <Attr Name="UsedIn" Val="simulation"/>
@@ -110,6 +123,7 @@
       </File>
       <File Path="$PSRCDIR/sources_1/imports/new/light_7seg.v">
         <FileInfo>
+          <Attr Name="AutoDisabled" Val="1"/>
           <Attr Name="ImportPath" Val="$PPRDIR/../Vivado/2017.4/bin/project_1/project_1.srcs/sources_1/new/light_7seg.v"/>
           <Attr Name="ImportTime" Val="1544579679"/>
           <Attr Name="UsedIn" Val="synthesis"/>
@@ -119,6 +133,7 @@
       </File>
       <File Path="$PSRCDIR/sources_1/new/seg_assembly.v">
         <FileInfo>
+          <Attr Name="AutoDisabled" Val="1"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
           <Attr Name="UsedIn" Val="simulation"/>
@@ -126,15 +141,9 @@
       </File>
       <File Path="$PSRCDIR/sources_1/imports/new/seg_scanner.v">
         <FileInfo>
+          <Attr Name="AutoDisabled" Val="1"/>
           <Attr Name="ImportPath" Val="$PPRDIR/../Vivado/2017.4/bin/project_1/project_1.srcs/sources_1/new/seg_scanner.v"/>
           <Attr Name="ImportTime" Val="1544766891"/>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="implementation"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
-      <File Path="$PSRCDIR/sources_1/new/clock_with_set.v">
-        <FileInfo>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
           <Attr Name="UsedIn" Val="simulation"/>
