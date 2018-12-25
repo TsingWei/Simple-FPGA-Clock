@@ -60,25 +60,22 @@ proc step_failed { step } {
   close $ch
 }
 
-set_msg_config -id {Synth 8-256} -limit 10000
-set_msg_config -id {Synth 8-638} -limit 10000
 
 start_step init_design
 set ACTIVE_STEP init_design
 set rc [catch {
   create_msg_db init_design.pb
   set_param xicom.use_bs_reader 1
-  set_param synth.incrementalSynthesisCache C:/Users/46162/AppData/Roaming/Xilinx/Vivado/.Xil/Vivado-20104-Dell-tsing/incrSyn
   create_project -in_memory -part xc7a100tfgg484-1
   set_property design_mode GateLvl [current_fileset]
   set_param project.singleFileAddWarning.threshold 0
-  set_property webtalk.parent_dir C:/Users/46162/Desktop/Simple-FPGA-Clock/Simple-FPGA-Clock/Simple-FPGA-Clock.cache/wt [current_project]
-  set_property parent.project_path C:/Users/46162/Desktop/Simple-FPGA-Clock/Simple-FPGA-Clock/Simple-FPGA-Clock.xpr [current_project]
-  set_property ip_output_repo C:/Users/46162/Desktop/Simple-FPGA-Clock/Simple-FPGA-Clock/Simple-FPGA-Clock.cache/ip [current_project]
+  set_property webtalk.parent_dir /home/moe/Simple-FPGA-Clock/Simple-FPGA-Clock.cache/wt [current_project]
+  set_property parent.project_path /home/moe/Simple-FPGA-Clock/Simple-FPGA-Clock.xpr [current_project]
+  set_property ip_output_repo /home/moe/Simple-FPGA-Clock/Simple-FPGA-Clock.cache/ip [current_project]
   set_property ip_cache_permissions {read write} [current_project]
-  add_files -quiet C:/Users/46162/Desktop/Simple-FPGA-Clock/Simple-FPGA-Clock/Simple-FPGA-Clock.runs/synth_1/clock_with_set.dcp
-  read_xdc C:/Users/46162/Desktop/Simple-FPGA-Clock/Simple-FPGA-Clock/Simple-FPGA-Clock.srcs/constrs_1/imports/exchange_src/KEY_SEG.xdc
-  read_xdc C:/Users/46162/Desktop/Simple-FPGA-Clock/Simple-FPGA-Clock/Simple-FPGA-Clock.srcs/constrs_1/imports/◊¿√Ê/KEY_SEG1.xdc
+  add_files -quiet /home/moe/Simple-FPGA-Clock/Simple-FPGA-Clock.runs/synth_1/clock_with_set.dcp
+  read_xdc /home/moe/Simple-FPGA-Clock/Simple-FPGA-Clock.srcs/constrs_1/imports/exchange_src/KEY_SEG.xdc
+  read_xdc /home/moe/Simple-FPGA-Clock/Simple-FPGA-Clock.srcs/constrs_1/imports/Ê°åÈù¢/KEY_SEG1.xdc
   link_design -top clock_with_set -part xc7a100tfgg484-1
   close_msg_db -file init_design.pb
 } RESULT]

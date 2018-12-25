@@ -1,5 +1,5 @@
-set_property SRC_FILE_INFO {cfile:C:/Users/46162/Desktop/Simple-FPGA-Clock/Simple-FPGA-Clock/Simple-FPGA-Clock.srcs/constrs_1/imports/exchange_src/KEY_SEG.xdc rfile:../../../Simple-FPGA-Clock.srcs/constrs_1/imports/exchange_src/KEY_SEG.xdc id:1} [current_design]
-set_property SRC_FILE_INFO {cfile:C:/Users/46162/Desktop/Simple-FPGA-Clock/Simple-FPGA-Clock/Simple-FPGA-Clock.srcs/constrs_1/imports/◊¿√Ê/KEY_SEG1.xdc rfile:../../../Simple-FPGA-Clock.srcs/constrs_1/imports/◊¿√Ê/KEY_SEG1.xdc id:2} [current_design]
+set_property SRC_FILE_INFO {cfile:/home/moe/Simple-FPGA-Clock/Simple-FPGA-Clock.srcs/constrs_1/imports/exchange_src/KEY_SEG.xdc rfile:../../../Simple-FPGA-Clock.srcs/constrs_1/imports/exchange_src/KEY_SEG.xdc id:1} [current_design]
+set_property SRC_FILE_INFO {cfile:/home/moe/Simple-FPGA-Clock/Simple-FPGA-Clock.srcs/constrs_1/imports/Ê°åÈù¢/KEY_SEG1.xdc rfile:../../../Simple-FPGA-Clock.srcs/constrs_1/imports/Ê°åÈù¢/KEY_SEG1.xdc id:2} [current_design]
 set_property src_info {type:XDC file:1 line:70 export:INPUT save:INPUT read:READ} [current_design]
 set_property IOSTANDARD LVCMOS33 [get_ports {h[3]}]
 set_property src_info {type:XDC file:1 line:71 export:INPUT save:INPUT read:READ} [current_design]

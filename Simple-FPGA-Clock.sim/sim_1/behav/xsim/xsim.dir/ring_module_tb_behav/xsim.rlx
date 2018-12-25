@@ -1,0 +1,12 @@
+
+{ 
+    crc :  2760375892182309449  , 
+    ccp_crc :  0  , 
+    cmdline : " -wto 4da20e3c81824f519157aadad2c4f05e --incr --debug typical --relax --mt 8 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot ring_module_tb_behav xil_defaultlib.ring_module_tb xil_defaultlib.glbl" , 
+    buildDate : "Dec 15 2017" , 
+    buildTime : "20:57:24" , 
+    linkCmd : "/usr/bin/gcc -Wa,-W  -O -fPIC  -m64  -Wl,--unresolved-symbols=ignore-all  -o \"xsim.dir/ring_module_tb_behav/xsimk\"   \"xsim.dir/ring_module_tb_behav/obj/xsim_0.lnx64.o\" \"xsim.dir/ring_module_tb_behav/obj/xsim_1.lnx64.o\" \"/home/moe/文档/Vivado/2017.4/lib/lnx64.o/librdi_simulator_kernel.so\" \"/home/moe/文档/Vivado/2017.4/lib/lnx64.o/librdi_simbridge_kernel.so\"" , 
+    aggregate_nets : 
+    [ 
+    ] 
+} 
