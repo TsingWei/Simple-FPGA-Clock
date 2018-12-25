@@ -1,7 +1,7 @@
 Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2017.4 (win64) Build 2086221 Fri Dec 15 20:55:39 MST 2017
-| Date         : Tue Dec 25 14:46:52 2018
+| Date         : Tue Dec 25 14:58:42 2018
 | Host         : Dell-tsing running 64-bit major release  (build 9200)
 | Command      : report_methodology -file clock_with_set_methodology_drc_routed.rpt -pb clock_with_set_methodology_drc_routed.pb -rpx clock_with_set_methodology_drc_routed.rpx
 | Design       : clock_with_set

@@ -25,10 +25,10 @@ input [4:0]count,
 input enable,
 input rst,
 input clk,
-output  buzz_out,
-output en,
-output [4:0]count_out,
-output [4:0]tempcount
+output  buzz_out
+//output en,
+//output [4:0]count_out,
+//output [4:0]tempcount
     );
     wire buzzout;
     wire sw;

@@ -1,7 +1,7 @@
 Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2017.4 (win64) Build 2086221 Fri Dec 15 20:55:39 MST 2017
-| Date             : Tue Dec 25 14:46:53 2018
+| Date             : Tue Dec 25 14:58:43 2018
 | Host             : Dell-tsing running 64-bit major release  (build 9200)
 | Command          : report_power -file clock_with_set_power_routed.rpt -pb clock_with_set_power_summary_routed.pb -rpx clock_with_set_power_routed.rpx
 | Design           : clock_with_set
@@ -30,14 +30,14 @@ Table of Contents
 ----------
 
 +--------------------------+--------------+
-| Total On-Chip Power (W)  | 5.649        |
+| Total On-Chip Power (W)  | 5.663        |
 | Design Power Budget (W)  | Unspecified* |
 | Power Budget Margin (W)  | NA           |
-| Dynamic (W)              | 5.538        |
+| Dynamic (W)              | 5.552        |
 | Device Static (W)        | 0.111        |
 | Effective TJA (C/W)      | 2.7          |
-| Max Ambient (C)          | 69.9         |
-| Junction Temperature (C) | 40.1         |
+| Max Ambient (C)          | 69.8         |
+| Junction Temperature (C) | 40.2         |
 | Confidence Level         | Low          |
 | Setting File             | ---          |
 | Simulation Activity File | ---          |
@@ -59,10 +59,10 @@ Table of Contents
 |   BUFG         |     0.006 |        1 |        32 |            3.13 |
 |   F7/F8 Muxes  |     0.005 |        2 |     63400 |           <0.01 |
 |   Others       |     0.000 |       25 |       --- |             --- |
-| Signals        |     2.020 |      500 |       --- |             --- |
+| Signals        |     2.033 |      499 |       --- |             --- |
 | I/O            |     1.353 |       37 |       285 |           12.98 |
 | Static Power   |     0.111 |          |           |                 |
-| Total          |     5.649 |          |           |                 |
+| Total          |     5.663 |          |           |                 |
 +----------------+-----------+----------+-----------+-----------------+
 
 
@@ -72,7 +72,7 @@ Table of Contents
 +-----------+-------------+-----------+-------------+------------+
 | Source    | Voltage (V) | Total (A) | Dynamic (A) | Static (A) |
 +-----------+-------------+-----------+-------------+------------+
-| Vccint    |       1.000 |     4.256 |       4.229 |      0.027 |
+| Vccint    |       1.000 |     4.269 |       4.243 |      0.027 |
 | Vccaux    |       1.800 |     0.067 |       0.048 |      0.019 |
 | Vcco33    |       3.300 |     0.375 |       0.371 |      0.004 |
 | Vcco25    |       2.500 |     0.000 |       0.000 |      0.000 |
@@ -139,22 +139,22 @@ Table of Contents
 +----------------+-----------+
 | Name           | Power (W) |
 +----------------+-----------+
-| clock_with_set |     5.538 |
-|   can          |     3.828 |
-|     hour       |     0.775 |
-|       nc       |     0.666 |
+| clock_with_set |     5.552 |
+|   can          |     3.843 |
+|     hour       |     0.785 |
+|       nc       |     0.676 |
 |       ncs      |     0.109 |
-|     min        |     1.165 |
-|       nc       |     1.011 |
-|       ncs      |     0.154 |
-|     sec        |     0.497 |
-|       nc       |     0.416 |
-|       ncs      |     0.081 |
-|     sec_clock  |     0.397 |
-|     seg7       |     0.995 |
-|       c2000    |     0.418 |
-|       sc       |     0.578 |
-|   kt           |     0.220 |
+|     min        |     1.146 |
+|       nc       |     0.993 |
+|       ncs      |     0.153 |
+|     sec        |     0.471 |
+|       nc       |     0.393 |
+|       ncs      |     0.078 |
+|     sec_clock  |     0.443 |
+|     seg7       |     0.998 |
+|       c2000    |     0.403 |
+|       sc       |     0.595 |
+|   kt           |     0.216 |
 +----------------+-----------+
 
 

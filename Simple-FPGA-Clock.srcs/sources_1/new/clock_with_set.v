@@ -32,7 +32,7 @@ module clock_with_set(
     output buzz_out
     );
 
-    wire round;
+    wire [4:0]round;
 
     wire [7:0] in_sec;
     wire [7:0] in_min;
@@ -52,6 +52,7 @@ module clock_with_set(
     assign min = in_min[7:4]*10 +in_min[3:0];
     assign hour = in_hour[7:4]*10 +in_hour[3:0];
     assign led[0] = buzz_en;
+    assign led[3:1] = round[2:0];
 
 
 endmodule

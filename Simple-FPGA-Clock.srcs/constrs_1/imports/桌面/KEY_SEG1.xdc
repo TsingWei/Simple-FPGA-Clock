@@ -119,3 +119,4 @@ set_property PACKAGE_PIN P4 [get_ports rst]
 #set_property C_USER_SCAN_CHAIN 1 [get_debug_cores dbg_hub]
 #connect_debug_port dbg_hub/clk [get_nets clk_IBUF_BUFG]
 
+

@@ -1,7 +1,7 @@
 Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
 --------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2017.4 (win64) Build 2086221 Fri Dec 15 20:55:39 MST 2017
-| Date         : Tue Dec 25 14:46:54 2018
+| Date         : Tue Dec 25 14:58:44 2018
 | Host         : Dell-tsing running 64-bit major release  (build 9200)
 | Command      : report_clock_utilization -file clock_with_set_clock_utilization_routed.rpt
 | Design       : clock_with_set
@@ -68,11 +68,11 @@ Table of Contents
 +----------+-----------------+------------+--------------------+--------------+-------------+-----------------+--------------+-------+---------------------------+---------------------------+
 | Local Id | Driver Type/Pin | Constraint | Site/BEL           | Clock Region | Clock Loads | Non-Clock Loads | Clock Period | Clock | Driver Pin                | Net                       |
 +----------+-----------------+------------+--------------------+--------------+-------------+-----------------+--------------+-------+---------------------------+---------------------------||
-| 0        | FDCE/Q          | None       | SLICE_X89Y114/DFF  | X1Y2         |          27 |               1 |              |       | kt/cnt_reg[19]/Q          | kt/key_clk                - Static -
-| 1        | FDRE/Q          | None       | SLICE_X76Y121/C5FF | X1Y2         |          17 |               1 |              |       | can/seg7/c2000/cout_reg/Q | can/seg7/c2000/en_reg[5]  - Static -
-| 2        | FDCE/Q          | None       | SLICE_X75Y106/AFF  | X1Y2         |          13 |               1 |              |       | can/sec/nc/clk_out_reg/Q  | can/sec/nc/clk_out        - Static -
-| 3        | FDRE/Q          | None       | SLICE_X76Y115/D5FF | X1Y2         |          13 |               1 |              |       | can/sec_clock/cout_reg/Q  | can/sec_clock/cout        - Static -
-| 4        | FDCE/Q          | None       | SLICE_X75Y112/AFF  | X1Y2         |          11 |               1 |              |       | can/min/nc/clk_out_reg/Q  | can/min/nc/cnt_reg[0]_P_0 - Static -
+| 0        | FDCE/Q          | None       | SLICE_X89Y118/DFF  | X1Y2         |          27 |               1 |              |       | kt/cnt_reg[19]/Q          | kt/key_clk                - Static -
+| 1        | FDRE/Q          | None       | SLICE_X76Y121/B5FF | X1Y2         |          17 |               1 |              |       | can/seg7/c2000/cout_reg/Q | can/seg7/c2000/en_reg[5]  - Static -
+| 2        | FDCE/Q          | None       | SLICE_X78Y112/AFF  | X1Y2         |          13 |               1 |              |       | can/sec/nc/clk_out_reg/Q  | can/sec/nc/clk_out        - Static -
+| 3        | FDRE/Q          | None       | SLICE_X81Y116/C5FF | X1Y2         |          13 |               1 |              |       | can/sec_clock/cout_reg/Q  | can/sec_clock/cout        - Static -
+| 4        | FDCE/Q          | None       | SLICE_X76Y111/AFF  | X1Y2         |          11 |               1 |              |       | can/min/nc/clk_out_reg/Q  | can/min/nc/cnt_reg[0]_P_0 - Static -
 +----------+-----------------+------------+--------------------+--------------+-------------+-----------------+--------------+-------+---------------------------+---------------------------||
 * Local Clocks in this context represents only clocks driven by non-global buffers
 ** Clock Loads column represents the clock pin loads (pin count)
@@ -92,8 +92,8 @@ Table of Contents
 | X0Y1              |    0 |    12 |    0 |     4 |    0 |     2 |    0 |     4 |    0 |     1 |    0 |     1 |    0 |     0 |    0 |     0 |    0 |    50 |    0 |    50 |    0 |  2000 |    0 |   600 |    0 |    20 |    0 |    10 |    0 |    20 |
 | X1Y1              |    0 |    12 |    0 |     4 |    0 |     2 |    0 |     4 |    0 |     1 |    0 |     1 |    0 |     0 |    0 |     0 |    0 |    50 |    0 |    50 |    0 |  1900 |    0 |   650 |    0 |    60 |    0 |    30 |    0 |    40 |
 | X0Y2              |    0 |    12 |    0 |     4 |    0 |     2 |    0 |     4 |    0 |     1 |    0 |     1 |    0 |     0 |    0 |     0 |    0 |    50 |    0 |    50 |    0 |  2000 |    0 |   600 |    0 |    20 |    0 |    10 |    0 |    20 |
-| X1Y2              |    1 |    12 |    0 |     4 |    0 |     2 |    0 |     4 |    0 |     1 |    0 |     1 |    0 |     0 |    0 |     0 |    0 |    50 |    0 |    50 |  166 |  1900 |   89 |   650 |    0 |    60 |    0 |    30 |    0 |    40 |
-| X0Y3              |    0 |    12 |    0 |     4 |    0 |     2 |    0 |     4 |    0 |     1 |    0 |     1 |    0 |     0 |    0 |     0 |    0 |    50 |    0 |    50 |    9 |  2600 |    6 |   600 |    0 |    20 |    0 |    10 |    0 |    20 |
+| X1Y2              |    1 |    12 |    0 |     4 |    0 |     2 |    0 |     4 |    0 |     1 |    0 |     1 |    0 |     0 |    0 |     0 |    0 |    50 |    0 |    50 |  166 |  1900 |   93 |   650 |    0 |    60 |    0 |    30 |    0 |    40 |
+| X0Y3              |    0 |    12 |    0 |     4 |    0 |     2 |    0 |     4 |    0 |     1 |    0 |     1 |    0 |     0 |    0 |     0 |    0 |    50 |    0 |    50 |    9 |  2600 |    2 |   600 |    0 |    20 |    0 |    10 |    0 |    20 |
 | X1Y3              |    0 |    12 |    0 |     0 |    0 |     0 |    0 |     0 |    0 |     0 |    0 |     0 |    0 |     4 |    0 |     1 |    0 |     0 |    0 |     0 |    0 |  1350 |    0 |   500 |    0 |    30 |    0 |    15 |    0 |    40 |
 +-------------------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+
 * Global Clock column represents track count; while other columns represents cell counts

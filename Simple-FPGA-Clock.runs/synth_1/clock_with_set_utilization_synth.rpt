@@ -1,7 +1,7 @@
 Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
 -----------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2017.4 (win64) Build 2086221 Fri Dec 15 20:55:39 MST 2017
-| Date         : Tue Dec 25 14:45:33 2018
+| Date         : Tue Dec 25 14:57:27 2018
 | Host         : Dell-tsing running 64-bit major release  (build 9200)
 | Command      : report_utilization -file clock_with_set_utilization_synth.rpt -pb clock_with_set_utilization_synth.pb
 | Design       : clock_with_set
@@ -156,12 +156,11 @@ Table of Contents
 | LUT4     |   55 |                 LUT |
 | LUT5     |   42 |                 LUT |
 | FDPE     |   27 |        Flop & Latch |
+| OBUF     |   25 |                  IO |
 | LDCE     |   24 |        Flop & Latch |
-| OBUF     |   22 |                  IO |
 | CARRY4   |   19 |          CarryLogic |
 | LUT2     |   13 |                 LUT |
 | IBUF     |   12 |                  IO |
-| OBUFT    |    3 |                  IO |
 | LUT1     |    3 |                 LUT |
 | MUXF7    |    2 |               MuxFx |
 | BUFG     |    1 |               Clock |
