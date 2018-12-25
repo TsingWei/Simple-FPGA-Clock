@@ -23,12 +23,12 @@
 module clock_with_set(
     input           clk,
     input           rst,
-    input      [3:0] row,                 // ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿?? ï¿½ï¿½
-    input     [5:0] set_en,
+    input      [3:0] row,
+    input     [5:0] set_en,//ÖÃÎ»µÄÎ»Ñ¡Ôñ
     output [3:0] col,
-    output wire [7:0] seg_out,//æ®µä¿¡å·ï¼ŒåŒ…æ‹¬å°æ•°ï¿???
-    output wire [7:0] seg_an,//ç®¡ï¿½?ï¿½æ‹©ä½¿èƒ½ä¿¡å·
-    output [3:0]led,
+    output wire [7:0] seg_out,
+    output wire [7:0] seg_an,
+    output [3:0]led, // µ÷ÊÔÓÃ
     output buzz_out
     );
 
@@ -37,17 +37,14 @@ module clock_with_set(
     wire [7:0] in_sec;
     wire [7:0] in_min;
     wire [7:0] in_hour;
-
-
     wire [3:0] keyboard_val;
-    //assign led = keyboard_val;
-    key_top kt(clk,rst,row,col,keyboard_val);
-    new_clock_assembly can(clk,rst,set_en,keyboard_val,in_sec,in_min,in_hour,seg_out,seg_an);
-    ring_module rm(clk,rst,in_sec,in_min,in_hour,round,buzz_out);
     
-
+    key_top kt(clk,rst,row,col,keyboard_val);
+    new_clock_assembly ca(clk,rst,set_en,keyboard_val,in_sec,in_min,in_hour,seg_out,seg_an);
+    ring_module rm(clk,rst,in_sec,in_min,in_hour,round,buzz_out);
+     
+    // °åÉÏdebug
     assign led[0] = buzz_out;
     assign led[3:1] = round[2:0];
-
 
 endmodule

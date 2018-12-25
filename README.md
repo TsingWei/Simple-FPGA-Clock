@@ -13,6 +13,13 @@
 ## 说明
 代码置于`/Simple-FPGA-Clock.srcs`里, 由于Vivado本身问题（几乎每一个操作，包括运行模拟和修改代码等，Vivado都会修改一大串日志和其他关联文件），建议新提交代码放在`/exchange_src`中，pull到本地后，在Vivado内import。
 ## Updates
+
+### 0.1.0 Compelete(With few bugs)
+* Top levlel design:
+    ![top.png](https://github.com/TsingWei/Simple-FPGA-Clock/blob/master/img/top.png)
+* Clock module:
+    ![clk.png](https://github.com/TsingWei/Simple-FPGA-Clock/blob/master/img/clk_mod.png)
+
 ### 0.0.7 新的时钟总成完成,带置位功能
 * ![on_board_1.png](https://github.com/TsingWei/Simple-FPGA-Clock/blob/master/img/new_clock.png)
 ### 0.0.6 蜂鸣器完成,走时电路正常,置位功能尚未测试
