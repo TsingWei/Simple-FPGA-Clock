@@ -21,36 +21,45 @@
 
 
 module count_buzz(
-input count,
+input [4:0]count,
 input enable,
 input rst,
 input clk,
-output reg buzz_out
+output  buzz_out,
+output en,
+output [4:0]count_out,
+output [4:0]tempcount
     );
     wire buzzout;
     wire sw;
     wire cycle;
-    reg tempcount;
+    reg [4:0]tempcount;
     reg en;
 //    half_sec_timer ht(clk,rst,sw);
-    new_buzz nb(en,rst,clk,buzzout,cycle);
-    always@(*)
+    new_buzz u(en,rst,clk,buzzout,cycle);
+   
+    assign  buzz_out=buzzout;
+    assign count_out=count;
+    always@(posedge cycle)
     begin
-        buzz_out=buzzout;
-    end
-    always@(posedge cycle or posedge rst)
-    begin
-        if(rst)
+        if(!enable)
         begin
-            tempcount<=0;
+            tempcount<=1;
+            en<=0;
         end
         else if(enable)
         begin
-            tempcount=tempcount+1;
+        if(tempcount<=count)
+        begin
+            tempcount<=tempcount+1;
+            
             if(tempcount>count)
                 en<=0;
             else
                 en<=1;
+        end
+        else
+            en<=0;
         end 
     end
 endmodule
