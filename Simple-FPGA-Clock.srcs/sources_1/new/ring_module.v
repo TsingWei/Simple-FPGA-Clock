@@ -19,14 +19,15 @@
 // 
 //////////////////////////////////////////////////////////////////////////////////
 
-//
+//蜂鸣器的驱动文件
 module ring_module(
+    input en, //使能蜂鸣信号
     input clk,
     input rst,
-    input [7:0] in_sec,
-    input [7:0] in_min,
-    input [7:0] in_hour,//ring round
-    output [4:0] round,
+    input [7:0] in_sec,//输入时间信息的秒
+    input [7:0] in_min,//输入时间信息的分
+    input [7:0] in_hour,//输入时间信息的时
+    output [4:0] round,//ring round
     output  buzz_out
     );
     reg buzz_en;
@@ -41,6 +42,8 @@ module ring_module(
     count_buzz cb(round,buzz_en,rst,clk,buzz_out);
 
     always@* begin
+        if(en)
+        begin
         if(in_min == 59)
             if(in_sec >= 58)
                 buzz_en = 1;
@@ -53,5 +56,8 @@ module ring_module(
                 buzz_en = 0;
         else
             buzz_en = 0;
+        end
+        else
+            buzz_en=0;
     end
 endmodule

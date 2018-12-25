@@ -19,8 +19,9 @@
 // 
 //////////////////////////////////////////////////////////////////////////////////
 
-
+//带置位的时钟总成
 module clock_with_set(
+    input en,           //使能定时响铃功能
     input           clk,
     input           rst,
     input      [3:0] row,
@@ -33,15 +34,15 @@ module clock_with_set(
     );
 
     wire [4:0]round;
-
+    
     wire [7:0] in_sec;
     wire [7:0] in_min;
     wire [7:0] in_hour;
     wire [3:0] keyboard_val;
     
-    key_top kt(clk,rst,row,col,keyboard_val);
+    key_top kt(clk,rst,row,col,keyboard_val);           //
     new_clock_assembly ca(clk,rst,set_en,keyboard_val,in_sec,in_min,in_hour,seg_out,seg_an);
-    ring_module rm(clk,rst,in_sec,in_min,in_hour,round,buzz_out);
+    ring_module rm(en,clk,rst,in_sec,in_min,in_hour,round,buzz_out);
      
     // 板上debug
     assign led[0] = buzz_out;

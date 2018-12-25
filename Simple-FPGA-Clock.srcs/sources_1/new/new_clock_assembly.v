@@ -19,7 +19,7 @@
 // 
 //////////////////////////////////////////////////////////////////////////////////
 
-
+//��ʱ�����ܳ�
 module new_clock_assembly(
 input clk_raw,
 input rst,
@@ -32,7 +32,7 @@ output [7:0] out_sec,
 output [7:0] out_min,
 output [7:0] out_hour,
 //input sw_en,
-output wire [7:0] seg_out,//段信号，包括小数�??
+output wire [7:0] seg_out,//段信号，包括小数�???
 output wire [7:0] seg_an//管�?�择使能信号
 // output led1,
 // output led2
@@ -63,7 +63,7 @@ reg clk_raw;
 reg  rst;
 reg  [5:0]set_en;
 reg  [3:0]set_val;
- wire [7:0] seg_out;//段信号，包括小数�??
+ wire [7:0] seg_out;//段信号，包括小数�???
  wire [7:0] seg_an;//管�?�择使能信号
  new_clock_assembly u(clk_raw,rst,set_en,set_val,seg_out,seg_an);
 always #5 clk_raw = ~clk_raw;
