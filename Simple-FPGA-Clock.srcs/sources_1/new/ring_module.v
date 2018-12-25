@@ -25,25 +25,34 @@ module ring_module(
 // output [4:0] round,
 // output en_out,
 
-// input clk,
-// input rst,
+ input clk,
+ input rst,
 input [7:0] in_sec,
 input [7:0] in_min,
 input [7:0] in_hour,//ring round
 output [4:0] round,
-output reg buzz_en
+output  buzz_out
     );
+    reg buzz_en;
+    wire [5:0] sec;
+    wire [5:0] min;
+    wire [5:0] hour;
+    assign sec = in_sec[7:4]*10 +in_sec[3:0];
+    assign min = in_min[7:4]*10 +in_min[3:0];
+    assign hour = in_hour[7:4]*10 +in_hour[3:0]; 
+    
+    assign round = hour[4:0];
+    count_buzz cb(round,buzz_en,rst,clk,buzz_out);
 
-//count_buzz cb(in_hour,en,rst,clk,buzz_out);
-always@* begin
-    if(in_min == 59 || in_min == 0)
-        if(in_sec >= 58||in_sec <= 30)
-            buzz_en = 1;
+    always@* begin
+        if(in_min == 59 || in_min == 0)
+            if(in_sec >= 58||in_sec <= 30)
+                buzz_en = 1;
+            else
+                buzz_en = 0;
         else
             buzz_en = 0;
-    else
-        buzz_en = 0;
-end
+    end
 endmodule
 
 module ring_module_tb();

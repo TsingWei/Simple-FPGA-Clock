@@ -2,8 +2,8 @@
 # Vivado v2017.4 (64-bit)
 # SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
 # IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
-# Start of session at: Tue Dec 25 14:56:42 2018
-# Process ID: 17384
+# Start of session at: Tue Dec 25 15:26:44 2018
+# Process ID: 16688
 # Current directory: C:/Users/46162/Desktop/Simple-FPGA-Clock/Simple-FPGA-Clock/Simple-FPGA-Clock.runs/synth_1
 # Command line: vivado.exe -log clock_with_set.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source clock_with_set.tcl
 # Log file: C:/Users/46162/Desktop/Simple-FPGA-Clock/Simple-FPGA-Clock/Simple-FPGA-Clock.runs/synth_1/clock_with_set.vds
@@ -15,7 +15,7 @@ Starting synth_design
 Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
 INFO: Launching helper process for spawning children vivado processes
-INFO: Helper process launched with PID 11384 
+INFO: Helper process launched with PID 6132 
 WARNING: [Synth 8-2611] redeclaration of ansi port keyboard_val is not allowed [C:/Users/46162/Desktop/Simple-FPGA-Clock/Simple-FPGA-Clock/Simple-FPGA-Clock.srcs/sources_1/imports/文档/KEY_SEG.v:142]
 WARNING: [Synth 8-976] keyboard_val has already been declared [C:/Users/46162/Desktop/Simple-FPGA-Clock/Simple-FPGA-Clock/Simple-FPGA-Clock.srcs/sources_1/imports/文档/KEY_SEG.v:142]
 WARNING: [Synth 8-2654] second declaration of keyboard_val ignored [C:/Users/46162/Desktop/Simple-FPGA-Clock/Simple-FPGA-Clock/Simple-FPGA-Clock.srcs/sources_1/imports/文档/KEY_SEG.v:142]
@@ -24,7 +24,7 @@ WARNING: [Synth 8-2611] redeclaration of ansi port out_sec is not allowed [C:/Us
 WARNING: [Synth 8-2611] redeclaration of ansi port out_min is not allowed [C:/Users/46162/Desktop/Simple-FPGA-Clock/Simple-FPGA-Clock/Simple-FPGA-Clock.srcs/sources_1/new/new_clock_assembly.v:46]
 WARNING: [Synth 8-2611] redeclaration of ansi port out_hour is not allowed [C:/Users/46162/Desktop/Simple-FPGA-Clock/Simple-FPGA-Clock/Simple-FPGA-Clock.srcs/sources_1/new/new_clock_assembly.v:47]
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 342.863 ; gain = 112.434
+Starting RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 343.441 ; gain = 112.418
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-638] synthesizing module 'clock_with_set' [C:/Users/46162/Desktop/Simple-FPGA-Clock/Simple-FPGA-Clock/Simple-FPGA-Clock.srcs/sources_1/new/clock_with_set.v:23]
 INFO: [Synth 8-638] synthesizing module 'key_top' [C:/Users/46162/Desktop/Simple-FPGA-Clock/Simple-FPGA-Clock/Simple-FPGA-Clock.srcs/sources_1/imports/文档/KEY_SEG.v:23]
@@ -78,33 +78,16 @@ INFO: [Synth 8-256] done synthesizing module 'seg_scanner' (10#1) [C:/Users/4616
 INFO: [Synth 8-256] done synthesizing module 'seg_assembly' (11#1) [C:/Users/46162/Desktop/Simple-FPGA-Clock/Simple-FPGA-Clock/Simple-FPGA-Clock.srcs/sources_1/new/seg_assembly.v:24]
 INFO: [Synth 8-256] done synthesizing module 'new_clock_assembly' (12#1) [C:/Users/46162/Desktop/Simple-FPGA-Clock/Simple-FPGA-Clock/Simple-FPGA-Clock.srcs/sources_1/new/new_clock_assembly.v:23]
 INFO: [Synth 8-638] synthesizing module 'ring_module' [C:/Users/46162/Desktop/Simple-FPGA-Clock/Simple-FPGA-Clock/Simple-FPGA-Clock.srcs/sources_1/new/ring_module.v:23]
-WARNING: [Synth 8-3848] Net round in module/entity ring_module does not have driver. [C:/Users/46162/Desktop/Simple-FPGA-Clock/Simple-FPGA-Clock/Simple-FPGA-Clock.srcs/sources_1/new/ring_module.v:33]
-INFO: [Synth 8-256] done synthesizing module 'ring_module' (13#1) [C:/Users/46162/Desktop/Simple-FPGA-Clock/Simple-FPGA-Clock/Simple-FPGA-Clock.srcs/sources_1/new/ring_module.v:23]
-WARNING: [Synth 8-689] width (6) of port connection 'in_sec' does not match port width (8) of module 'ring_module' [C:/Users/46162/Desktop/Simple-FPGA-Clock/Simple-FPGA-Clock/Simple-FPGA-Clock.srcs/sources_1/new/clock_with_set.v:49]
-WARNING: [Synth 8-689] width (6) of port connection 'in_min' does not match port width (8) of module 'ring_module' [C:/Users/46162/Desktop/Simple-FPGA-Clock/Simple-FPGA-Clock/Simple-FPGA-Clock.srcs/sources_1/new/clock_with_set.v:49]
-WARNING: [Synth 8-689] width (6) of port connection 'in_hour' does not match port width (8) of module 'ring_module' [C:/Users/46162/Desktop/Simple-FPGA-Clock/Simple-FPGA-Clock/Simple-FPGA-Clock.srcs/sources_1/new/clock_with_set.v:49]
 INFO: [Synth 8-638] synthesizing module 'count_buzz' [C:/Users/46162/Desktop/Simple-FPGA-Clock/Simple-FPGA-Clock/count_buzz.v:23]
 INFO: [Synth 8-638] synthesizing module 'new_buzz' [C:/Users/46162/Desktop/Simple-FPGA-Clock/Simple-FPGA-Clock/Simple-FPGA-Clock.srcs/sources_1/imports/Simple-FPGA-Clock/new_buzz.v:23]
 INFO: [Synth 8-638] synthesizing module 'clock_500Hz' [C:/Users/46162/Desktop/Simple-FPGA-Clock/Simple-FPGA-Clock/Simple-FPGA-Clock.srcs/sources_1/new/clock_500Hz.v:23]
-INFO: [Synth 8-256] done synthesizing module 'clock_500Hz' (14#1) [C:/Users/46162/Desktop/Simple-FPGA-Clock/Simple-FPGA-Clock/Simple-FPGA-Clock.srcs/sources_1/new/clock_500Hz.v:23]
-INFO: [Synth 8-256] done synthesizing module 'new_buzz' (15#1) [C:/Users/46162/Desktop/Simple-FPGA-Clock/Simple-FPGA-Clock/Simple-FPGA-Clock.srcs/sources_1/imports/Simple-FPGA-Clock/new_buzz.v:23]
-INFO: [Synth 8-256] done synthesizing module 'count_buzz' (16#1) [C:/Users/46162/Desktop/Simple-FPGA-Clock/Simple-FPGA-Clock/count_buzz.v:23]
+INFO: [Synth 8-256] done synthesizing module 'clock_500Hz' (13#1) [C:/Users/46162/Desktop/Simple-FPGA-Clock/Simple-FPGA-Clock/Simple-FPGA-Clock.srcs/sources_1/new/clock_500Hz.v:23]
+INFO: [Synth 8-256] done synthesizing module 'new_buzz' (14#1) [C:/Users/46162/Desktop/Simple-FPGA-Clock/Simple-FPGA-Clock/Simple-FPGA-Clock.srcs/sources_1/imports/Simple-FPGA-Clock/new_buzz.v:23]
+INFO: [Synth 8-256] done synthesizing module 'count_buzz' (15#1) [C:/Users/46162/Desktop/Simple-FPGA-Clock/Simple-FPGA-Clock/count_buzz.v:23]
+INFO: [Synth 8-256] done synthesizing module 'ring_module' (16#1) [C:/Users/46162/Desktop/Simple-FPGA-Clock/Simple-FPGA-Clock/Simple-FPGA-Clock.srcs/sources_1/new/ring_module.v:23]
 INFO: [Synth 8-256] done synthesizing module 'clock_with_set' (17#1) [C:/Users/46162/Desktop/Simple-FPGA-Clock/Simple-FPGA-Clock/Simple-FPGA-Clock.srcs/sources_1/new/clock_with_set.v:23]
-WARNING: [Synth 8-3331] design ring_module has unconnected port round[4]
-WARNING: [Synth 8-3331] design ring_module has unconnected port round[3]
-WARNING: [Synth 8-3331] design ring_module has unconnected port round[2]
-WARNING: [Synth 8-3331] design ring_module has unconnected port round[1]
-WARNING: [Synth 8-3331] design ring_module has unconnected port round[0]
-WARNING: [Synth 8-3331] design ring_module has unconnected port in_hour[7]
-WARNING: [Synth 8-3331] design ring_module has unconnected port in_hour[6]
-WARNING: [Synth 8-3331] design ring_module has unconnected port in_hour[5]
-WARNING: [Synth 8-3331] design ring_module has unconnected port in_hour[4]
-WARNING: [Synth 8-3331] design ring_module has unconnected port in_hour[3]
-WARNING: [Synth 8-3331] design ring_module has unconnected port in_hour[2]
-WARNING: [Synth 8-3331] design ring_module has unconnected port in_hour[1]
-WARNING: [Synth 8-3331] design ring_module has unconnected port in_hour[0]
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 376.105 ; gain = 145.676
+Finished RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 375.848 ; gain = 144.824
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -114,7 +97,7 @@ Report Check Netlist:
 |1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
 +------+------------------+-------+---------+-------+------------------+
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 376.105 ; gain = 145.676
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 375.848 ; gain = 144.824
 ---------------------------------------------------------------------------------
 INFO: [Device 21-403] Loading part xc7a100tfgg484-1
 INFO: [Project 1-570] Preparing netlist for logic optimization
@@ -272,22 +255,22 @@ Completed Processing XDC Constraints
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 730.250 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 730.391 ; gain = 0.000
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:20 ; elapsed = 00:00:21 . Memory (MB): peak = 730.250 ; gain = 499.820
+Finished Constraint Validation : Time (s): cpu = 00:00:20 ; elapsed = 00:00:22 . Memory (MB): peak = 730.391 ; gain = 499.367
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7a100tfgg484-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:20 ; elapsed = 00:00:21 . Memory (MB): peak = 730.250 ; gain = 499.820
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:20 ; elapsed = 00:00:22 . Memory (MB): peak = 730.391 ; gain = 499.367
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:20 ; elapsed = 00:00:21 . Memory (MB): peak = 730.250 ; gain = 499.820
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:20 ; elapsed = 00:00:22 . Memory (MB): peak = 730.391 ; gain = 499.367
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-3898] No Re-encoding of one hot register 'current_state_reg' in module 'key_top'
 INFO: [Synth 8-5546] ROM "next_state" won't be mapped to RAM because it is too sparse
@@ -302,7 +285,7 @@ INFO: [Synth 8-5545] ROM "cout" won't be mapped to RAM because address size (27)
 WARNING: [Synth 8-6014] Unused sequential element tempcount_reg was removed.  [C:/Users/46162/Desktop/Simple-FPGA-Clock/Simple-FPGA-Clock/count_buzz.v:47]
 WARNING: [Synth 8-327] inferring latch for variable 'next_state_reg' [C:/Users/46162/Desktop/Simple-FPGA-Clock/Simple-FPGA-Clock/Simple-FPGA-Clock.srcs/sources_1/imports/文档/KEY_SEG.v:72]
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:20 ; elapsed = 00:00:22 . Memory (MB): peak = 730.250 ; gain = 499.820
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:21 ; elapsed = 00:00:23 . Memory (MB): peak = 730.391 ; gain = 499.367
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -461,22 +444,9 @@ WARNING: [Synth 8-6014] Unused sequential element cnt_reg was removed.  [C:/User
 WARNING: [Synth 8-6014] Unused sequential element hour/nc/clk_out_reg was removed.  [C:/Users/46162/Desktop/Simple-FPGA-Clock/Simple-FPGA-Clock/Simple-FPGA-Clock.srcs/sources_1/new/new_counter_24.v:36]
 INFO: [Synth 8-5545] ROM "sec_clock/cout" won't be mapped to RAM because address size (27) is larger than maximum supported(25)
 INFO: [Synth 8-5545] ROM "seg7/c2000/cout" won't be mapped to RAM because address size (27) is larger than maximum supported(25)
-INFO: [Synth 8-5545] ROM "u/c500/cout" won't be mapped to RAM because address size (27) is larger than maximum supported(25)
-INFO: [Synth 8-5545] ROM "u/ht/cout" won't be mapped to RAM because address size (27) is larger than maximum supported(25)
-WARNING: [Synth 8-6014] Unused sequential element tempcount_reg was removed.  [C:/Users/46162/Desktop/Simple-FPGA-Clock/Simple-FPGA-Clock/count_buzz.v:47]
-WARNING: [Synth 8-3331] design ring_module has unconnected port round[4]
-WARNING: [Synth 8-3331] design ring_module has unconnected port round[3]
-WARNING: [Synth 8-3331] design ring_module has unconnected port round[2]
-WARNING: [Synth 8-3331] design ring_module has unconnected port round[1]
-WARNING: [Synth 8-3331] design ring_module has unconnected port round[0]
-WARNING: [Synth 8-3331] design ring_module has unconnected port in_hour[7]
-WARNING: [Synth 8-3331] design ring_module has unconnected port in_hour[6]
-WARNING: [Synth 8-3331] design ring_module has unconnected port in_hour[5]
-WARNING: [Synth 8-3331] design ring_module has unconnected port in_hour[4]
-WARNING: [Synth 8-3331] design ring_module has unconnected port in_hour[3]
-WARNING: [Synth 8-3331] design ring_module has unconnected port in_hour[2]
-WARNING: [Synth 8-3331] design ring_module has unconnected port in_hour[1]
-WARNING: [Synth 8-3331] design ring_module has unconnected port in_hour[0]
+INFO: [Synth 8-5545] ROM "cb/u/c500/cout" won't be mapped to RAM because address size (27) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "cb/u/ht/cout" won't be mapped to RAM because address size (27) is larger than maximum supported(25)
+WARNING: [Synth 8-6014] Unused sequential element cb/tempcount_reg was removed.  [C:/Users/46162/Desktop/Simple-FPGA-Clock/Simple-FPGA-Clock/count_buzz.v:47]
 INFO: [Synth 8-3886] merging instance 'can/seg7/sc/en_reg[2]' (FDPE) to 'can/seg7/sc/en_reg[5]'
 INFO: [Synth 8-3333] propagating constant 1 across sequential element (\can/seg7/sc/out_reg[7] )
 WARNING: [Synth 8-3332] Sequential element (can/seg7/sc/out_reg[7]) is unused and will be removed from module clock_with_set.
@@ -484,7 +454,7 @@ INFO: [Synth 8-3333] propagating constant 0 across sequential element (\can/hour
 WARNING: [Synth 8-3332] Sequential element (can/seg7/sc/scan_cnt_reg[3]) is unused and will be removed from module clock_with_set.
 WARNING: [Synth 8-3332] Sequential element (can/hour/nc/cnt_reg[5]_C) is unused and will be removed from module clock_with_set.
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:25 ; elapsed = 00:00:26 . Memory (MB): peak = 730.250 ; gain = 499.820
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:26 ; elapsed = 00:00:28 . Memory (MB): peak = 730.391 ; gain = 499.367
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -496,13 +466,13 @@ Report RTL Partitions:
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:35 ; elapsed = 00:00:37 . Memory (MB): peak = 738.582 ; gain = 508.152
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:36 ; elapsed = 00:00:38 . Memory (MB): peak = 741.211 ; gain = 510.188
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:35 ; elapsed = 00:00:37 . Memory (MB): peak = 739.102 ; gain = 508.672
+Finished Timing Optimization : Time (s): cpu = 00:00:36 ; elapsed = 00:00:38 . Memory (MB): peak = 741.656 ; gain = 510.633
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -513,71 +483,8 @@ Report RTL Partitions:
 ---------------------------------------------------------------------------------
 Start Technology Mapping
 ---------------------------------------------------------------------------------
-WARNING: [Synth 8-3332] Sequential element (cb/tempcount_reg[4]) is unused and will be removed from module clock_with_set.
-WARNING: [Synth 8-3332] Sequential element (cb/tempcount_reg[3]) is unused and will be removed from module clock_with_set.
-WARNING: [Synth 8-3332] Sequential element (cb/tempcount_reg[2]) is unused and will be removed from module clock_with_set.
-WARNING: [Synth 8-3332] Sequential element (cb/tempcount_reg[1]) is unused and will be removed from module clock_with_set.
-WARNING: [Synth 8-3332] Sequential element (cb/tempcount_reg[0]) is unused and will be removed from module clock_with_set.
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\cb/en_reg )
-WARNING: [Synth 8-3332] Sequential element (cb/en_reg) is unused and will be removed from module clock_with_set.
-WARNING: [Synth 8-3332] Sequential element (cb/u/ht/cnt_reg[26]) is unused and will be removed from module clock_with_set.
-WARNING: [Synth 8-3332] Sequential element (cb/u/ht/cnt_reg[25]) is unused and will be removed from module clock_with_set.
-WARNING: [Synth 8-3332] Sequential element (cb/u/ht/cnt_reg[24]) is unused and will be removed from module clock_with_set.
-WARNING: [Synth 8-3332] Sequential element (cb/u/ht/cnt_reg[23]) is unused and will be removed from module clock_with_set.
-WARNING: [Synth 8-3332] Sequential element (cb/u/ht/cnt_reg[22]) is unused and will be removed from module clock_with_set.
-WARNING: [Synth 8-3332] Sequential element (cb/u/ht/cnt_reg[21]) is unused and will be removed from module clock_with_set.
-WARNING: [Synth 8-3332] Sequential element (cb/u/ht/cnt_reg[20]) is unused and will be removed from module clock_with_set.
-WARNING: [Synth 8-3332] Sequential element (cb/u/ht/cnt_reg[19]) is unused and will be removed from module clock_with_set.
-WARNING: [Synth 8-3332] Sequential element (cb/u/ht/cnt_reg[18]) is unused and will be removed from module clock_with_set.
-WARNING: [Synth 8-3332] Sequential element (cb/u/ht/cnt_reg[17]) is unused and will be removed from module clock_with_set.
-WARNING: [Synth 8-3332] Sequential element (cb/u/ht/cnt_reg[16]) is unused and will be removed from module clock_with_set.
-WARNING: [Synth 8-3332] Sequential element (cb/u/ht/cnt_reg[15]) is unused and will be removed from module clock_with_set.
-WARNING: [Synth 8-3332] Sequential element (cb/u/ht/cnt_reg[14]) is unused and will be removed from module clock_with_set.
-WARNING: [Synth 8-3332] Sequential element (cb/u/ht/cnt_reg[13]) is unused and will be removed from module clock_with_set.
-WARNING: [Synth 8-3332] Sequential element (cb/u/ht/cnt_reg[12]) is unused and will be removed from module clock_with_set.
-WARNING: [Synth 8-3332] Sequential element (cb/u/ht/cnt_reg[11]) is unused and will be removed from module clock_with_set.
-WARNING: [Synth 8-3332] Sequential element (cb/u/ht/cnt_reg[10]) is unused and will be removed from module clock_with_set.
-WARNING: [Synth 8-3332] Sequential element (cb/u/ht/cnt_reg[9]) is unused and will be removed from module clock_with_set.
-WARNING: [Synth 8-3332] Sequential element (cb/u/ht/cnt_reg[8]) is unused and will be removed from module clock_with_set.
-WARNING: [Synth 8-3332] Sequential element (cb/u/ht/cnt_reg[7]) is unused and will be removed from module clock_with_set.
-WARNING: [Synth 8-3332] Sequential element (cb/u/ht/cnt_reg[6]) is unused and will be removed from module clock_with_set.
-WARNING: [Synth 8-3332] Sequential element (cb/u/ht/cnt_reg[5]) is unused and will be removed from module clock_with_set.
-WARNING: [Synth 8-3332] Sequential element (cb/u/ht/cnt_reg[4]) is unused and will be removed from module clock_with_set.
-WARNING: [Synth 8-3332] Sequential element (cb/u/ht/cnt_reg[3]) is unused and will be removed from module clock_with_set.
-WARNING: [Synth 8-3332] Sequential element (cb/u/ht/cnt_reg[2]) is unused and will be removed from module clock_with_set.
-WARNING: [Synth 8-3332] Sequential element (cb/u/ht/cnt_reg[1]) is unused and will be removed from module clock_with_set.
-WARNING: [Synth 8-3332] Sequential element (cb/u/ht/cnt_reg[0]) is unused and will be removed from module clock_with_set.
-WARNING: [Synth 8-3332] Sequential element (cb/u/ht/cout_reg) is unused and will be removed from module clock_with_set.
-WARNING: [Synth 8-3332] Sequential element (cb/u/c500/cnt_reg[26]) is unused and will be removed from module clock_with_set.
-WARNING: [Synth 8-3332] Sequential element (cb/u/c500/cnt_reg[25]) is unused and will be removed from module clock_with_set.
-WARNING: [Synth 8-3332] Sequential element (cb/u/c500/cnt_reg[24]) is unused and will be removed from module clock_with_set.
-WARNING: [Synth 8-3332] Sequential element (cb/u/c500/cnt_reg[23]) is unused and will be removed from module clock_with_set.
-WARNING: [Synth 8-3332] Sequential element (cb/u/c500/cnt_reg[22]) is unused and will be removed from module clock_with_set.
-WARNING: [Synth 8-3332] Sequential element (cb/u/c500/cnt_reg[21]) is unused and will be removed from module clock_with_set.
-WARNING: [Synth 8-3332] Sequential element (cb/u/c500/cnt_reg[20]) is unused and will be removed from module clock_with_set.
-WARNING: [Synth 8-3332] Sequential element (cb/u/c500/cnt_reg[19]) is unused and will be removed from module clock_with_set.
-WARNING: [Synth 8-3332] Sequential element (cb/u/c500/cnt_reg[18]) is unused and will be removed from module clock_with_set.
-WARNING: [Synth 8-3332] Sequential element (cb/u/c500/cnt_reg[17]) is unused and will be removed from module clock_with_set.
-WARNING: [Synth 8-3332] Sequential element (cb/u/c500/cnt_reg[16]) is unused and will be removed from module clock_with_set.
-WARNING: [Synth 8-3332] Sequential element (cb/u/c500/cnt_reg[15]) is unused and will be removed from module clock_with_set.
-WARNING: [Synth 8-3332] Sequential element (cb/u/c500/cnt_reg[14]) is unused and will be removed from module clock_with_set.
-WARNING: [Synth 8-3332] Sequential element (cb/u/c500/cnt_reg[13]) is unused and will be removed from module clock_with_set.
-WARNING: [Synth 8-3332] Sequential element (cb/u/c500/cnt_reg[12]) is unused and will be removed from module clock_with_set.
-WARNING: [Synth 8-3332] Sequential element (cb/u/c500/cnt_reg[11]) is unused and will be removed from module clock_with_set.
-WARNING: [Synth 8-3332] Sequential element (cb/u/c500/cnt_reg[10]) is unused and will be removed from module clock_with_set.
-WARNING: [Synth 8-3332] Sequential element (cb/u/c500/cnt_reg[9]) is unused and will be removed from module clock_with_set.
-WARNING: [Synth 8-3332] Sequential element (cb/u/c500/cnt_reg[8]) is unused and will be removed from module clock_with_set.
-WARNING: [Synth 8-3332] Sequential element (cb/u/c500/cnt_reg[7]) is unused and will be removed from module clock_with_set.
-WARNING: [Synth 8-3332] Sequential element (cb/u/c500/cnt_reg[6]) is unused and will be removed from module clock_with_set.
-WARNING: [Synth 8-3332] Sequential element (cb/u/c500/cnt_reg[5]) is unused and will be removed from module clock_with_set.
-WARNING: [Synth 8-3332] Sequential element (cb/u/c500/cnt_reg[4]) is unused and will be removed from module clock_with_set.
-WARNING: [Synth 8-3332] Sequential element (cb/u/c500/cnt_reg[3]) is unused and will be removed from module clock_with_set.
-WARNING: [Synth 8-3332] Sequential element (cb/u/c500/cnt_reg[2]) is unused and will be removed from module clock_with_set.
-WARNING: [Synth 8-3332] Sequential element (cb/u/c500/cnt_reg[1]) is unused and will be removed from module clock_with_set.
-WARNING: [Synth 8-3332] Sequential element (cb/u/c500/cnt_reg[0]) is unused and will be removed from module clock_with_set.
-WARNING: [Synth 8-3332] Sequential element (cb/u/c500/cout_reg) is unused and will be removed from module clock_with_set.
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:35 ; elapsed = 00:00:37 . Memory (MB): peak = 772.570 ; gain = 542.141
+Finished Technology Mapping : Time (s): cpu = 00:00:36 ; elapsed = 00:00:38 . Memory (MB): peak = 776.004 ; gain = 544.980
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -607,7 +514,7 @@ INFO: [Synth 8-5365] Flop can/seg7/sc/en_reg[7] is being inverted and renamed to
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:36 ; elapsed = 00:00:38 . Memory (MB): peak = 772.570 ; gain = 542.141
+Finished IO Insertion : Time (s): cpu = 00:00:37 ; elapsed = 00:00:39 . Memory (MB): peak = 776.004 ; gain = 544.980
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -620,7 +527,7 @@ Report Check Netlist:
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:36 ; elapsed = 00:00:38 . Memory (MB): peak = 772.570 ; gain = 542.141
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:37 ; elapsed = 00:00:39 . Memory (MB): peak = 776.004 ; gain = 544.980
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -632,25 +539,25 @@ Report RTL Partitions:
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:36 ; elapsed = 00:00:38 . Memory (MB): peak = 772.570 ; gain = 542.141
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:37 ; elapsed = 00:00:39 . Memory (MB): peak = 776.004 ; gain = 544.980
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:36 ; elapsed = 00:00:38 . Memory (MB): peak = 772.570 ; gain = 542.141
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:37 ; elapsed = 00:00:39 . Memory (MB): peak = 776.004 ; gain = 544.980
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:36 ; elapsed = 00:00:38 . Memory (MB): peak = 772.570 ; gain = 542.141
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:37 ; elapsed = 00:00:39 . Memory (MB): peak = 776.004 ; gain = 544.980
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:36 ; elapsed = 00:00:38 . Memory (MB): peak = 772.570 ; gain = 542.141
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:37 ; elapsed = 00:00:39 . Memory (MB): peak = 776.004 ; gain = 544.980
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -667,52 +574,58 @@ Report Cell Usage:
 |      |Cell   |Count |
 +------+-------+------+
 |1     |BUFG   |     1|
-|2     |CARRY4 |    19|
-|3     |LUT1   |     3|
-|4     |LUT2   |    13|
-|5     |LUT3   |    83|
-|6     |LUT4   |    55|
-|7     |LUT5   |    42|
-|8     |LUT6   |   123|
-|9     |MUXF7  |     2|
+|2     |CARRY4 |    33|
+|3     |LUT1   |     4|
+|4     |LUT2   |    16|
+|5     |LUT3   |   138|
+|6     |LUT4   |    65|
+|7     |LUT5   |    54|
+|8     |LUT6   |   134|
+|9     |MUXF7  |     1|
 |10    |FDCE   |    62|
 |11    |FDPE   |    27|
-|12    |FDRE   |    82|
-|13    |LD     |     6|
-|14    |LDC    |    18|
-|15    |IBUF   |    12|
-|16    |OBUF   |    25|
+|12    |FDRE   |   143|
+|13    |FDSE   |     1|
+|14    |LD     |     6|
+|15    |LDC    |    18|
+|16    |IBUF   |    12|
+|17    |OBUF   |    25|
 +------+-------+------+
 
 Report Instance Areas: 
 +------+--------------+-----------------------------------+------+
 |      |Instance      |Module                             |Cells |
 +------+--------------+-----------------------------------+------+
-|1     |top           |                                   |   573|
-|2     |  can         |new_clock_assembly                 |   431|
-|3     |    hour      |new_counter_sub__parameterized0    |    82|
-|4     |      nc      |new_counter__parameterized0        |    64|
-|5     |      ncs     |new_counter_setter__parameterized0 |    18|
-|6     |    min       |new_counter_sub                    |    86|
-|7     |      nc      |new_counter_1                      |    68|
-|8     |      ncs     |new_counter_setter_2               |    18|
-|9     |    sec       |new_counter_sub_0                  |    86|
-|10    |      nc      |new_counter                        |    68|
+|1     |top           |                                   |   740|
+|2     |  can         |new_clock_assembly                 |   442|
+|3     |    hour      |new_counter_sub__parameterized0    |    90|
+|4     |      nc      |new_counter__parameterized0        |    71|
+|5     |      ncs     |new_counter_setter__parameterized0 |    19|
+|6     |    min       |new_counter_sub                    |    88|
+|7     |      nc      |new_counter_2                      |    70|
+|8     |      ncs     |new_counter_setter_3               |    18|
+|9     |    sec       |new_counter_sub_0                  |    94|
+|10    |      nc      |new_counter                        |    76|
 |11    |      ncs     |new_counter_setter                 |    18|
-|12    |    sec_clock |half_sec_timer                     |    69|
-|13    |    seg7      |seg_assembly                       |   108|
+|12    |    sec_clock |half_sec_timer_1                   |    69|
+|13    |    seg7      |seg_assembly                       |   101|
 |14    |      c2000   |clock_2000Hz                       |    69|
-|15    |      sc      |seg_scanner                        |    38|
-|16    |  kt          |key_top                            |   104|
+|15    |      sc      |seg_scanner                        |    31|
+|16    |  kt          |key_top                            |   110|
+|17    |  rm          |ring_module                        |   150|
+|18    |    cb        |count_buzz                         |   150|
+|19    |      u       |new_buzz                           |   139|
+|20    |        c500  |clock_500Hz                        |    69|
+|21    |        ht    |half_sec_timer                     |    70|
 +------+--------------+-----------------------------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:36 ; elapsed = 00:00:38 . Memory (MB): peak = 772.570 ; gain = 542.141
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:37 ; elapsed = 00:00:39 . Memory (MB): peak = 776.004 ; gain = 544.980
 ---------------------------------------------------------------------------------
-Synthesis finished with 0 errors, 0 critical warnings and 84 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:24 ; elapsed = 00:00:31 . Memory (MB): peak = 772.570 ; gain = 187.996
-Synthesis Optimization Complete : Time (s): cpu = 00:00:37 ; elapsed = 00:00:38 . Memory (MB): peak = 772.570 ; gain = 542.141
+Synthesis finished with 0 errors, 0 critical warnings and 9 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:23 ; elapsed = 00:00:32 . Memory (MB): peak = 776.004 ; gain = 190.438
+Synthesis Optimization Complete : Time (s): cpu = 00:00:37 ; elapsed = 00:00:40 . Memory (MB): peak = 776.004 ; gain = 544.980
 INFO: [Project 1-571] Translating synthesized netlist
-INFO: [Netlist 29-17] Analyzing 57 Unisim elements for replacement
+INFO: [Netlist 29-17] Analyzing 70 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
@@ -722,10 +635,10 @@ INFO: [Project 1-111] Unisim Transformation Summary:
   LDC => LDCE: 18 instances
 
 INFO: [Common 17-83] Releasing license: Synthesis
-83 Infos, 155 Warnings, 46 Critical Warnings and 0 Errors encountered.
+82 Infos, 63 Warnings, 46 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:39 ; elapsed = 00:00:42 . Memory (MB): peak = 772.570 ; gain = 546.391
+synth_design: Time (s): cpu = 00:00:40 ; elapsed = 00:00:43 . Memory (MB): peak = 776.004 ; gain = 548.988
 INFO: [Common 17-1381] The checkpoint 'C:/Users/46162/Desktop/Simple-FPGA-Clock/Simple-FPGA-Clock/Simple-FPGA-Clock.runs/synth_1/clock_with_set.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file clock_with_set_utilization_synth.rpt -pb clock_with_set_utilization_synth.pb
-report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.048 . Memory (MB): peak = 772.570 ; gain = 0.000
-INFO: [Common 17-206] Exiting Vivado at Tue Dec 25 14:57:27 2018...
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.053 . Memory (MB): peak = 776.004 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Tue Dec 25 15:27:31 2018...

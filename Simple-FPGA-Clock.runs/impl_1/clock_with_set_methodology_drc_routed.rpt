@@ -1,7 +1,7 @@
 Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2017.4 (win64) Build 2086221 Fri Dec 15 20:55:39 MST 2017
-| Date         : Tue Dec 25 14:58:42 2018
+| Date         : Tue Dec 25 15:28:46 2018
 | Host         : Dell-tsing running 64-bit major release  (build 9200)
 | Command      : report_methodology -file clock_with_set_methodology_drc_routed.rpt -pb clock_with_set_methodology_drc_routed.pb -rpx clock_with_set_methodology_drc_routed.rpx
 | Design       : clock_with_set
@@ -23,11 +23,11 @@ Table of Contents
           Floorplan: design_1
       Design limits: <entire design considered>
              Max violations: <unlimited>
-             Violations found: 199
+             Violations found: 261
 +-----------+----------+-----------------------------+------------+
 | Rule      | Severity | Description                 | Violations |
 +-----------+----------+-----------------------------+------------+
-| TIMING-17 | Warning  | Non-clocked sequential cell | 175        |
+| TIMING-17 | Warning  | Non-clocked sequential cell | 237        |
 | TIMING-20 | Warning  | Non-clocked latch           | 24         |
 +-----------+----------+-----------------------------+------------+
 
@@ -906,6 +906,316 @@ Related violations: <none>
 TIMING-17#175 Warning
 Non-clocked sequential cell  
 The clock pin kt/row_val_reg[3]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#176 Warning
+Non-clocked sequential cell  
+The clock pin rm/cb/en_reg/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#177 Warning
+Non-clocked sequential cell  
+The clock pin rm/cb/tempcount_reg[0]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#178 Warning
+Non-clocked sequential cell  
+The clock pin rm/cb/tempcount_reg[1]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#179 Warning
+Non-clocked sequential cell  
+The clock pin rm/cb/tempcount_reg[2]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#180 Warning
+Non-clocked sequential cell  
+The clock pin rm/cb/tempcount_reg[3]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#181 Warning
+Non-clocked sequential cell  
+The clock pin rm/cb/tempcount_reg[4]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#182 Warning
+Non-clocked sequential cell  
+The clock pin rm/cb/u/c500/cnt_reg[0]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#183 Warning
+Non-clocked sequential cell  
+The clock pin rm/cb/u/c500/cnt_reg[10]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#184 Warning
+Non-clocked sequential cell  
+The clock pin rm/cb/u/c500/cnt_reg[11]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#185 Warning
+Non-clocked sequential cell  
+The clock pin rm/cb/u/c500/cnt_reg[12]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#186 Warning
+Non-clocked sequential cell  
+The clock pin rm/cb/u/c500/cnt_reg[13]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#187 Warning
+Non-clocked sequential cell  
+The clock pin rm/cb/u/c500/cnt_reg[14]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#188 Warning
+Non-clocked sequential cell  
+The clock pin rm/cb/u/c500/cnt_reg[15]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#189 Warning
+Non-clocked sequential cell  
+The clock pin rm/cb/u/c500/cnt_reg[16]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#190 Warning
+Non-clocked sequential cell  
+The clock pin rm/cb/u/c500/cnt_reg[17]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#191 Warning
+Non-clocked sequential cell  
+The clock pin rm/cb/u/c500/cnt_reg[18]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#192 Warning
+Non-clocked sequential cell  
+The clock pin rm/cb/u/c500/cnt_reg[19]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#193 Warning
+Non-clocked sequential cell  
+The clock pin rm/cb/u/c500/cnt_reg[1]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#194 Warning
+Non-clocked sequential cell  
+The clock pin rm/cb/u/c500/cnt_reg[20]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#195 Warning
+Non-clocked sequential cell  
+The clock pin rm/cb/u/c500/cnt_reg[21]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#196 Warning
+Non-clocked sequential cell  
+The clock pin rm/cb/u/c500/cnt_reg[22]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#197 Warning
+Non-clocked sequential cell  
+The clock pin rm/cb/u/c500/cnt_reg[23]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#198 Warning
+Non-clocked sequential cell  
+The clock pin rm/cb/u/c500/cnt_reg[24]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#199 Warning
+Non-clocked sequential cell  
+The clock pin rm/cb/u/c500/cnt_reg[25]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#200 Warning
+Non-clocked sequential cell  
+The clock pin rm/cb/u/c500/cnt_reg[26]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#201 Warning
+Non-clocked sequential cell  
+The clock pin rm/cb/u/c500/cnt_reg[2]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#202 Warning
+Non-clocked sequential cell  
+The clock pin rm/cb/u/c500/cnt_reg[3]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#203 Warning
+Non-clocked sequential cell  
+The clock pin rm/cb/u/c500/cnt_reg[4]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#204 Warning
+Non-clocked sequential cell  
+The clock pin rm/cb/u/c500/cnt_reg[5]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#205 Warning
+Non-clocked sequential cell  
+The clock pin rm/cb/u/c500/cnt_reg[6]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#206 Warning
+Non-clocked sequential cell  
+The clock pin rm/cb/u/c500/cnt_reg[7]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#207 Warning
+Non-clocked sequential cell  
+The clock pin rm/cb/u/c500/cnt_reg[8]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#208 Warning
+Non-clocked sequential cell  
+The clock pin rm/cb/u/c500/cnt_reg[9]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#209 Warning
+Non-clocked sequential cell  
+The clock pin rm/cb/u/c500/cout_reg/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#210 Warning
+Non-clocked sequential cell  
+The clock pin rm/cb/u/ht/cnt_reg[0]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#211 Warning
+Non-clocked sequential cell  
+The clock pin rm/cb/u/ht/cnt_reg[10]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#212 Warning
+Non-clocked sequential cell  
+The clock pin rm/cb/u/ht/cnt_reg[11]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#213 Warning
+Non-clocked sequential cell  
+The clock pin rm/cb/u/ht/cnt_reg[12]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#214 Warning
+Non-clocked sequential cell  
+The clock pin rm/cb/u/ht/cnt_reg[13]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#215 Warning
+Non-clocked sequential cell  
+The clock pin rm/cb/u/ht/cnt_reg[14]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#216 Warning
+Non-clocked sequential cell  
+The clock pin rm/cb/u/ht/cnt_reg[15]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#217 Warning
+Non-clocked sequential cell  
+The clock pin rm/cb/u/ht/cnt_reg[16]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#218 Warning
+Non-clocked sequential cell  
+The clock pin rm/cb/u/ht/cnt_reg[17]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#219 Warning
+Non-clocked sequential cell  
+The clock pin rm/cb/u/ht/cnt_reg[18]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#220 Warning
+Non-clocked sequential cell  
+The clock pin rm/cb/u/ht/cnt_reg[19]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#221 Warning
+Non-clocked sequential cell  
+The clock pin rm/cb/u/ht/cnt_reg[1]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#222 Warning
+Non-clocked sequential cell  
+The clock pin rm/cb/u/ht/cnt_reg[20]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#223 Warning
+Non-clocked sequential cell  
+The clock pin rm/cb/u/ht/cnt_reg[21]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#224 Warning
+Non-clocked sequential cell  
+The clock pin rm/cb/u/ht/cnt_reg[22]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#225 Warning
+Non-clocked sequential cell  
+The clock pin rm/cb/u/ht/cnt_reg[23]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#226 Warning
+Non-clocked sequential cell  
+The clock pin rm/cb/u/ht/cnt_reg[24]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#227 Warning
+Non-clocked sequential cell  
+The clock pin rm/cb/u/ht/cnt_reg[25]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#228 Warning
+Non-clocked sequential cell  
+The clock pin rm/cb/u/ht/cnt_reg[26]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#229 Warning
+Non-clocked sequential cell  
+The clock pin rm/cb/u/ht/cnt_reg[2]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#230 Warning
+Non-clocked sequential cell  
+The clock pin rm/cb/u/ht/cnt_reg[3]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#231 Warning
+Non-clocked sequential cell  
+The clock pin rm/cb/u/ht/cnt_reg[4]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#232 Warning
+Non-clocked sequential cell  
+The clock pin rm/cb/u/ht/cnt_reg[5]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#233 Warning
+Non-clocked sequential cell  
+The clock pin rm/cb/u/ht/cnt_reg[6]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#234 Warning
+Non-clocked sequential cell  
+The clock pin rm/cb/u/ht/cnt_reg[7]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#235 Warning
+Non-clocked sequential cell  
+The clock pin rm/cb/u/ht/cnt_reg[8]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#236 Warning
+Non-clocked sequential cell  
+The clock pin rm/cb/u/ht/cnt_reg[9]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#237 Warning
+Non-clocked sequential cell  
+The clock pin rm/cb/u/ht/cout_reg/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-20#1 Warning
