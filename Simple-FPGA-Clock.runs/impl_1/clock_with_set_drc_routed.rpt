@@ -1,8 +1,8 @@
 Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
 ------------------------------------------------------------------------------------------------------------------------------------
-| Tool Version : Vivado v.2017.4 (lin64) Build 2086221 Fri Dec 15 20:54:30 MST 2017
-| Date         : Mon Dec 24 23:24:35 2018
-| Host         : moe-SVP132200C running 64-bit Ubuntu 18.04.1 LTS
+| Tool Version : Vivado v.2017.4 (win64) Build 2086221 Fri Dec 15 20:55:39 MST 2017
+| Date         : Tue Dec 25 14:46:51 2018
+| Host         : Dell-tsing running 64-bit major release  (build 9200)
 | Command      : report_drc -file clock_with_set_drc_routed.rpt -pb clock_with_set_drc_routed.pb -rpx clock_with_set_drc_routed.rpx
 | Design       : clock_with_set
 | Device       : xc7a100tfgg484-1

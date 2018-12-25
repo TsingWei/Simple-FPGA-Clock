@@ -1,8 +1,8 @@
 Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------------------
-| Tool Version              : Vivado v.2017.4 (lin64) Build 2086221 Fri Dec 15 20:54:30 MST 2017
-| Date                      : Mon Dec 24 23:23:58 2018
-| Host                      : moe-SVP132200C running 64-bit Ubuntu 18.04.1 LTS
+| Tool Version              : Vivado v.2017.4 (win64) Build 2086221 Fri Dec 15 20:55:39 MST 2017
+| Date                      : Tue Dec 25 14:46:13 2018
+| Host                      : Dell-tsing running 64-bit major release  (build 9200)
 | Command                   : report_io -file clock_with_set_io_placed.rpt
 | Design                    : clock_with_set
 | Device                    : xc7a100t
@@ -25,7 +25,7 @@ Table of Contents
 +---------------+
 | Total User IO |
 +---------------+
-|            36 |
+|            37 |
 +---------------+
 
 
@@ -53,7 +53,7 @@ Table of Contents
 | A16        |             | High Range | IO_L9N_T1_DQS_16             | User IO       |             |      16 |            |      |                     |                      |         |            |           |          |      |                  |              |                   |              |
 | A17        |             | High Range | VCCO_16                      | VCCO          |             |      16 |            |      |                     |                      |    3.30 |            |           |          |      |                  |              |                   |              |
 | A18        | seg_an[7]   | High Range | IO_L17P_T2_16                | OUTPUT        | LVCMOS33    |      16 |         12 | SLOW |                     |            FP_VTT_50 |         | FIXED      |           |          |      | NONE             |              |                   |              |
-| A19        |             | High Range | IO_L17N_T2_16                | User IO       |             |      16 |            |      |                     |                      |         |            |           |          |      |                  |              |                   |              |
+| A19        | buzz_out    | High Range | IO_L17N_T2_16                | OUTPUT        | LVCMOS33    |      16 |         12 | SLOW |                     |            FP_VTT_50 |         | FIXED      |           |          |      | NONE             |              |                   |              |
 | A20        | seg_an[6]   | High Range | IO_L16N_T2_16                | OUTPUT        | LVCMOS33    |      16 |         12 | SLOW |                     |            FP_VTT_50 |         | FIXED      |           |          |      | NONE             |              |                   |              |
 | A21        |             | High Range | IO_L21N_T3_DQS_16            | User IO       |             |      16 |            |      |                     |                      |         |            |           |          |      |                  |              |                   |              |
 | A22        |             |            | GND                          | GND           |             |         |            |      |                     |                      |     0.0 |            |           |          |      |                  |              |                   |              |

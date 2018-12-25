@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="synth_1" LaunchPart="xc7a100tfgg484-1" LaunchTime="1545664736">
-  <File Type="VDS-TIMING-PB" Name="clock_with_set_timing_summary_synth.pb"/>
-  <File Type="VDS-TIMINGSUMMARY" Name="clock_with_set_timing_summary_synth.rpt"/>
-  <File Type="RDS-DCP" Name="clock_with_set.dcp"/>
-  <File Type="RDS-UTIL-PB" Name="clock_with_set_utilization_synth.pb"/>
-  <File Type="RDS-UTIL" Name="clock_with_set_utilization_synth.rpt"/>
-  <File Type="RDS-PROPCONSTRS" Name="clock_with_set_drc_synth.rpt"/>
-  <File Type="RDS-RDS" Name="clock_with_set.vds"/>
-  <File Type="REPORTS-TCL" Name="clock_with_set_reports.tcl"/>
+<GenRun Id="synth_1" LaunchPart="xc7a100tfgg484-1" LaunchTime="1545720282">
   <File Type="PA-TCL" Name="clock_with_set.tcl"/>
+  <File Type="RDS-PROPCONSTRS" Name="clock_with_set_drc_synth.rpt"/>
+  <File Type="REPORTS-TCL" Name="clock_with_set_reports.tcl"/>
+  <File Type="RDS-RDS" Name="clock_with_set.vds"/>
+  <File Type="RDS-UTIL" Name="clock_with_set_utilization_synth.rpt"/>
+  <File Type="RDS-UTIL-PB" Name="clock_with_set_utilization_synth.pb"/>
+  <File Type="RDS-DCP" Name="clock_with_set.dcp"/>
+  <File Type="VDS-TIMINGSUMMARY" Name="clock_with_set_timing_summary_synth.rpt"/>
+  <File Type="VDS-TIMING-PB" Name="clock_with_set_timing_summary_synth.pb"/>
   <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
     <Filter Type="Srcs"/>
     <File Path="$PSRCDIR/sources_1/imports/文档/KEY_SEG.v">
@@ -21,6 +21,20 @@
       </FileInfo>
     </File>
     <File Path="$PSRCDIR/sources_1/new/clock_2000Hz.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/clock_500Hz.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/count_buzz.v">
       <FileInfo>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
@@ -52,6 +66,15 @@
       <FileInfo>
         <Attr Name="ImportPath" Val="$PPRDIR/../Vivado/2017.4/bin/project_1/project_1.srcs/sources_1/new/light_7seg.v"/>
         <Attr Name="ImportTime" Val="1544579679"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/Simple-FPGA-Clock/new_buzz.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/new_buzz.v"/>
+        <Attr Name="ImportTime" Val="1545640383"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
         <Attr Name="UsedIn" Val="simulation"/>
@@ -110,24 +133,6 @@
     </File>
     <File Path="$PSRCDIR/sources_1/new/clock_with_set.v">
       <FileInfo>
-        <Attr Name="UsedIn" Val="synthesis"/>
-        <Attr Name="UsedIn" Val="implementation"/>
-        <Attr Name="UsedIn" Val="simulation"/>
-      </FileInfo>
-    </File>
-    <File Path="$PSRCDIR/sources_1/new/clock_500Hz.v">
-      <FileInfo>
-        <Attr Name="AutoDisabled" Val="1"/>
-        <Attr Name="UsedIn" Val="synthesis"/>
-        <Attr Name="UsedIn" Val="implementation"/>
-        <Attr Name="UsedIn" Val="simulation"/>
-      </FileInfo>
-    </File>
-    <File Path="$PSRCDIR/sources_1/imports/Simple-FPGA-Clock/new_buzz.v">
-      <FileInfo>
-        <Attr Name="AutoDisabled" Val="1"/>
-        <Attr Name="ImportPath" Val="$PPRDIR/new_buzz.v"/>
-        <Attr Name="ImportTime" Val="1545640383"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
         <Attr Name="UsedIn" Val="simulation"/>
@@ -210,6 +215,14 @@
       </FileInfo>
     </File>
     <File Path="$PSRCDIR/sources_1/new/clock_reg.v">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/new_buzz.v">
       <FileInfo>
         <Attr Name="AutoDisabled" Val="1"/>
         <Attr Name="UsedIn" Val="synthesis"/>

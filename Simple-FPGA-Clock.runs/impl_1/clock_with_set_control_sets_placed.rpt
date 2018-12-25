@@ -1,8 +1,8 @@
 Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------------
-| Tool Version : Vivado v.2017.4 (lin64) Build 2086221 Fri Dec 15 20:54:30 MST 2017
-| Date         : Mon Dec 24 23:23:59 2018
-| Host         : moe-SVP132200C running 64-bit Ubuntu 18.04.1 LTS
+| Tool Version : Vivado v.2017.4 (win64) Build 2086221 Fri Dec 15 20:55:39 MST 2017
+| Date         : Tue Dec 25 14:46:13 2018
+| Host         : Dell-tsing running 64-bit major release  (build 9200)
 | Command      : report_control_sets -verbose -file clock_with_set_control_sets_placed.rpt
 | Design       : clock_with_set
 | Device       : xc7a100t
@@ -33,10 +33,10 @@ Table of Contents
 +--------------+-----------------------+------------------------+-----------------+--------------+
 | Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
 +--------------+-----------------------+------------------------+-----------------+--------------+
-| No           | No                    | No                     |              24 |           13 |
-| No           | No                    | Yes                    |              81 |           53 |
+| No           | No                    | No                     |              24 |           17 |
+| No           | No                    | Yes                    |              81 |           52 |
 | No           | Yes                   | No                     |              74 |           30 |
-| Yes          | No                    | No                     |               8 |            2 |
+| Yes          | No                    | No                     |               8 |            1 |
 | Yes          | No                    | Yes                    |              12 |            4 |
 | Yes          | Yes                   | No                     |               0 |            0 |
 +--------------+-----------------------+------------------------+-----------------+--------------+
@@ -48,68 +48,68 @@ Table of Contents
 +-------------------------------+----------------------------+-----------------------------------+------------------+----------------+
 |          Clock Signal         |        Enable Signal       |          Set/Reset Signal         | Slice Load Count | Bel Load Count |
 +-------------------------------+----------------------------+-----------------------------------+------------------+----------------+
-|  can/sec/nc/clk_out           |                            | can/min/ncs/cnt_reg[2]_C          |                1 |              1 |
-|  can/sec/ncs/cnt_reg[1]_P     |                            | can/sec/ncs/cnt_reg[1]_C          |                1 |              1 |
-|  can/sec/ncs/cnt_reg[2]_P     |                            | can/sec/ncs/cnt_reg[2]_C          |                1 |              1 |
-|  can/hour/ncs/cnt_reg[3]_P    |                            | can/hour/ncs/cnt_reg[3]_C         |                1 |              1 |
-|  can/sec/ncs/cnt_reg[4]_P     |                            | can/sec/ncs/cnt_reg[4]_C          |                1 |              1 |
-|  can/hour/ncs/cnt_reg[4]_P    |                            | can/hour/ncs/cnt_reg[4]_C         |                1 |              1 |
-|  can/hour/ncs/cnt_reg[5]_P    |                            | can/hour/ncs/set_val_out_reg[5]_0 |                1 |              1 |
-|  can/sec/nc/clk_out           |                            | can/min/ncs/cnt_reg[3]_P          |                1 |              1 |
-|  can/sec/nc/clk_out           |                            | rst_IBUF                          |                1 |              1 |
-|  can/sec/nc/clk_out           |                            | can/min/ncs/cnt_reg[1]_P          |                1 |              1 |
+|  can/min/ncs/cnt_reg[0]_P     |                            | can/min/ncs/cnt_reg[0]_C          |                1 |              1 |
+|  can/min/ncs/cnt_reg[3]_P     |                            | can/min/ncs/cnt_reg[3]_C          |                1 |              1 |
+|  can/min/ncs/cnt_reg[5]_P     |                            | can/min/ncs/cnt_reg[5]_C          |                1 |              1 |
+|  can/min/ncs/cnt_reg[1]_P     |                            | can/min/ncs/cnt_reg[1]_C          |                1 |              1 |
+|  can/min/ncs/cnt_reg[2]_P     |                            | can/min/ncs/cnt_reg[2]_C          |                1 |              1 |
+|  can/min/ncs/cnt_reg[4]_P     |                            | can/min/ncs/cnt_reg[4]_C          |                1 |              1 |
 |  can/sec/nc/clk_out           |                            | can/min/ncs/cnt_reg[0]_C          |                1 |              1 |
 |  can/sec/nc/clk_out           |                            | can/min/ncs/cnt_reg[0]_P          |                1 |              1 |
+|  can/sec/nc/clk_out           |                            | can/min/ncs/cnt_reg[3]_P          |                1 |              1 |
 |  can/sec/nc/clk_out           |                            | can/min/ncs/cnt_reg[1]_C          |                1 |              1 |
-|  can/sec/nc/clk_out           |                            | can/min/ncs/cnt_reg[3]_C          |                1 |              1 |
-|  can/sec/ncs/cnt_reg[3]_P     |                            | can/sec/ncs/cnt_reg[3]_C          |                1 |              1 |
-|  can/sec/nc/clk_out           |                            | can/min/ncs/cnt_reg[2]_P          |                1 |              1 |
-|  can/sec/nc/clk_out           |                            | can/min/ncs/cnt_reg[4]_C          |                1 |              1 |
-|  can/sec/nc/clk_out           |                            | can/min/ncs/cnt_reg[4]_P          |                1 |              1 |
 |  can/sec/nc/clk_out           |                            | can/min/ncs/cnt_reg[5]_C          |                1 |              1 |
+|  can/sec/nc/clk_out           |                            | can/min/ncs/cnt_reg[3]_C          |                1 |              1 |
 |  can/sec/nc/clk_out           |                            | can/min/ncs/cnt_reg[5]_P          |                1 |              1 |
+|  can/sec/nc/clk_out           |                            | can/min/ncs/cnt_reg[2]_C          |                1 |              1 |
+|  can/sec/nc/clk_out           |                            | can/min/ncs/cnt_reg[1]_P          |                1 |              1 |
+|  can/sec/nc/clk_out           |                            | can/min/ncs/cnt_reg[4]_C          |                1 |              1 |
+|  can/sec/nc/clk_out           |                            | can/min/ncs/cnt_reg[2]_P          |                1 |              1 |
+|  can/sec/nc/clk_out           |                            | can/min/ncs/cnt_reg[4]_P          |                1 |              1 |
+|  can/sec/nc/clk_out           |                            | rst_IBUF                          |                1 |              1 |
+|  can/sec/ncs/cnt_reg[0]_P     |                            | can/sec/ncs/cnt_reg[0]_C          |                1 |              1 |
+|  can/sec/ncs/cnt_reg[2]_P     |                            | can/sec/ncs/cnt_reg[2]_C          |                1 |              1 |
+|  can/sec/ncs/cnt_reg[3]_P     |                            | can/sec/ncs/cnt_reg[3]_C          |                1 |              1 |
+|  can/sec/ncs/cnt_reg[5]_P     |                            | can/sec/ncs/cnt_reg[5]_C          |                1 |              1 |
+|  can/sec/ncs/cnt_reg[1]_P     |                            | can/sec/ncs/cnt_reg[1]_C          |                1 |              1 |
+|  can/sec/ncs/cnt_reg[4]_P     |                            | can/sec/ncs/cnt_reg[4]_C          |                1 |              1 |
+|  can/hour/ncs/cnt_reg[4]_P    |                            | can/hour/ncs/cnt_reg[4]_C         |                1 |              1 |
+|  can/hour/ncs/cnt_reg[0]_P    |                            | can/hour/ncs/cnt_reg[0]_C         |                1 |              1 |
 |  can/hour/ncs/cnt_reg[1]_P    |                            | can/hour/ncs/cnt_reg[1]_C         |                1 |              1 |
-|  can/min/ncs/cnt_reg[3]_P     |                            | can/min/ncs/cnt_reg[3]_C          |                1 |              1 |
-|  can/min/ncs/cnt_reg[1]_P     |                            | can/min/ncs/cnt_reg[1]_C          |                1 |              1 |
-|  can/min/ncs/cnt_reg[0]_P     |                            | can/min/ncs/cnt_reg[0]_C          |                1 |              1 |
-|  can/min/ncs/cnt_reg[2]_P     |                            | can/min/ncs/cnt_reg[2]_C          |                1 |              1 |
+|  can/hour/ncs/cnt_reg[3]_P    |                            | can/hour/ncs/cnt_reg[3]_C         |                1 |              1 |
+|  can/hour/ncs/cnt_reg[5]_P    |                            | can/hour/ncs/set_val_out_reg[5]_0 |                1 |              1 |
 |  can/hour/ncs/cnt_reg[2]_P    |                            | can/hour/ncs/cnt_reg[2]_C         |                1 |              1 |
-|  can/min/ncs/cnt_reg[4]_P     |                            | can/min/ncs/cnt_reg[4]_C          |                1 |              1 |
-|  can/min/ncs/cnt_reg[5]_P     |                            | can/min/ncs/cnt_reg[5]_C          |                1 |              1 |
-|  can/sec_clock/cout           |                            | can/sec/ncs/cnt_reg[5]_C          |                1 |              1 |
-|  can/sec_clock/cout           |                            | can/sec/ncs/cnt_reg[5]_P          |                1 |              1 |
-|  can/sec_clock/cout           |                            | can/sec/ncs/cnt_reg[0]_C          |                1 |              1 |
-|  can/sec_clock/cout           |                            | can/sec/ncs/cnt_reg[0]_P          |                1 |              1 |
-|  can/sec_clock/cout           |                            | can/sec/ncs/cnt_reg[1]_C          |                1 |              1 |
-|  can/sec_clock/cout           |                            | can/sec/ncs/cnt_reg[1]_P          |                1 |              1 |
-|  can/sec_clock/cout           |                            | can/sec/ncs/cnt_reg[3]_C          |                1 |              1 |
+|  can/min/nc/cnt_reg[0]_P_0    |                            | can/hour/ncs/cnt_reg[1]_P         |                1 |              1 |
 |  can/sec_clock/cout           |                            | can/sec/ncs/cnt_reg[2]_C          |                1 |              1 |
+|  can/sec_clock/cout           |                            | can/sec/ncs/cnt_reg[0]_P          |                1 |              1 |
 |  can/sec_clock/cout           |                            | can/sec/ncs/cnt_reg[2]_P          |                1 |              1 |
 |  can/sec_clock/cout           |                            | can/sec/ncs/cnt_reg[3]_P          |                1 |              1 |
+|  can/sec_clock/cout           |                            | can/sec/ncs/cnt_reg[5]_P          |                1 |              1 |
 |  can/sec_clock/cout           |                            | can/sec/ncs/cnt_reg[4]_C          |                1 |              1 |
+|  can/sec_clock/cout           |                            | can/sec/ncs/cnt_reg[0]_C          |                1 |              1 |
+|  can/sec_clock/cout           |                            | can/sec/ncs/cnt_reg[3]_C          |                1 |              1 |
+|  can/sec_clock/cout           |                            | can/sec/ncs/cnt_reg[1]_P          |                1 |              1 |
+|  can/sec_clock/cout           |                            | can/sec/ncs/cnt_reg[5]_C          |                1 |              1 |
 |  can/sec_clock/cout           |                            | can/sec/ncs/cnt_reg[4]_P          |                1 |              1 |
-|  can/sec/ncs/cnt_reg[0]_P     |                            | can/sec/ncs/cnt_reg[0]_C          |                1 |              1 |
+|  can/sec_clock/cout           |                            | can/sec/ncs/cnt_reg[1]_C          |                1 |              1 |
 |  can/sec_clock/cout           |                            | rst_IBUF                          |                1 |              1 |
-|  can/min/nc/cnt_reg[0]_P_0    |                            | can/hour/ncs/cnt_reg[3]_P         |                1 |              1 |
 |  can/min/nc/cnt_reg[0]_P_0    |                            | can/hour/ncs/cnt_reg[4]_P         |                1 |              1 |
-|  can/min/nc/cnt_reg[0]_P_0    |                            | can/hour/ncs/cnt_reg[5]_P         |                1 |              1 |
 |  can/min/nc/cnt_reg[0]_P_0    |                            | can/hour/ncs/cnt_reg[1]_C         |                1 |              1 |
-|  can/min/nc/cnt_reg[0]_P_0    |                            | can/hour/ncs/cnt_reg[4]_C         |                1 |              1 |
-|  can/min/nc/cnt_reg[0]_P_0    |                            | can/hour/ncs/cnt_reg[0]_C         |                1 |              1 |
-|  can/min/nc/cnt_reg[0]_P_0    |                            | can/hour/ncs/cnt_reg[1]_P         |                1 |              1 |
 |  can/min/nc/cnt_reg[0]_P_0    |                            | can/hour/ncs/cnt_reg[0]_P         |                1 |              1 |
-|  can/sec/ncs/cnt_reg[5]_P     |                            | can/sec/ncs/cnt_reg[5]_C          |                1 |              1 |
-|  can/min/nc/cnt_reg[0]_P_0    |                            | can/hour/ncs/cnt_reg[3]_C         |                1 |              1 |
-|  can/hour/ncs/cnt_reg[0]_P    |                            | can/hour/ncs/cnt_reg[0]_C         |                1 |              1 |
-|  can/min/nc/cnt_reg[0]_P_0    |                            | can/hour/ncs/cnt_reg[2]_P         |                1 |              1 |
 |  can/min/nc/cnt_reg[0]_P_0    |                            | can/hour/ncs/cnt_reg[2]_C         |                1 |              1 |
+|  can/min/nc/cnt_reg[0]_P_0    |                            | can/hour/ncs/cnt_reg[3]_P         |                1 |              1 |
+|  can/min/nc/cnt_reg[0]_P_0    |                            | can/hour/ncs/cnt_reg[5]_P         |                1 |              1 |
+|  can/min/nc/cnt_reg[0]_P_0    |                            | can/hour/ncs/cnt_reg[2]_P         |                1 |              1 |
+|  can/min/nc/cnt_reg[0]_P_0    |                            | can/hour/ncs/cnt_reg[4]_C         |                1 |              1 |
+|  can/min/nc/cnt_reg[0]_P_0    |                            | can/hour/ncs/cnt_reg[3]_C         |                1 |              1 |
+|  can/min/nc/cnt_reg[0]_P_0    |                            | can/hour/ncs/cnt_reg[0]_C         |                1 |              1 |
 |  kt/key_clk                   | kt/keyboard_val[3]_i_1_n_0 | rst_IBUF                          |                2 |              4 |
 |  kt/next_state_reg[5]_i_2_n_0 |                            |                                   |                2 |              6 |
 |  kt/key_clk                   |                            | rst_IBUF                          |                2 |              7 |
+|  kt/key_clk                   | kt/col_val                 |                                   |                1 |              8 |
 |  kt/key_clk                   | kt/col[3]_i_1_n_0          | rst_IBUF                          |                2 |              8 |
-|  kt/key_clk                   | kt/col_val                 |                                   |                2 |              8 |
-|  can/seg7/c2000/en_reg[5]     |                            | rst_IBUF                          |                9 |             17 |
-|  clk_IBUF_BUFG                |                            |                                   |               11 |             18 |
+|  can/seg7/c2000/en_reg[5]     |                            | rst_IBUF                          |                8 |             17 |
+|  clk_IBUF_BUFG                |                            |                                   |               15 |             18 |
 |  clk_IBUF_BUFG                |                            | rst_IBUF                          |               17 |             76 |
 +-------------------------------+----------------------------+-----------------------------------+------------------+----------------+
 
